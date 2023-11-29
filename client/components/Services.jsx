@@ -1,5 +1,5 @@
 import React from 'react'
-import Servisesbg from '../assets/servisesbg.jpg'
+import Servisesbg from '../assets/bg/cosyhome11.png'
 
 const Services = () => {
   return (
@@ -16,8 +16,8 @@ const Services = () => {
           }}
         >
           <div className="banner-content">
-            <h1>Services</h1>
-            <h3>Building Construction</h3>
+            <h1 className="h1serv">Services</h1>
+            <h3 className="h3serv">Building Construction</h3>
           </div>
         </div>
         <div className="textbanserv">

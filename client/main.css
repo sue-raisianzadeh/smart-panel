@@ -836,16 +836,61 @@
   
   .picbanserv {
     position: relative;
-    width: 70%;
+  width: 70%;
+  height: 0;
+  padding-bottom: 42%; /* Adjust the aspect ratio as needed */
+  background-image: url(${Servisesbg});
+  background-size: cover;
+  background-position: center;
   }
   
-  .picbanserv .banner-content {
+
+.banner-content{
     position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 42%;
+    left: 8%;
+    transform: translateY(-50%);
+    color:rgb(253, 253, 253);
+    text-shadow: 3px 2px 5px #f2a8a8;
+    }
+
+  .h1serv, .h3serv {
+    padding-left: 3em;
+    margin: 0;
+  }
+  
+  .h1serv, .h3serv{
+    background-color: transparent;
+    display: inline-block;
+    position: relative;  
+   }
+  .h1serv{
+    font-size: 3.75em;
+   }
+  .h3serv {
+    position: absolute;
+    top: 120%;
+    left: 20%;
+    transform: translateY(4%);
+    font-size: 2em;
+  }
+
+  .picbanserv h1::before {
+    content: '';
+    position: absolute;
+    left: 160px;
     top: 50%;
     transform: translateY(-50%);
-    background-color: beige;
-    padding: 1em;
+    width: 0.2em; 
+    height: 1em; /* Adjust the height of the bar */
+    background-color: #f5bb64; 
+    text-shadow: 3px 2px 5px #f2a8a8;
   }
+
+  
+
   
   .textbanserv {
     background-color:#f9c576; 

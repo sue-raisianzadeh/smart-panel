@@ -63,6 +63,7 @@ function ContactUs() {
       try {
         const newUser = { name, email, phone, message }
         await axios.post('/api/add-user', newUser)
+        // await axios.post('https://emailsender.com/', newUser)
       } catch (error) {
         console.error(error)
       }
