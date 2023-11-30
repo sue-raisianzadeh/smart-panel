@@ -12,8 +12,8 @@ const Home = () => {
           backgroundImage: `url(${Kitchen})`,
           position: 'relative',
           backgroundSize: 'cover',
-          width: '100vw',
-          height: '100vh',
+          width: '100%',
+          height: '100%',
         }}
       >
         <p className="phome">
