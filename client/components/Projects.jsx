@@ -34,11 +34,7 @@ const Projects = () => {
           <p className="pp4">
             please have a look on other projects at Atom Company
             <br />
-            <a
-              className="download2"
-              href="https://drive.google.com/file/d/1FSN7MKxwscyFw1uKp2RzfJUfR-ubQ8iy/view?usp=sharing"
-              target="_blank"
-            >
+            <a className="download2" href="https://atom.com">
               Atom Company
               {/* <ImDownload2
               size={28}

@@ -10,7 +10,7 @@ const Home = () => {
         className="content"
         style={{
           backgroundImage: `url(${Kitchen})`,
-          position: 'relative',
+          // position: 'relative',
           backgroundSize: 'cover',
           width: '100%',
           height: '100%',
@@ -24,25 +24,22 @@ const Home = () => {
         </p>
         <img className="homepic" src={House2} alt="house2" />
       </div>
-      {/* <div className="grid1"> */}
       <div className="phome3">
-        <p className="topmail">
-          <a className="anav2" href="/Services">
-            <FaTools size={27} style={{ marginRight: '5px' }} />
-            Services
+        <a className="anav2" href="/Services">
+          <FaTools size={27} style={{ marginRight: '5px' }} />
+          Services
+        </a>
+        <span
+          style={{
+            paddingLeft: '2em',
+            paddingRight: '2em',
+          }}
+        >
+          <a className="anav2" href="/ContactUs">
+            <FaComment size={27} style={{ marginRight: '5px' }} />
+            Contact Us
           </a>
-          <span
-            style={{
-              paddingLeft: '2em',
-              paddingRight: '2em',
-            }}
-          >
-            <a className="anav2" href="/ContactUs">
-              <FaComment size={27} style={{ marginRight: '5px' }} />
-              Contact Us
-            </a>
-          </span>
-        </p>
+        </span>
       </div>
     </div>
   )

@@ -22,9 +22,7 @@ const NavBar = () => {
   }
 
   return (
-    <div
-      className={`navbar-container ${isDarkRedBackground ? 'darkred-bg' : ''}`}
-    >
+    <div className={`navbar-container ${isDarkRedBackground ? 'red' : ''}`}>
       {/* The top part with contact information */}
       <div className="top-line">
         <div className="logo-container">
