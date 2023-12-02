@@ -19,7 +19,7 @@ const Projects = () => {
         Turn your vision into a reality with planning and Design
       </h2>
 
-      <div className="Body grid-wrapper">
+      <div className="grid-wrapper">
         <div className="grid1">
           <div className="projectl">
             <img className="logopic" src={Logo1} alt="Logo1" />

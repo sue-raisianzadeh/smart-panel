@@ -10,7 +10,7 @@ const Home = () => {
         className="content"
         style={{
           backgroundImage: `url(${Kitchen})`,
-          // position: 'relative',
+          position: 'relative',
           backgroundSize: 'cover',
           width: '100%',
           height: '100%',

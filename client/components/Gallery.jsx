@@ -47,7 +47,7 @@ const Gallery = () => {
       <h1 className="hgallery">GALLERY</h1>
       <p className="pgallery">
         Disclaimer: The imagery and video footage provided in this gallery are
-        available for media download and use, and must be credited to Rocket Lab
+        available for media download and use, and must be credited to Metalcraft
         or the photographer specified in the image caption. They cannot be used
         for advertising, marketing, or to imply endorsement.
       </p>
