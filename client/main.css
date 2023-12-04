@@ -357,6 +357,7 @@
 
 
 /*home */
+
 .Bodyhome {
   background: #000;
   /* height: 90vh;
@@ -402,7 +403,10 @@
   margin-left: 10px;
   box-shadow: 2px 2px  #57595a;
   margin: 8em;
+  animation: fade-in 2s ease-in-out forwards; 
+
 }
+
 .phome {
   /* display: flex; */
   font-size: 2.25em;
@@ -411,41 +415,30 @@
   color: #e0c397;
   text-align: left;
   /* word-spacing: -5px; */
-  /* justify-content: center; */
-  /* align-items: center; */
-  padding: 3.5em 0.25em 0 2em;
+  padding: 0em 0.25em 0 2em;
   margin:0px
 }
 
-.phome2 {
-  font-family: 'Cairo','Arial, Helvetica, sans-serif';
-justify-content: center;
-text-align: center;
-color:white;
-} 
-.phome3 {
-  margin-top: 4em;
-/* display: flex;
-grid-template-columns: repeat( auto-fit, minmax(250px, 1fr) );
-/* background:#f6ead8; */
-/* font-family:'Arial, Helvetica, sans-serif';
-justify-content: center;
-text-align: center;
-color:rgb(70, 58, 58);
-font-size: 21px;
-padding: 0px;
-text-decoration: none; */
-/* opacity: 0; 
-z-index: 9999;   */
-/* word-spacing: -1.5px; */
-/* border: #c8c16f; */
-/* box-shadow: 2px 2px #b35e72; */
+.image-container {
+  flex: -10;
+  margin-left: 20px; /* Add margin as needed */
+}
+
+.content-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2em; 
+}
+.text-and-buttons {
+  flex: 1;
 }
 .button-row {
   display: flex;
-  justify-content: row;
+  flex-direction: row;
+  /* justify-content: start; */
   gap: 2em;
-  margin: em;
+  margin: 2em;
   animation: fade-in 2s ease-in-out forwards;  
 }
 

@@ -17,30 +17,31 @@ const Home = () => {
           height: '100%',
         }}
       >
-        <p className="phome">
-          Design & Installation of custom insulated panel solutions is our
-          specialty. <br />
-          <br />
-          We are here to help you build your new dream home or bach
-        </p>
-        <img className="homepic" src={House2} alt="house2" />
-      </div>
-      <div className="phome3">
-        <div className="button-row">
-          <a className="anav2" href="/Services">
-            <FaTools size={27} style={{ marginRight: '5px' }} />
-            Services
-          </a>
-          <a className="anav2" href="/ContactUs">
-            <FaComment size={27} style={{ marginRight: '5px' }} />
-            Contact Us
-          </a>
+        <div className="content-wrapper">
+          <div className="text-and-buttons">
+            <p className="phome">
+              Design & Installation of custom insulated panel solutions is our
+              specialty. <br />
+              <br />
+              We are here to help you build your new dream home or bach
+            </p>
+            <div className="button-row">
+              <a className="anav2" href="/Services">
+                <FaTools size={27} style={{ marginRight: '5px' }} />
+                Services
+              </a>
+              <a className="anav2" href="/ContactUs">
+                <FaComment size={27} style={{ marginRight: '5px' }} />
+                Contact Us
+              </a>
+            </div>
+          </div>
+          <div className="image-container">
+            <img className="homepic" src={House2} alt="house2" />
+          </div>
         </div>
       </div>
-
-      <div>
-        <Footer />
-      </div>
+      <Footer />
     </div>
   )
 }
