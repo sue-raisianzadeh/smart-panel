@@ -8,7 +8,7 @@ import {
   FaHome,
   FaSchool,
   FaTools,
-  FaBuilding,
+  // FaBuilding,
   FaImage,
   FaComment,
 } from 'react-icons/fa'
@@ -92,7 +92,7 @@ const NavBar = () => {
                 Services
               </Link>
             </li>
-            <li className="nav-item">
+            {/* <li className="nav-item">
               <Link
                 to="/Projects"
                 className={`nav-link ${isActive('/Projects')}`}
@@ -100,7 +100,7 @@ const NavBar = () => {
                 <FaBuilding size={20} style={{ marginRight: '5px' }} />
                 Projects
               </Link>
-            </li>
+            </li> */}
             <li className="nav-item">
               <Link
                 to="/Gallery"

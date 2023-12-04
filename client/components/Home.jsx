@@ -2,6 +2,7 @@ import React from 'react'
 import House2 from '../assets/house2.jpg'
 import Kitchen from '../assets/bg/homebg4.jpg'
 import { FaTools, FaComment } from 'react-icons/fa'
+import Footer from './Footer'
 
 const Home = () => {
   return (
@@ -20,26 +21,25 @@ const Home = () => {
           Design & Installation of custom insulated panel solutions is our
           specialty. <br />
           <br />
-          We are here to help you to build your new dream home or bach
+          We are here to help you build your new dream home or bach
         </p>
         <img className="homepic" src={House2} alt="house2" />
       </div>
       <div className="phome3">
-        <a className="anav2" href="/Services">
-          <FaTools size={27} style={{ marginRight: '5px' }} />
-          Services
-        </a>
-        <span
-          style={{
-            paddingLeft: '2em',
-            paddingRight: '2em',
-          }}
-        >
+        <div className="button-row">
+          <a className="anav2" href="/Services">
+            <FaTools size={27} style={{ marginRight: '5px' }} />
+            Services
+          </a>
           <a className="anav2" href="/ContactUs">
             <FaComment size={27} style={{ marginRight: '5px' }} />
             Contact Us
           </a>
-        </span>
+        </div>
+      </div>
+
+      <div>
+        <Footer />
       </div>
     </div>
   )
