@@ -555,47 +555,40 @@
   .section1-about {
    display: grid;
    grid-template-columns: repeat( auto-fit, minmax(250px, 1fr) );
-   font-size: 16.5px;
- font-family: 'Arial, Helvetica, sans-serif';
+   font-family: 'Arial, Helvetica, sans-serif';
  color: rgb(21, 20, 20);
- background-color: #f3f2ed;
- border-radius: 35px;
- box-shadow: 2px #737779;
- padding: 2em;
  align-items: center;
  padding-top: 0px;
  text-align: justify;
- text-justify: distribute;
- margin: 0px;
- box-shadow: 15% 12% 15% #999;
- word-spacing: -1.5px;
  line-height: 2em;
+ padding: 2em;
+ margin: 0px;
  width: 100%;
- background-color: #333;
+}
+
+.h2about {
+  font-size: 3em;
+  letter-spacing: 0.2em;
+  font-family: 'Cairo', 'Arial, Helvetica, sans-serif';
+  color: #f8e6ca;
+  font-weight: bold;
+  text-shadow: 1px 1px 5px #f2a8a8;
+  border-bottom: 1px solid #dbc7c7;
+  text-align: left;
+  padding: 2em 0em 0.25em 2.5em;
+  animation: fade-right 2s ease-in; 
  }
- 
-  .h2about {
-   font-size: 3em;
-   letter-spacing: 0.2em;
-   font-family: 'Cairo', 'Arial, Helvetica, sans-serif';
-   color: #f8e6ca;
-   font-weight: bold;
-   text-shadow: 1px 1px 5px #f2a8a8;
-   border-bottom: 1px solid #dbc7c7;
-   text-align: left;
-   padding: 2em 0em 0.25em 2.5em;
-   animation: fade-right 2s ease-in; 
-   
- }
- 
- .pabout{
-   font-size: 1.5em;
-   font-family: 'Cairo', 'Arial, Helvetica, sans-serif';
-   color: #f8ece7;
-   text-align:justify;
-   padding:2em;
-   text-shadow: #000 2px;
-  }
+
+.pabout{
+  font-size: 1.5em;
+  font-family: 'Cairo', 'Arial, Helvetica, sans-serif';
+  color: #f8ece7;
+  text-align:justify;
+  padding:2em;
+  text-shadow: #000 2px;
+  /* word-spacing: -1.5px; */
+  /* text-justify: distribute; */
+}
   
   .text-animation-container {
     animation: slideout 2s ease-out; 
@@ -645,8 +638,7 @@
   margin: 10px 3px 2px 10px;
   padding: 0%;
   cursor: pointer;
-  /* transition: transform 0.3s ease; */
-  
+  /* transition: transform 0.3s ease; */ 
 }
 .about1-1{
   width: 34em;
@@ -659,12 +651,14 @@
 
 /* section2 */
 
+.section2-about {
+padding: 0px; 
+  margin: 0px;
+}
+
 .picabout2 {
-  width: 100%;
- height: 40em;
- margin: 5px;
  cursor: pointer;
- /* transition: transform 0.3s ease; */
+ animation: slideout 2s ease-out; 
 }
 .h2about-section2, .h2about2-section2{
   font-family: 'Cairo','Montserrat', Arial, Helvetica, sans-serif ;
@@ -716,7 +710,7 @@
   text-shadow: 2px 1px 5px #f2a8a8;
   text-align: left;
   padding: 2em 0em 0.25em 2.5em;
-  animation: fade-right 2s ease-in; 
+  animation: slideout 2s ease-out; 
 }
 
 .pabout3{
@@ -728,22 +722,9 @@
   text-shadow: #000 2px;
   text-justify: distribute;
   word-spacing: -1.5px;
+  animation: slideout 2s ease-out; 
    }
    
-   .text-animation-container {
-     animation: slideout 2s ease-out; 
-   }
-   
-   @keyframes slideout {
-    0% {
-      transform: translateX(-50%); /* Start off the screen to the left */
-    }
-    100% {
-      transform: translateX(0); /* End at the original position */
-     }
-   }
-   
-
    .about3 {
     width: 28em;
     height: 29em;
@@ -752,8 +733,8 @@
     margin: 5em 0em 2em 3em;
     cursor: pointer;
     border-radius: 55% 20% 35% 12%;
-    transition: transform 0.3s ease;
-   }
+    animation: slideout 2s ease-out; 
+  }
    
    .logo-about3{
     display: flex;
@@ -763,6 +744,8 @@
     margin:0em 0em 2em 3em;
     padding: 0em 0em 2em 3em;
     gap:4em;
+    animation: slideout 2s ease-out; 
+
    }
 .LogoMetal{
   /* flex:1; */
@@ -803,6 +786,12 @@ height: 5em;
 /* responsive aboutus */
 
   @media screen and (max-width: 1800px) {
+
+    .section1-about {
+    padding: 1em;
+    margin: 0px;
+    width: 100%;
+   }
     
    .h2about {
       font-size: 2.75em;
@@ -813,14 +802,14 @@ height: 5em;
       text-shadow: 1px 1px 5px #f2a8a8;
       padding: 1.75em 0em 0.25em 1.2em;
   }
-  .pabout, .pabout4{
+  .pabout{
     font-size: 1.25em;
     font-family: 'Cairo', 'Arial, Helvetica, sans-serif';
     color: #f4e7e0;
     text-align:justify;
     padding:2em;
     text-shadow: #000 2px;
-    word-spacing:-4px;
+    /* word-spacing:-4px; */
    }
    .picabout1-animation-container {
    display: flex;
@@ -846,30 +835,77 @@ height: 5em;
     font-size: 2em;
   }
   
-}
-@media screen and (max-width: 600px) {
-  .h2about {
-    font-size: 2.60em;
-    letter-spacing: 0.1em;
-    font-family: 'Cairo','Montserrat', Arial, Helvetica, sans-serif ;
-    color: #f9dcaf;
-    font-weight: bold;
-    text-shadow: 1px 1px 5px #f2a8a8;
-    padding: 1.75em 0em 0.25em 1.2em;
-    word-spacing:-5px;
-}
-.pabout{
-  font-size: 1.35em;
-  font-family: 'Cairo', 'Arial, Helvetica, sans-serif';
-  color: #f4e7e0;
-  text-align:justify;
-  padding:1.75em;
-  /* text-shadow: #000 2px; */
-  word-spacing:-5px;
- }
- .picabout1-animation-container {
+  /* section3-aboutus */
+
+ .section3-about{
   display: grid;
-   justify-content: row;
+  grid-template-columns: repeat( auto-fit, minmax(250px, 1fr) );
+  
+  font-family: 'Arial, Helvetica, sans-serif';
+  justify-content: center;
+  align-items: center;
+  margin: 0px;
+  padding: 0em;
+  padding-top: 2em; 
+  /* line-height: 2em; */
+ } 
+.h2about3 {
+  font-size: 2.70em;
+  color: #f8f0e3;
+  padding: 2em 0em 0.25em 2.5em;
+}
+
+.pabout3{
+  font-size: 1.5em;
+  font-family: 'Cairo', 'Arial, Helvetica, sans-serif';
+  color: #f9f4f1;
+  text-align:center;
+  padding-left:4em;
+  text-shadow: #000 2px;
+  text-justify: distribute;
+  word-spacing: -1.5px;
+  animation: slideout 2s ease-out; 
+   }
+   
+   .about3 {
+    width: 28em;
+    height: 29em;
+    justify-content: center;
+    align-items: center;
+    margin: 5em 0em 2em 3em;
+    border-radius: 55% 20% 35% 12%;
+  }
+   
+   .logo-about3{
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: start;
+    grid-template-columns: repeat( auto-fit, minmax(250px, 1fr) );
+    margin:0em 0em 2em 3em;
+    padding: 0em 0em 2em 3em;
+    gap:4em;
+
+   }
+.LogoMetal{
+width: 20em;
+height: 5em;
+}
+
+.Logobluebird{
+  width: 21em;
+  height: 6.5em;
+}
+}
+
+@media screen and (max-width: 1600px) {
+
+  .picabout1-animation-container {
+    display: flex;
+    flex-direction: column;
+    padding: 3em;
+    margin-top: 3em;
+    /* grid-template-columns: repeat( auto-fit, minmax(250px, 1fr) ); */
+   /* margin: 0em 1em 0em 0em; */
    } 
    .about1-1{
     width: 20em;
@@ -879,6 +915,90 @@ height: 5em;
     cursor: pointer;
      /* z-index: 5; */
    }
+  }
+  
+
+@media screen and (max-width: 1300px) {
+
+.picabout1-animation-container {
+  display: flex;
+  flex-direction: column;
+  /* grid-template-columns: repeat( auto-fit, minmax(250px, 1fr) ); */
+ /* margin: 0em 1em 0em 0em; */
+ } 
+ .about1-1{
+  width: 20em;
+  height: 16em;
+  margin: 10px 3px 10px 10px;
+  padding: 0%;
+  cursor: pointer;
+   /* z-index: 5; */
+ }
+ .about3 {
+  width: 19em;
+  height: 20em;
+  justify-content: center;
+  align-items: center;
+  margin: 5em 0em 2em 2em;
+  border-radius: 55% 20% 35% 12%;
+}
+ 
+ .logo-about3{
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: start;
+  margin:0em 0em 2em 1.2em;
+  padding: 0em 0em 2em 1.75em;
+  gap:3em;
+
+ }
+.LogoMetal{
+width: 16em;
+height: 3em;
+}
+
+.Logobluebird{
+width: 17em;
+height: 4.75em;
+}
+}
+
+@media screen and (max-width: 1000px) {
+  .h2about {
+    font-size: 2.60em;
+    letter-spacing: 0.1em;
+    font-family: 'Cairo','Montserrat', Arial, Helvetica, sans-serif ;
+    color: #f8e6cb;
+    font-weight: bold;
+    text-shadow: 1px 1px 5px #f2a8a8;
+    padding: 1.75em 0em 0.25em 1.2em;
+    word-spacing:-5px;
+}
+.pabout{
+  font-size: 1.35em;
+  color: #f4e7e0;
+  text-align:justify;
+  padding:1.75em 0.5em 1.75em 1.5em;
+  /* text-shadow: #000 2px; */
+  word-spacing:-5px;
+ }
+ .picabout1-animation-container {
+    display: grid;
+    grid-template-columns: repeat( auto-fit, minmax(250px, 1fr) );
+   /* margin: 0em 1em 0em 0em; */
+   } 
+   .about1, .about1-1 {
+    width: 18em;
+    height: 13em;
+    margin: 10px 3px 2px 10px;
+    padding: 0%;
+    cursor: pointer;
+    /* transition: transform 0.3s ease; */ 
+  }
+  
+
+   /* section2-aboutus */
+
   .h2about2-section2{
     width: 85%;
     padding: 0.25em;
@@ -891,43 +1011,273 @@ height: 5em;
 
   } 
 
-  .section3-about{
-    display: grid;
-    grid-template-columns: repeat( auto-fit, minmax(250px, 1fr) );
-    width: 100%;
-    font-size: 14.5px;
-    font-family: 'Arial, Helvetica, sans-serif';
-    text-align: center;
+  /* section3-aboutus */
+
+ .section3-about{
+  display: grid;
+  margin: 0px;
+  padding: 0em;
+  padding-top: 1.75em;
+  /* line-height: 2em; */
+ } 
+.h2about3 {
+  font-size: 2.55em;
+  color: #f8f0e3;
+  padding: 2em 0em 0.25em 1em;
+}
+
+.pabout3{
+  font-size: 1.20em;
+  color: #f9f4f1;
+  text-align:center;
+  padding-left:0.85em;
+  text-shadow: #000 2px;
+  text-justify: distribute;
+  word-spacing: -1.5px;
+  animation: slideout 2s ease-out; 
+   }
+   
+   .about3 {
+    width: 19em;
+    height: 20em;
     justify-content: center;
     align-items: center;
-    margin: 0px;
-    padding: 0em;
-    padding-top: 1.80em;
-    /* line-height: 2em; */
+    margin: 5em 0em 2em 2em;
+    border-radius: 55% 20% 35% 12%;
   }
-  .h2about3 {
-    font-size: 2.80em;
-    font-family: 'Cairo', 'Arial, Helvetica, sans-serif';
-    color: #f7e9d3;
-    font-weight: bold;
-    text-shadow: 2px 1px 5px #f2a8a8;
-    text-align: left;
-    padding: 1.80em 0em 0.25em 2.15em;
-    animation: fade-right 2s ease-in; 
+   
+   .logo-about3{
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: start;
+    margin:0em 0em 2em 1.5em;
+    padding: 0em 0em 2em 2em;
+    gap:3em;
+
+   }
+.LogoMetal{
+width: 16em;
+height: 3em;
+}
+
+.Logobluebird{
+  width: 17em;
+  height: 4.75em;
+}
+
+}
+
+@media screen and (max-width: 710px) {
+
+  .section1-about {
+    padding: 0.75em;
+    margin: 0px;
+    width: 100%;
+   }
+  .h2about {
+    font-size: 2.5em;
+    letter-spacing: 0.1em;
+    color: #fee6c2;
+    text-shadow: 1px 1px 5px #f2a8a8;
+    padding: 1.75em 0em 0.25em 1.2em;
+    word-spacing:-7px;
+}
+.pabout{
+  font-size: 1.30em;
+  color: #f4e7e0;
+  padding:1.75em 0.25em 1.75em 1.5em;
+  /* text-shadow: #000 2px; */
+  word-spacing: -5.5px;
+ }
+ .picabout1-animation-container {
+    display: grid;
+    grid-template-columns: repeat( auto-fit, minmax(250px, 1fr) );
+   /* margin: 0em 1em 0em 0em; */
+   } 
+   .about1, .about1-1 {
+    width: 17em;
+    height: 10em;
+    margin: 10px 3px 2px 10px;
+    padding: 0%;
+    cursor: pointer;
+    /* transition: transform 0.3s ease; */ 
   }
   
-  .pabout3{
-    font-size: 1.4em;
-    font-family: 'Cairo', 'Arial, Helvetica, sans-serif';
-    color: #f9f4f1;
-    text-align:center;
-    padding-left:4em;
-    text-shadow: #000 2px;
-    text-justify: distribute;
-    word-spacing: -1px;
-     }
+   /* section2-aboutus */
+
+  .h2about2-section2{
+    width: 85%;
+    padding: 0.25em;
+    padding-top: 1.75em;
+    /* margin: 4%; */
+    margin: 0px 0px 0px 40px;
+    color:#2a2824;
+    font-size: 1.75em;
+    line-height: 1em;
+  } 
+
+  /* section3-aboutus */
+
+ .section3-about{
+  justify-content: center;
+  align-items: center;
+  margin: 0px;
+  padding: 0em;
+  padding-top: 1.75em;
+  /* line-height: 2em; */
+ } 
+.h2about3 {
+  font-size: 2.25em;
+  color: #f8f0e3;
+  padding: 2em 0em 0.25em 1.10em;
 }
-@media screen and (max-width: 400px) {
+
+.pabout3{
+  font-size: 1.20em;
+  color: #f9f4f1;
+  text-align:center;
+  padding-left:1.10em;
+  text-shadow: #000 2px;
+  text-justify: distribute;
+  animation: slideout 2s ease-out; 
+   }
+   
+   .about3 {
+    width: 17em;
+    height: 18em;
+    justify-content: center;
+    align-items: center;
+    margin: 5em 0em 2em 0.5em;
+    border-radius: 55% 20% 35% 12%;
+  }
+   
+   .logo-about3{
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: start;
+    margin:0em 0em 2em 1em;
+    padding: 0em 0em 2em 2em;
+    gap:2.5em;
+
+   }
+.LogoMetal{
+width: 15em;
+height: 2.75em;
+}
+
+.Logobluebird{
+  width: 14em;
+  height: 4.5em;
+}
+
+}
+
+@media screen and (max-width: 600px) {
+
+  .section1-about {
+    padding: 0.25em;
+    margin: 0px;
+    width: 100%;
+   }
+  .h2about {
+    font-size: 2.5em;
+    letter-spacing: 0.1em;
+    color: #fee6c2;
+    text-shadow: 1px 1px 5px #f2a8a8;
+    padding: 1.75em 0em 0.25em 0.85em;
+    word-spacing:-7px;
+}
+.pabout{
+  font-size: 1.30em;
+  color: #f4e7e0;
+  padding:1.75em 0.2em 1.75em 1.25em;
+  /* text-shadow: #000 2px; */
+  word-spacing: -4px;
+ }
+ .picabout1-animation-container {
+    display: grid;
+    grid-template-columns: repeat( auto-fit, minmax(250px, 1fr) );
+   /* margin: 0em 1em 0em 0em; */
+   } 
+   .about1, .about1-1 {
+    width: 16em;
+    height: 15em;
+    margin: 10px 3px 2px 10px;
+    padding: 0%;
+    cursor: pointer;
+    /* transition: transform 0.3s ease; */ 
+  }
+  
+   /* section2-aboutus */
+
+  .h2about2-section2{
+    width: 85%;
+    padding: 0.25em;
+    padding-top: 1.75em;
+    /* margin: 4%; */
+    margin: 0px 0px 0px 40px;
+    color:#2a2824;
+    font-size: 1.75em;
+    line-height: 1em;
+  } 
+
+  /* section3-aboutus */
+
+ .section3-about{
+  justify-content: center;
+  align-items: center;
+  margin: 0px;
+  padding: 0em;
+  padding-top: 1.5em;
+  /* line-height: 2em; */
+ } 
+.h2about3 {
+  font-size: 2.2em;
+  color: #f8f0e3;
+  padding: 2em 0em 0.25em 0.75em;
+}
+
+.pabout3{
+  font-size: 1.20em;
+  color: #f9f4f1;
+  text-align:center;
+  padding-left:0.5em;
+  text-shadow: #000 2px;
+  text-justify: distribute;
+  animation: slideout 2s ease-out; 
+   }
+   
+   .about3 {
+    width: 14.5em;
+    height: 15.5em;
+    justify-content: center;
+    align-items: center;
+    margin: 5em 0em 2em 0.5em;
+    border-radius: 55% 20% 35% 12%;
+  }
+   
+   .logo-about3{
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: start;
+    margin:0em 0em 2em 0.75em;
+    padding: 0em 0em 2em 2em;
+    gap:1.5em;
+
+   }
+.LogoMetal{
+width: 13em;
+height: 2.5em;
+}
+
+.Logobluebird{
+  width: 13em;
+  height: 4.5em;
+}
+
+}
+
+@media screen and (max-width: 450px) {
   .h2about {
     font-size: 2.5em;
     letter-spacing: 0.1em;
@@ -969,6 +1319,36 @@ height: 5em;
     font-size: 1.70em;
     line-height: 1em;
   }
+  /* section3 */
+
+  .about3 {
+    width: 17em;
+    height: 18em;
+    justify-content: center;
+    align-items: center;
+    margin: 3em 0em 2em 4em;
+    border-radius: 55% 20% 35% 12%;
+  }
+
+  .logo-about3{
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: start;
+    margin:0.5em 0.5em 2em 0.75em;
+    padding: 0em 0em 2em 1.2em;
+    gap:1.5em;
+
+   }
+.LogoMetal{
+width: 15em;
+height: 2em;
+}
+
+.Logobluebird{
+  width: 16em;
+  height: 4em;
+}
+
 }
     
   /* Services */

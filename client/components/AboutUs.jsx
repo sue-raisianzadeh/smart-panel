@@ -61,8 +61,9 @@ const AboutUs = () => {
         style={{
           backgroundImage: `url(${About4})`,
 
-          width: '99vw',
-          height: '55vh',
+          width: '100%',
+          height: '65vh',
+          margin: 0,
         }}
       >
         {/* <img className="picabout2" src={About4} alt="About4" /> */}
