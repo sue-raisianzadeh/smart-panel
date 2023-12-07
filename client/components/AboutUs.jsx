@@ -48,19 +48,29 @@ const AboutUs = () => {
             <img className="about1" src={About1} alt="About1" />
             <img className="about1" src={About2} alt="About2" />
           </div>
-
-          <img className="about1-1 overlay" src={About3} alt="About3" />
+          {/* <div className="divabout1-1"> */}
+          <img className="about1-1" src={About3} alt="About3" />
+          {/* </div> */}
         </div>
       </div>
-      <div className="section2-about">
+      <div
+        className="section2-about"
+        style={{
+          backgroundImage: `url(${About4})`,
+
+          width: '100vw',
+          height: '70vh',
+        }}
+      >
+        {/* <img className="picabout2" src={About4} alt="About4" /> */}
         <div className="text">
-          <h2 className="h2about">Smart Panel Homes Ltd</h2>
-          <p className="pabout2 ">
+          {/* <h2 className="h2about-section2">Smart Panel Homes Ltd</h2> */}
+          <h2 className="h2about2-section2">
+            Your Trust Is Our Responsibility <br />
             Our rich expertise allows us to deliver all the assigned projects
             placidly...
-          </p>
+          </h2>
         </div>
-        <img className="about2" src={About4} alt="About4" />
       </div>
       {/* Section 3 */}
       <div className="section3">
