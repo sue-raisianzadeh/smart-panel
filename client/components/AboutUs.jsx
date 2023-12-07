@@ -5,6 +5,9 @@ import About2 from '../assets/about/about3.jpg'
 import About3 from '../assets/about/15.jpg'
 import About4 from '../assets/about/I8.jpg'
 import About5 from '../assets/about/16.jpg'
+import LogoMetal from '../assets/icons/metalcraft-logo.jpg'
+import Logobluebird from '../assets/icons/bluebird_logo.png'
+
 import Footer from './Footer'
 
 const AboutUs = () => {
@@ -67,7 +70,7 @@ const AboutUs = () => {
           {/* <h2 className="h2about-section2">Smart Panel Homes Ltd</h2> */}
           <h2 className="h2about2-section2">
             Your Trust Is Our Responsibility <br />
-            <span className="spansection2" style={{ paddingTop: '3em' }}>
+            <span className="spansection2" style={{ paddingTop: '2.5em' }}>
               Our rich expertise allows us to deliver all the assigned projects
             </span>
             placidly
@@ -75,15 +78,19 @@ const AboutUs = () => {
         </div>
       </div>
       {/* Section 3 */}
-      <div className="section3">
-        <div className="text">
+      <div className="section3-about">
+        <div className="textabout-section3">
           <h2 className="h2about3">We Have Worked With Brands</h2>
-          <p className="pabout4">
+          <p className="pabout3">
             We have had the privilege of helping many companies with cold
             storage, freezers...
           </p>
         </div>
         <img className="about3" src={About5} alt="About5" />
+      </div>
+      <div className="logo-about3">
+        <img className="LogoMetal" src={LogoMetal} alt="About5" />
+        <img className="Logobluebird" src={Logobluebird} alt="About5" />
       </div>
       <Footer />
     </div>
