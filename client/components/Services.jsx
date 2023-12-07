@@ -8,6 +8,8 @@ import Services5 from '../assets/services/services5.png'
 import Services6 from '../assets/services/services6.jpg'
 import Services7 from '../assets/services/services7.png'
 import Services8 from '../assets/services/services8.png'
+import Footer from './Footer'
+
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 // import {
 //   FaBuilding,
@@ -288,6 +290,7 @@ const Services = () => {
           </div>
         </div>
       </div>
+      <Footer />
     </div>
   )
 }

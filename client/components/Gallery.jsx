@@ -8,6 +8,7 @@ import House14 from '../assets/4house.png'
 import House13 from '../assets/1housesp.png'
 import House15 from '../assets/1house8.png'
 import House17 from '../assets/1house7.png'
+import Footer from './Footer'
 
 const Gallery = () => {
   const [modalVisible, setModalVisible] = useState(false)
@@ -54,20 +55,28 @@ const Gallery = () => {
       <div className="galpic">
         <div className="gallery-container">
           {images.map((image, index) => (
-            <img
+            <div
               key={index}
-              src={image}
-              alt={`House ${index + 1}`}
-              className="gallery-image"
+              className="image-container"
               onClick={() => openModal(index)}
-            />
+            >
+              <img
+                src={image}
+                alt={`House ${index + 1}`}
+                className="gallery-image"
+              />
+              <div className="image-overlay" />
+            </div>
           ))}
         </div>
       </div>
 
       {modalVisible && (
-        <Modal show={modalVisible} onHide={closeModal}>
-          {/* // Inside Modal.Body// */}
+        <Modal
+          show={modalVisible}
+          onHide={closeModal}
+          dialogClassName="modal-container"
+        >
           <Modal.Body>
             <Image
               src={images[selectedImage]}
@@ -94,6 +103,7 @@ const Gallery = () => {
           </Modal.Body>
         </Modal>
       )}
+      <Footer />
     </div>
   )
 }

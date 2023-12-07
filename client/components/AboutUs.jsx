@@ -1,18 +1,18 @@
-import React, { useEffect, useState } from 'react'
-import Homeabout from '../assets/house8-1.png'
+import React, { useEffect } from 'react'
+import { Element, animateScroll as scroll } from 'react-scroll'
+import About1 from '../assets/about/about.jpg'
+import About2 from '../assets/about/about3.jpg'
+import About3 from '../assets/about/15.jpg'
+import About4 from '../assets/about/I8.jpg'
+import About5 from '../assets/about/16.jpg'
+import Footer from './Footer'
 
 const AboutUs = () => {
   return (
-    <div className="bodyabout" style={{ backgroundColor: ' #333' }}>
-      <div className="containerabout">
-        <div className="bannerabout">
-          <div className="aboutpic">
-            <img className="aboutpicc" src={Homeabout} alt="house2" />
-          </div>
-          <h1 className="habout">About Us</h1>
-        </div>
-        <div className="textabout">
-          <h2 className="h2about">ABOUT US </h2>
+    <div className="about-us-container">
+      <div className="section1-about">
+        <div className="text-animation-container">
+          <h2 className="h2about">About Us</h2>
           <p className="pabout">
             Smart Panel Homes come about after I built a commercial building
             using insulated panel and was instantly impressed with the ease of
@@ -44,10 +44,41 @@ const AboutUs = () => {
             In addition to the above we have also developed relationships with a
             key architect and Building company, more details on these companies
             will be included on other pages
-            {/* Add more sentences here */}
           </p>
         </div>
+
+        <div className="picabout1-animation-container">
+          <div className="2pic-section1">
+            <img className="about1-1 overlay" src={About3} alt="About3" />
+          </div>
+          <div>
+            <img className="about1" src={About1} alt="About1" />
+            <img className="about1" src={About2} alt="About2" />
+          </div>
+        </div>
       </div>
+      <div className="section2-about">
+        <div className="text">
+          <h2 className="h2about">Smart Panel Homes Ltd</h2>
+          <p className="pabout2 ">
+            Our rich expertise allows us to deliver all the assigned projects
+            placidly...
+          </p>
+        </div>
+        <img className="about2" src={About4} alt="About4" />
+      </div>
+      {/* Section 3 */}
+      <div className="section3">
+        <div className="text">
+          <h2 className="h2about3">We Have Worked With Brands</h2>
+          <p className="pabout4">
+            We have had the privilege of helping many companies with cold
+            storage, freezers...
+          </p>
+        </div>
+        <img className="about3" src={About5} alt="About5" />
+      </div>
+      <Footer />
     </div>
   )
 }

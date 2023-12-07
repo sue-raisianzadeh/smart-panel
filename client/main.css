@@ -334,26 +334,100 @@
 
 
 /* Footer */
-.container-footer{
-  background-color: #251e1e;
+.container-footer {
+  background-color: rgb(94, 32, 32);
+  color: white;
+  text-align: center;
   padding: 2em;
 }
-.contact-information {
 
+.footer-row {
+  margin: 0;
+}
+
+/* Contact Us section */
+.contact-footer-colum {
+  padding: 2em;
+  text-align: center; /* Center the container */
 }
 
 .info-box-footer {
   display: flex;
+  flex-direction: column;
+  align-items: center; /* Center items horizontally within the container */
+}
+
+.company-info-footer {
+  text-align: left;
+  padding-bottom: 1em; /* Adjust padding as needed */
+}
+
+.contact-information,
+.about-information {
+  padding-left: 2em;
+}
+
+.company-info {
+  margin-bottom: 0.25em;
+  text-align: left;
+  font-size: 1.25em;
+  
+}
+
+.footer-icons {
+  display: flex;
   justify-content: start;
-  align-items: start;
-  padding-left: 2em; 
-
-}
-.company-info-footer,
- .contact-information{
- padding-left: 2em; 
+  margin-right: 0.5em; 
 }
 
+
+/* About section */
+.about-box-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  width: 50%;
+}
+
+.about {
+  letter-spacing: 5px;
+  text-align: left;
+  font-size: 2.5em;
+}
+
+.company-info-footer {
+  text-align: center;
+  padding-bottom: 1em;
+}
+
+/* Media query for responsiveness */
+@media (max-width: 767px) {
+  .contact-footer-colum {
+    padding: 0.25em; 
+  }
+
+  .about-box-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: auto;
+  }
+}
+
+
+/* Media query for responsiveness */
+@media (max-width: 767px) {
+  .col-md-6.text-justify {
+    padding: 0.5em; /* Adjust padding for smaller screens */
+  }
+
+  .about-box-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: auto;
+  }
+}
 
 
 /*home */
@@ -474,82 +548,170 @@
 
    /*AboutUs */
 
-   .bodyabout {
+   .about-us-container {
      background-color: #333;
-   }
+    }
+    
+   .section1-about {
+    display: grid;
+  grid-template-columns: repeat(2, auto);
+  font-size: 16.5px;
+  font-family: 'Arial, Helvetica, sans-serif';
+  color: rgb(21, 20, 20);
+  background-color: #f3f2ed;
+  border-radius: 35px;
+  box-shadow: 2px #737779;
+  padding: 20px;
+  align-items: center;
+  padding-top: 0px;
+  text-align: justify;
+  text-justify: distribute;
+  margin: 0px;
+  box-shadow: 15% 12% 15% #999;
+  word-spacing: -1.5px;
+  line-height: 2em;
+  width: 100%;
+  background-color: #333;
+  }
 
-   .containerabout {
-    width: 100%;
-    background-color: #333;
-
+  .text-animation-container {
+    animation: slideout 2s ease-out; /* Define animation */
   }
   
-  .bannerabout {
-    position: relative;
-    width: 100%;
-    height: 60vh; /* Adjust the height based on your design */
-    overflow: hidden;
-  }
-  
-  .aboutpicc {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center;
-  }
-  
-  .habout {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: #fff;
-    font-family: 'Cairo', 'Arial, Helvetica, sans-serif';
-    text-shadow: 3px 2px 5px #f2a8a8;
-    font-size: 5em;
-    font-weight:bolder;
-    text-align: center;
-    animation: slideIn 2s ease-in; /* Define animation */
-  }
-  
-   /* @keyframes slideIn {
+  @keyframes slideout {
     0% {
-      transform: translateX(-50%); */
-       /* Start off the screen to the left */
-    /* }
+      transform: translateX(-50%); /* Start off the screen to the left */
+    }
     100% {
-      transform: translateX(0); */
-       /* End at the original position */
-  /* } 
-}
-  */
-  
-  .textabout {
-    padding: 3em;
-    text-align: center;
-    background-color: #333;
-    color: #333; /* Set your desired text color */
-    transition: transform 0.3s ease-in-out;
+      transform: translateX(0); /* End at the original position */
   }
+}
   
-  .h2about {
-    font-size: 3.5em;
+  .h2about3, .h2about {
+    font-size: 3em;
     letter-spacing: 0.2em;
     color: #e0c397;
+    text-shadow: 1px 1px 5px #f2a8a8;
+    border-bottom: 1px solid #dbc7c7;
     text-align: left;
-    padding-left: 2em;
+    padding: 2em 0em 0.5em 2.5em;
+    animation: fade-right 2s ease-in; 
+    
   }
   
-  .pabout {
+  .picabout1-animation-container {
+    display: flex;
+    flex-direction: row;
+    /* justify-content: center; */
+    align-content: center;
+    animation: slideIn 2s ease-out; /* Define animation */
+  }
+  
+  @keyframes slideIn {
+    0% {
+      transform: translateX(50%); /* Start off the screen to the left */
+    }
+    100% {
+      transform: translateX(0); /* End at the original position */
+  }
+}
+
+.pic2-section1 {
+display: flex;
+flex-direction: row;
+}
+  
+  .pabout , .pabout4, .pabout4{
     font-size: 1.5em;
     font-family: 'Cairo', 'Arial, Helvetica, sans-serif';
     color: #edd7cc;
     text-align:justify;
     padding:2em;
     text-shadow: #000 2px;
-
+  }
+  .picabout1, .picabout2, .last-section {
+    display: flex;
+    justify-content: column;
+    align-items: center;
+    margin-top: 2em;
   }
   
+
+.about1 {
+  width: 200px;
+  height: 210px;
+  margin: 10px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+
+}
+.about1-1{
+  width: 380;
+  height: 420px;
+  z-index: 0;
+  transition: transform 0.3s ease;
+}
+.about2 {
+  width: 100%;
+  height: 210px;
+  margin: 5px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+.about3 {
+  width: 380px;
+  height: 390px;
+  margin: 5px;
+  cursor: pointer;
+  border-radius: 20% 0% 0% 30%;
+  transition: transform 0.3s ease;
+}
+  .text-container {
+    flex: 1;
+  }
+  
+  .text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    text-align: left;
+  }
+  
+  /* Add these animations for scroll effects */
+  .fade-right {
+    opacity: 0;
+    transform: translateX(-20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+  }
+  
+  .fade-right.active {
+    opacity: 1;
+    transform: translateX(0);
+  }
+ 
+/* @keyframes slideIn {
+  0% {
+    transform: translateX(-50%); */
+    /* Start off the screen to the left */
+    /* }
+    100% {
+      transform: translateX(0); */
+      /* End at the original position */
+      /* } 
+    }
+    */
+/*     
+
+    .textandpicsabout {
+      padding: 3em;
+      text-align: center;
+      background-color: #333;
+      color: #333; /* Set your desired text color */
+      /* transition: transform 0.3s ease-in-out; */
+    /* } */ 
+    
   /* Services */
 
   /* Responsive image styles using Bootstrap classes */
@@ -787,6 +949,7 @@
 
 .gallerybody {
   background-color: #1b1616;
+  padding: 20px;
 }
 
 .hgallery {
@@ -814,27 +977,27 @@
 
 .galpic {
   display: flex;
-  grid-template-rows: repeat( auto-fit, minmax(250px, 1fr) );
+  grid-template-rows: repeat(auto-fit, minmax(250px, 1fr));
   height: auto;
   width: 90%;
   margin: auto;
-  font-family:' Arial, Helvetica, sans-serif'; 
-  text-align:justify;
+  font-family: 'Arial, Helvetica, sans-serif';
+  text-align: justify;
   word-spacing: -1.5px;
-  color:white;
+  color: white;
   justify-content: center;
   grid-gap: 1.2em;
-  opacity: 0; 
+  opacity: 0;
   padding: 20px;
-  margin:20px;
-   animation: fade-in 2s ease-in forwards;  
+  margin: 20px;
+  animation: fade-in 2s ease-in forwards;
 }
 
 .gallery-container {
   display: flex;
-  flex-wrap: wrap; 
+  flex-wrap: wrap;
   justify-content: center;
-  width: 80%; 
+  width: 100%;
 }
 
 .gallery-image {
@@ -842,6 +1005,11 @@
   height: 390px;
   margin: 10px;
   cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.gallery-image:hover {
+  transform: scale(1.05); /* Scale the image by 1.1 on hover */
 }
 
 .modal {
@@ -860,26 +1028,42 @@
 .modal-image {
   width: 100%;
   max-height: 100%;
-  object-fit: contain; /* Keep image aspect ratio */
+  object-fit: contain;
   background: rgba(0, 0, 0, 0.9);
   margin: 0px;
-  
+}
+
+/* overlay */
+.modal-image-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.modal-image-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(21, 18, 18, 0.2);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.modal-image-container:hover .modal-image-overlay {
+  opacity: 1;
 }
 
 .modal-content {
-  background-color: rgba(234, 225, 225, 0.8);
-  flex-direction: column;
-  /* transform: translate(-50%, -50%); */
-  /* z-index: 9999; */
+  background-color: rgba(23, 20, 20, 0.8);
   border-radius: 10px;
-  display: flex;
-  align-items: center;
   margin: 0px;
-  width: 100%; 
-  height: 100%; 
+  width: 100%;
+  height: 100%;
   overflow: auto;
   padding: 0.4em;
 }
+
 
 .download-button {
   display: flex;
@@ -941,9 +1125,10 @@
 
 }
 
-  /* ContactUs */
-  
-  @media screen and (max-width: 600px) {
+
+     /* ContactUs */
+
+@media screen and (max-width: 600px) {
   form {
     display: flex;
     flex-direction: column;
@@ -963,7 +1148,7 @@
    }
   }
 
-   .container-zone{
+  .container-zone{
     display: flex; 
     flex-direction: row; 
     justify-content: center;

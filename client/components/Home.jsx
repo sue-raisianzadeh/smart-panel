@@ -1,6 +1,6 @@
 import React from 'react'
 import House2 from '../assets/house2.jpg'
-import Kitchen from '../assets/bg/homebg4.jpg'
+import Kitchen from '../assets/houses/homes1.jpg'
 import { FaTools, FaComment } from 'react-icons/fa'
 import Footer from './Footer'
 
@@ -9,13 +9,13 @@ const Home = () => {
     <div className="Bodyhome">
       <div
         className="content"
-        style={{
-          backgroundImage: `url(${Kitchen})`,
-          position: 'relative',
-          backgroundSize: 'cover',
-          width: '100%',
-          height: '100%',
-        }}
+        // style={{
+        //   backgroundImage: `url(${Kitchen})`,
+        //   position: 'relative',
+        //   backgroundSize: 'cover',
+        //   width: '100%',
+        //   height: '100%',
+        // }}
       >
         <div className="content-wrapper">
           <div className="text-and-buttons">
