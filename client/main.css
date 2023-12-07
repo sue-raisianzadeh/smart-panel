@@ -180,8 +180,9 @@
 /* Logo and Contact Information */
 
 .top-line {
-  display: flex;
-  justify-content: space-between; /* Adjusted to space between logo and contact info */
+  display: grid;
+  grid-template-columns: repeat( auto-fit, minmax(250px, 1fr) );
+  justify-content:space-between; 
   align-items: center;
   background-color: #fdc673;
   text-align: center;
@@ -195,15 +196,19 @@
 
 .logo-container {
   display: flex;
+  justify-content: center;
   align-items: center;
 }
 
 .Logopic {
-  max-width: 100px;
+  display: flex;
+  width: 100px;
+  padding-right: 2em;
 }
 
 .contact-info1 {
   display: flex;
+  justify-content: end;
   align-items: center;
 }
 .contact-link-container {
