@@ -24,12 +24,8 @@ const AboutUs = () => {
             <br /> This experience led me to make the following important
             discoveries It is critical to use local manufacturers, so the
             technical experience is close at hand.
-            <br />
-            <b>
-              {' '}
-              This local manufacturer is also well placed to supply products
-              that:
-            </b>
+            <br /> This local manufacturer is also well placed to supply
+            products that:
             <br />
             <br />
             a. Survive the test of time.
@@ -48,13 +44,12 @@ const AboutUs = () => {
         </div>
 
         <div className="picabout1-animation-container">
-          <div className="2pic-section1">
-            <img className="about1-1 overlay" src={About3} alt="About3" />
-          </div>
-          <div>
+          <div className="pic-2-section1">
             <img className="about1" src={About1} alt="About1" />
             <img className="about1" src={About2} alt="About2" />
           </div>
+
+          <img className="about1-1 overlay" src={About3} alt="About3" />
         </div>
       </div>
       <div className="section2-about">
