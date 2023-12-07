@@ -58,8 +58,8 @@ const AboutUs = () => {
         style={{
           backgroundImage: `url(${About4})`,
 
-          width: '100vw',
-          height: '70vh',
+          width: '99vw',
+          height: '55vh',
         }}
       >
         {/* <img className="picabout2" src={About4} alt="About4" /> */}
@@ -67,8 +67,10 @@ const AboutUs = () => {
           {/* <h2 className="h2about-section2">Smart Panel Homes Ltd</h2> */}
           <h2 className="h2about2-section2">
             Your Trust Is Our Responsibility <br />
-            Our rich expertise allows us to deliver all the assigned projects
-            placidly...
+            <span className="spansection2" style={{ paddingTop: '3em' }}>
+              Our rich expertise allows us to deliver all the assigned projects
+            </span>
+            placidly
           </h2>
         </div>
       </div>
