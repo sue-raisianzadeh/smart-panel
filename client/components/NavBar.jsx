@@ -1,7 +1,7 @@
 // NavBar.jsx
 import React from 'react'
 import { Link, useLocation } from 'react-router-dom'
-import Logo1 from '../assets/Logo1.png'
+import Logo1 from '../assets/icons/logo-smart1.png'
 import {
   FaEnvelope,
   FaPhoneAlt,
@@ -32,7 +32,7 @@ const NavBar = () => {
           <div className="contact-link-container">
             <FaEnvelope
               size={20}
-              style={{ marginRight: '1em', color: 'darkred' }}
+              style={{ marginRight: '1em', color: 'white' }}
             />
             <a
               className="contact-link"
@@ -44,7 +44,7 @@ const NavBar = () => {
           <div className="contact-link-container">
             <FaPhoneAlt
               size={20}
-              style={{ marginRight: '1em', color: 'darkred' }}
+              style={{ marginRight: '1em', color: 'white' }}
             />
             <a className="contact-link" href="tel:0274781672">
               027 478 1672
