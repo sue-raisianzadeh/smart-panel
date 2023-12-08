@@ -91,7 +91,6 @@ function ContactUs() {
         </div>
         <div className="row justify-content-center align-items-center">
           <div className="col-md-6 text-center">
-            {/* <div className="company-info"> */}
             <div className="info-box">
               <FaPhoneAlt className="icon" />
               <p className="contact-info text-white">Phone: 027 478 1672</p>
@@ -104,12 +103,11 @@ function ContactUs() {
             </div>
             <div className="info-box2">
               <FaMapMarkerAlt className="icon" />
-              <p className="contact-info address text-white">
+              <p className="contact-info text-white">
                 Address: 23a Hereford Street, Te Atatu Peninsula, Auckland, 0610
                 , New Zealand
               </p>
             </div>
-            {/* </div> */}
           </div>
           <div className="allform-col-md-6.5">
             <div className="contactform">

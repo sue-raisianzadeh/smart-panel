@@ -8,7 +8,7 @@ function Footer() {
         <div className="row justify-content-center align-items-center footer-row">
           <div className="col-md-6 text-justify contact-footer-colum">
             <div className="info-box-footer">
-              <h1 className="contact-us text-white">CONTACT US</h1>
+              <h1 className="contact-us2 text-white">CONTACT US</h1>
               <div className="company-info-footer">
                 <FaPhoneAlt className="icon footer-icons" />
                 <p className="company-info text-white">Phone: 027 478 1672</p>

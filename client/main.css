@@ -72,8 +72,9 @@
 /* Responsive styles for smaller screens */
 @media screen and (max-width: 600px) {
   .top-line {
-    padding: 10px;
-    
+    font-size: 0.75em ;
+    font-weight: bold;
+    gap:0em;
   }
   
   .contact-info1 {
@@ -116,7 +117,9 @@
 }
 @media  screen and (max-width: 400px){
   .top-line {
-    font-size: 0.75em ;
+    font-size: 0.5em ;
+    font-weight: bold;
+    gap:0em;
   }
 
   .logo-container {
@@ -182,11 +185,12 @@
 .top-line {
   display: grid;
   grid-template-columns: repeat( auto-fit, minmax(250px, 1fr) );
+  font-family: 'Cairo', 'Montserrat', 'Merriweather', 'Open Sans', 'Lato', Helvetica;
   justify-content:space-between; 
-  align-items: center;
   background-color: #fdc673;
   text-align: center;
   font-size: 1em;
+  font-weight: bold;
   color: #d8b8b8;
   width: 100%;
   padding-right: 3em;
@@ -197,12 +201,11 @@
 .logo-container {
   display: flex;
   justify-content: center;
-  align-items: center;
+padding-right: 5em;  
 }
 
 .Logopic {
   display: flex;
-  width: 100px;
   padding-right: 2em;
 }
 
@@ -210,6 +213,8 @@
   display: flex;
   justify-content: end;
   align-items: center;
+  padding-right: 2em;
+  gap:2em;
 }
 .contact-link-container {
   display: flex;
@@ -344,6 +349,7 @@
   color: white;
   text-align: center;
   padding: 2em;
+  gap:2em;
 }
 
 .footer-row {
@@ -353,29 +359,32 @@
 /* Contact Us section */
 .contact-footer-colum {
   padding: 2em;
-  text-align: center; /* Center the container */
+  text-align: center; 
 }
 
+.contact-us2{
+  font-size: 2em;
+}
 .info-box-footer {
   display: flex;
   flex-direction: column;
-  align-items: center; /* Center items horizontally within the container */
+  align-items: center; 
 }
 
 .company-info-footer {
   text-align: left;
-  padding-bottom: 1em; /* Adjust padding as needed */
+  padding-bottom: 1em; 
 }
 
 .contact-information,
 .about-information {
-  padding-left: 2em;
+  padding-left: 1.75em;
 }
 
 .company-info {
   margin-bottom: 0.25em;
   text-align: left;
-  font-size: 1.25em;
+  font-size: 1.1em;
   
 }
 
@@ -397,12 +406,13 @@
 .about {
   letter-spacing: 5px;
   text-align: left;
-  font-size: 2.5em;
+  font-size: 2em;
 }
 
 .company-info-footer {
   text-align: center;
   padding-bottom: 1em;
+  font-size: 1em;
 }
 
 /* Media query for responsiveness */
@@ -416,14 +426,15 @@
     flex-direction: column;
     align-items: center;
     width: auto;
+    padding: 0.25em; 
   }
 }
 
 
 /* Media query for responsiveness */
-@media (max-width: 767px) {
+@media (max-width: 400px) {
   .col-md-6.text-justify {
-    padding: 0.5em; /* Adjust padding for smaller screens */
+    padding: 0.5em; 
   }
 
   .about-box-footer {
@@ -431,6 +442,7 @@
     flex-direction: column;
     align-items: center;
     width: auto;
+    padding: 0.25em; 
   }
 }
 
@@ -739,6 +751,7 @@ padding: 0px;
     cursor: pointer;
     border-radius: 55% 20% 35% 12%;
     animation: slideout 2s ease-out; 
+    border: solid 0.5em rgb(250, 231, 231);
   }
    
    .logo-about3{
@@ -754,8 +767,8 @@ padding: 0px;
    }
 .LogoMetal{
   /* flex:1; */
-width: 20em;
-height: 5em;
+width: 19em;
+height: 4.5em;
 }
 
 .Logobluebird{
@@ -764,7 +777,7 @@ height: 5em;
   height: 6.5em;
 }
      /* Add these animations for scroll effects */
-     .fade-right {
+     /* .fade-right {
        opacity: 0;
        transform: translateX(-20px);
        transition: opacity 0.5s ease, transform 0.5s ease;
@@ -773,7 +786,7 @@ height: 5em;
      .fade-right.active {
        opacity: 1;
        transform: translateX(0);
-     }
+     } */
     
    /* @keyframes slideIn {
      0% {
