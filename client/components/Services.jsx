@@ -1,5 +1,5 @@
 import React from 'react'
-import Servisesbg from '../assets/bg/cosyhome11.png'
+import Servisesbg from '../assets/bg/new2-1.png'
 import Services1 from '../assets/services/Services1.png'
 import Services2 from '../assets/services/Services2.png'
 import Services3 from '../assets/services/Services3.png'
