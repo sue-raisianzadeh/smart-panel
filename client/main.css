@@ -1361,6 +1361,9 @@ height: 2em;
     
   /* Services */
 
+  .containerservices {
+    background:#240b0b;
+  }
 .bannerservices {
     display: flex;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -1391,17 +1394,23 @@ height: 2em;
         font-family:  'Montserrat', 'Arial, Helvetica, sans-serif';
         letter-spacing: 0.1em;
         padding-top: 3em;
+        animation: fade-in 2s ease-in-out forwards; 
       }
       /* text bannerarea */
+      .textbanserv {
+        background-color:#f9c576; 
+        width: 33%;
+        padding: 1em;
+        animation: slideIn 2s ease-in-out forwards; 
+     }
       .h3serv {
         justify-content: start;
         justify-content: center;
         align-items: center;
         padding-left: 5.75em;
         font-size: 2em;
-        animation: slide-left 2s ease-out; 
+        animation: slideout 2s ease-in-out forwards; 
       }
-      
       .h2serv {
         padding-top:2em;
       }
@@ -1421,12 +1430,6 @@ height: 2em;
         text-shadow: 3px 2px 5px #f2a8a8;
       } */
        
-      .textbanserv {
-        background-color:#f9c576; 
-        width: 33%;
-        padding: 1em;
-        
-      }
     
       
   .service-item {
