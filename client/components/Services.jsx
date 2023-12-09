@@ -1,5 +1,5 @@
 import React from 'react'
-import Servisesbg from '../assets/bg/new2-1.png'
+import Servisesbg from '../assets/bg/new--.png'
 import Services1 from '../assets/services/Services1.png'
 import Services2 from '../assets/services/Services2.png'
 import Services3 from '../assets/services/Services3.png'
@@ -40,7 +40,7 @@ const Services = () => {
           style={{
             backgroundImage: `url(${Servisesbg})`,
             backgroundSize: 'cover',
-            width: '63%',
+            width: '64%',
             height: 'auto',
           }}
         >
@@ -66,11 +66,7 @@ const Services = () => {
           <br />
 
           <h3 className="h3services">
-            {/* <FontAwesomeIcon
-              icon={FaHardHat}
-              size={20}
-              style={{ marginRight: '5px' }}
-            /> */}
+            {/* <FaHardHat size={20} style={{ marginRight: '5px' }} /> */}
             Licensed Practising Builders (LPB), Building company.
           </h3>
           <p className="pbanner">
@@ -79,66 +75,42 @@ const Services = () => {
           </p>
 
           <h3 className="h3services">
-            {/* <FontAwesomeIcon
-              icon={FaDraftingCompass}
-              size={20}
-              style={{ marginRight: '5px' }}
-            /> */}
+            {/* <FaDraftingCompass size={20} style={{ marginRight: '5px' }} /> */}
             Architectural specialists
           </h3>
           <p className="pbanner">We make the best you want</p>
 
           <div className="service-item">
             <h3 className="h3services">
-              {/* <FontAwesomeIcon
-                icon={FaHammer}
-                size={20}
-                style={{ marginRight: '5px' }}
-              /> */}
+              {/* <FaHammer size={20} style={{ marginRight: '5px' }} /> */}
               Engineering specialists
             </h3>
             <p className="pbanner">We make the best you want</p>
           </div>
           <div className="service-item">
             <h3 className="h3services">
-              {/* <FontAwesomeIcon
-                icon={FaWrench}
-                size={20}
-                style={{ marginRight: '5px' }}
-              /> */}
+              {/* <FaWrench size={20} style={{ marginRight: '5px' }} /> */}
               Civil Construction, All Foundation
             </h3>
             <p className="pbanner">We make the best you want</p>
           </div>
           <div className="service-item">
             <h3 className="h3services">
-              {/* <FontAwesomeIcon
-                icon={FaTasks}
-                size={20}
-                style={{ marginRight: '5px' }}
-              /> */}
+              {/* <FaTasks size={20} style={{ marginRight: '5px' }} /> */}
               Plumbing and Electrical
             </h3>
             <p className="pbanner">We make the best you want</p>
           </div>
           <div className="service-item">
             <h3 className="h3services">
-              {/* <FontAwesomeIcon
-                icon={FaHome}
-                size={20}
-                style={{ marginRight: '5px' }}
-              /> */}
+              {/* <FaHome size={20} style={{ marginRight: '5px' }} /> */}
               Building Construction
             </h3>
             <p className="pbanner">We build the best you want</p>
           </div>
           <div className="service-item">
             <h3 className="h3services">
-              {/* <FontAwesomeIcon
-                icon={FaTasks}
-                size={20}
-                style={{ marginRight: '5px' }}
-              /> */}
+              {/* <FaTasks size={20} style={{ marginRight: '5px' }} /> */}
               Site Management
             </h3>{' '}
             <p className="pbanner">We make the best you want</p>

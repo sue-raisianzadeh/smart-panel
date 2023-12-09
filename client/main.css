@@ -1361,90 +1361,74 @@ height: 2em;
     
   /* Services */
 
-  /* Responsive image styles using Bootstrap classes */
-.servicepic1,
-.servicepic2 {
-  width: 100%;
-  height: auto;
-  border-radius: 5% 6% 10% 13%;
-  margin: 1.5em 0;
-  border: 15px solid #e3d8c7;
-  box-shadow: 2px 2px #57595a;
-}
-  
 .bannerservices {
     display: flex;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      }
-  /* .container.services {
-    padding: 0;
-      } */
-      .picbanserv {
-        position: relative;
-        display: flex;
-        flex-direction: column;
-      }
-      
-      .banner-content {
-        position: absolute;
-        display: flex;
-        flex-direction: column;
-        top: 30%; /* Adjusted to center the content */
-        left: 8%;
-        width: 40%;
-        transform: translateY(-50%);
-        color: rgb(253, 253, 253);
-        text-shadow: 3px 2px 5px #f2a8a8;
-      }
-  .h1serv, .h3serv {
-    padding-left: 3em;
-    margin: 0;
-    background-color: transparent;
-    display: inline-block;
-    /* justify-content: start; */
-    /* position: relative;   */
+    font-family: 'Cairo', 'Montserrat', 'Arial, Helvetica, sans-serif';
+  color: rgb(21, 20, 20);
+  padding-top: 0px;
+  margin: 0px;
+  width: 100%; 
   }
-  
- 
-  .h1serv{
-    font-size: 4em;
-  }
-   .h3serv {
-    justify-content: start;
-    padding-left: 5em;
-    font-size: 2em;
-    animation: slide-left 2s ease-out; 
-  }
-
-  /* text bannerarea */
-.h2serv {
-  padding-top:2em;
-}
-
-  .h3services, .h2serv, .pbanner{
-    padding: 0em 0 0em 1em;
-  }
-  .picbanserv h1::before {
-    content: '';
-    position: absolute;
-    left: 160px;
-    top: 30%;
-    transform: translateY(-50%);
-    width: 0.2em; 
-    height: 1em; /* Adjust the height of the bar */
-    background-color: #fdc673; 
+    
+  .banner-content {
+    width: 40%; 
+    color: rgb(253, 253, 253);
     text-shadow: 3px 2px 5px #f2a8a8;
   }
 
-  
-  .textbanserv {
-    background-color:#f9c576; 
-    width: 33%;
-    padding: 1em;
+      .h1serv, .h3serv {
+        padding-left: 2.95em;
+        margin: 0;
+        justify-content: center; 
+        align-items: center;
+        /* background-color: transparent; */
+        /* display: inline-block; */
+      }
+      
+      .h1serv{
+        font-size: 4em;
+        font-family:  'Montserrat', 'Arial, Helvetica, sans-serif';
+        letter-spacing: 0.1em;
+        padding-top: 3em;
+      }
+      /* text bannerarea */
+      .h3serv {
+        justify-content: start;
+        justify-content: center;
+        align-items: center;
+        padding-left: 5.75em;
+        font-size: 2em;
+        animation: slide-left 2s ease-out; 
+      }
+      
+      .h2serv {
+        padding-top:2em;
+      }
+      
+      .h3services, .h2serv, .pbanner{
+        padding: 0em 0 0em 1em;
+      }
+      /* .picbanserv h1::before {
+        content: '';
+        position: absolute;
+        left: 160px;
+        top: 30%;
+        transform: translateY(-50%);
+        width: 0.2em; 
+        height: 1em; /* Adjust the height of the bar */
+        /* background-color: #fdc673; 
+        text-shadow: 3px 2px 5px #f2a8a8;
+      } */
+       
+      .textbanserv {
+        background-color:#f9c576; 
+        width: 33%;
+        padding: 1em;
+        
+      }
     
-    }
- 
-  
+      
   .service-item {
     margin-bottom: 20px;
   }
@@ -1455,9 +1439,17 @@ height: 2em;
     padding: 20px;
   }
   /* .service-detail{
- 
+    
   } */
 
+  .servicepic2 {
+    width: 100%;
+    height: auto;
+    border-radius: 5% 6% 10% 13%;
+    margin: 1.5em 0;
+    border: 15px solid #e3d8c7;
+    box-shadow: 2px 2px #57595a;
+  }
   .pservices {
     font-size: 1.5em;
   }
@@ -1575,7 +1567,7 @@ height: 2em;
   display: grid;
   grid-template-rows: repeat(2, auto);
   font-size: 18.5px;
-  font-family: 'Arial, Helvetica, sans-serif';
+  font-family: 'Cairo', 'Montserrat', 'Arial, Helvetica, sans-serif';
   color: rgb(21, 20, 20);
   background-color: #f3f2ed;
   border-radius: 35px;
