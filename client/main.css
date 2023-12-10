@@ -453,11 +453,14 @@ color:#c9c9c9;
 
 .Bodyhome {
   background: #100e0e;
+  justify-content: center;
+  align-items: center;
  /* background:-webkit-linear-gradient(290deg, rgb(17, 23, 25) 0%, rgb(15, 17, 18) 100%); */
 }
  .content-wrapper {
   padding: 0px; 
   margin: 0px;
+  
   animation: fade-in 2s ease-in forwards; 
 }
 
@@ -465,13 +468,16 @@ color:#c9c9c9;
   font-family: 'Cairo','Montserrat', Arial, Helvetica, sans-serif ;
   color:rgb(249, 246, 246);
   /* text-shadow: 1px 0px  #f7c4c4; */
-  font-size: 2em;
+  font-size: 3em;
+  text-align: center;
+  width: 100%;
   font-weight: 500;
   width: 70%;
   justify-content: center;
   align-items: center;
-  padding: 10em 0em 0em 3.5em;
-  margin: 0px 0px 0px 80px;
+  padding: 4em 0em 0em 3.5em;
+  margin: 0px 0px 0px 2em;
+  text-shadow: 1px 1px #100f0f;
   animation: slideout 2s ease-out; 
 }
 
@@ -486,7 +492,7 @@ color:#c9c9c9;
 
 .button-row {
   display: flex;
-  flex-direction: row;
+  /* flex-direction: row; */
   justify-content: center;
   gap: 2em;
   margin: 2em 0em 0em 0em;
@@ -500,10 +506,11 @@ color:#c9c9c9;
   background-color: rgb(154, 14, 14);
   text-decoration: none;
   border-radius: 10px;
+  justify-content: center;
+  align-items: center;
   text-decoration: none;
   position: relative;
   font-size: 1.1em;
-  transform-style: preserve-3d;
 
 }
 
@@ -547,9 +554,9 @@ color:#c9c9c9;
   grid-template-columns: repeat( auto-fit, minmax(250px, 1fr) );
   width: 100%;
   font-size: 16.5px;
-  text-align: justify;
+  text-align: center;
   justify-content: center;
-  /* align-items: center; */
+  align-items: center;
   margin: 0px;
   padding: 0em;
   /* padding-top: 7em; */
@@ -562,8 +569,8 @@ color:#c9c9c9;
   font-weight: 500;
   width: 100%;
   justify-content: center;
-  align-items: center;
-  padding: 8em 0em 2em 3em;
+  /* align-items: center; */
+  padding: 0em 0em 2em 3em;
   margin: 0px 0px 0px 80px;
 }
 
@@ -714,13 +721,13 @@ padding: 0px;
 }
 .h2about-section2, .h2about2-section2{
   font-family: 'Cairo','Montserrat', Arial, Helvetica, sans-serif ;
-  color:rgb(54, 25, 25);
-  text-shadow: 2px 2px 5px #f2a8a8;
-  font-size: 2em;
+  color:rgb(84, 11, 11);
+  text-shadow: 1px 1px 3px #f0cece;
+  font-size: 2.5em;
   font-weight: bold;
   width: 50%;
   line-height: 2em;
-  padding: 2em 0em 0em 1.5em;
+  padding: 1.5em 0em 0em 2em;
   margin: 0px 0px 0px 80px;
   animation: slideout 2s ease-out; 
 }
