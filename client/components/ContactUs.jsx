@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import axios from 'axios'
 import { FaEnvelope, FaPhoneAlt, FaMapMarkerAlt } from 'react-icons/fa'
 import NZ1 from '../assets/nz1.png'
-import Footer from './Footer'
+// import Footer from './Footer'
 
 function ContactUs() {
   const [name, setName] = useState('')

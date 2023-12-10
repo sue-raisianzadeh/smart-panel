@@ -1,4 +1,6 @@
-import React from 'react'
+import React, { useState } from 'react'
+import { Modal, Image } from 'react-bootstrap'
+// import ScrollAnimation from 'react-animate-on-scroll'
 import Servisesbg from '../assets/bg/new--.png'
 import Services1 from '../assets/services/Services1.png'
 import Services2 from '../assets/services/Services2.png'
@@ -9,29 +11,32 @@ import Services6 from '../assets/services/services6.jpg'
 import Services7 from '../assets/services/services7.png'
 import Services8 from '../assets/services/services8.png'
 import Footer from './Footer'
-
+import { FaTools } from 'react-icons/fa'
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-// import {
-//   FaBuilding,
-//   FaHardHat,
-//   FaDraftingCompass,
-//   FaHammer,
-//   FaWrench,
-//   FaHome,
-//   FaTasks,
-//   FaMailBulk,
-// } from '@fortawesome/free-solid-svg-icons'
-
-// import BuildingIcon from '../assets/icons/building-icon.png'
-// import ArchitectIcon from '../assets/icons/architect-icon.png'
-// import EngineeringIcon from '../assets/icons/engineering-icon.png'
-// import ConstructionIcon from '../assets/icons/construction-icon.png'
-// import PlumbingIcon from '../assets/icons/plumbing-icon.png'
-// import ElectricalIcon from '../assets/icons/electrical-icon.png'
-// import SiteManagementIcon from '../assets/icons/site-management-icon.png'
-// import BuildingConstructionIcon from '../assets/icons/building-construction-icon.png'
 
 const Services = () => {
+  const [modalVisible, setModalVisible] = useState(false)
+  const [selectedImage, setSelectedImage] = useState(null)
+  const images = [Services5, Services6, Services7]
+  const openModal = (index) => {
+    setSelectedImage(index)
+    setModalVisible(true)
+  }
+
+  const closeModal = () => {
+    setModalVisible(false)
+  }
+
+  const nextImage = () => {
+    setSelectedImage((prevIndex) => (prevIndex + 1) % images.length)
+  }
+
+  const prevImage = () => {
+    setSelectedImage(
+      (prevIndex) => (prevIndex - 1 + images.length) % images.length
+    )
+  }
+
   return (
     <div className="containerservices">
       <div className="bannerservices">
@@ -39,13 +44,17 @@ const Services = () => {
           className="picbanserv"
           style={{
             backgroundImage: `url(${Servisesbg})`,
-            backgroundSize: 'cover',
-            width: '64%',
-            height: 'auto',
           }}
         >
-          <div className="banner-content">
-            <h1 className="h1serv">Services</h1>
+          <div className="banner-content"></div>
+          <h1 className="h1serv">
+            <FaTools
+              size={58}
+              style={{ color: '#f5ca8b', marginRight: '8px' }}
+            />
+            Services
+          </h1>
+          <div>
             <br />
             <h3 className="h3serv">Building Construction</h3>
           </div>
@@ -53,15 +62,15 @@ const Services = () => {
         {/* Service items */}
         <div
           className="textbanserv"
-          style={{ width: '37%', paddingTop: '3em' }}
+          style={{ width: '36%', paddingTop: '3em' }}
         >
-          <h2 className="h2serv">
+          <h2 className="h2services">
             {/* <FontAwesomeIcon
               icon={FaBuilding}
               size={20}
               style={{ marginRight: '5px' }}
             /> */}
-            Products And Services:
+            Our Products And Services:
           </h2>
           <br />
 
@@ -117,86 +126,77 @@ const Services = () => {
           </div>
         </div>
       </div>
-      <div className="services-details">
-        <h2 className="h2services">
-          For our clients we provide the following services:
-        </h2>
-        <p
-          className="pserve"
-          style={{ fontSize: '1.5em', paddingBottom: '2em' }}
-        >
-          rrttyuigdhtfjykjhgfdsdfghmj,,
-        </p>
-        <br />
-        <div className="container-wraper">
-          <div className="row">
-            <div className="col-md-6 gridservice1">
-              <h2>Free Standing</h2>
-              <p
-                className="pserve"
-                style={{
-                  fontSize: '1.5em',
-                  paddingBottom: '2em',
-                  paddingLeft: '2em',
-                }}
-              >
+      <div className="services-body">
+        <div className="text-top-body-service">
+          <h2 className="h2servbody">
+            DESIGN & INSTALLATION
+            {/* For our clients we provide the following services: */}
+          </h2>
+          <br />
+          {/* <ScrollAnimation animateIn="fadeIn"> */}
+          <p className="pservebody">
+            We pride ourselves on providing an extensive service covering all
+            steps in initial consultations to final commissioning.
+          </p>
+          {/* </ScrollAnimation> */}
+        </div>
+        <div className="services-wraper">
+          <div className="section1-services">
+            <div>
+              <h2 className="h2serveboby">Free Standing</h2>
+              <p className="pserve-section">
                 A free-standing patio design offers an oasis away from the home
                 positioned in front of a pool or a cozy spot in the yard perfect
-                for weekend gatherings, family events, or regular outdoor
+                for weekend gatherings , family events, or regular outdoor
                 dining. Your SolarSpan patio designer and installer can offer a
                 gable or skillion roof design for a free-standing patio with a
                 variety of exciting beam and post options to complement your
                 home.
+              </p>{' '}
+            </div>
+            <div>
+              <img className="servicepic1" src={Services1} alt="Services1" />
+            </div>
+          </div>
+          <br />
+          <br />
+          <div className="section2-services">
+            <img className="servicepic2" src={Services2} alt="Services2" />
+            <div>
+              <h2 className="h2serveboby">Property Extension</h2>
+              <p className="pserve-section">
+                A SolarSpan flyover roof creates an impressive open living area
+                with high ceilings for additional headroom, airflow, daylight,
+                and unrestricted views. Create architecturally pleasing roof
+                lines to enhance your home and breathe new life into an existing
+                deck or patio with new-found space and added comfort all year
+                round.
               </p>
-              <img
-                className="img-fluid servicepic1"
-                src={Services1}
-                alt="Services1"
-              />
-            </div>
-            <div className="col-md-6 gridservice1">
-              <img
-                className="img-fluid servicepic2"
-                src={Services2}
-                alt="Services2"
-              />
             </div>
           </div>
-          <h2>Property Extension</h2>
-          <p
-            className="pserve"
-            style={{ fontSize: '1.5em', paddingBottom: '2em' }}
-          >
-            A SolarSpan flyover roof creates an impressive open living area with
-            high ceilings for additional headroom, airflow, daylight, and
-            unrestricted views. Create architecturally pleasing roof lines to
-            enhance your home and breathe new life into an existing deck or
-            patio with new-found space and added comfort all year round.
-          </p>
-          <div className="col-md-6 gridservice1">
-            <h2>Gable</h2>
-            <p
-              className="pserve"
-              style={{ fontSize: '1.5em', paddingBottom: '2em' }}
-            >
-              Create a grand opening to your outdoor living area with a
-              SolarSpan gable roof while giving your patio additional height and
-              ventilation of hot air. A variety of gable infill and beam options
-              are available from your SolarSpan patio designer and installer to
-              deliver an exciting patio design.
-            </p>
-            <img
-              className="img-fluid servicepic3"
-              src={Services3}
-              alt="Services3"
-            />
+
+          <div className="section3-services">
+            <div>
+              <p className="pserve-section">
+                <h2 className="h2serveboby">Gable</h2>
+                Create a grand opening to your outdoor living area with a
+                SolarSpan gable roof while giving your patio additional height
+                and ventilation of hot air. A variety of gable infill and beam
+                options are available from your SolarSpan patio designer and
+                installer to deliver an exciting patio design.
+              </p>
+            </div>
+
+            <img className="servicepic3" src={Services3} alt="Services3" />
           </div>
-          <div className="gridservice1">
-            <h2>Attached Skillion</h2>
-            <p
-              className="pserve"
-              style={{ fontSize: '1.5em', paddingBottom: '2em' }}
-            >
+        </div>{' '}
+        <br />
+        <br />
+        <div className="section4-services">
+          <img className="servicepic4" src={Services2} alt="Services4" />
+          <div>
+            <h2 className="h2serveboby">Attached Skillion</h2>
+            <p className="pserve-section">
               For a quick, simple, and cost-effective addition to any home,
               SolarSpan's attached skillion roof will extend your living area,
               provide a multi-use carport, boat port, or general cover area
@@ -205,60 +205,92 @@ const Services = () => {
               to assist you in designing the perfect undercover area, adding
               value to any outdoor area of your home.
             </p>
-            <img
-              className="img-fluid servicepic4"
-              src={Services4}
-              alt="Services4"
-            />
           </div>
-          <div className="gridservice5">
-            <img
-              className="img-fluid servicepic5"
-              src={Services5}
-              alt="Services5"
-            />
+        </div>
+        <div className="section5-services">
+          <div className="section-pic5and6">
+            <h2 className="h2serveboby" style={{ paddingTop: '2em' }}>
+              The ultimate in Patio & Pergola design options
+            </h2>
+            <p className="pserve-section5-6">
+              A SolarSpan outdoor shaded living area offers the ultimate freedom
+              in design. Select from a wide choice of modern COLORBOND steel
+              colours for your SolarSpan roof, unique ceiling profiles, designer
+              roofing accessories in COLORBOND and a selection of stylish posts
+              and beams available in prepainted steel, aluminium or stained
+              timber. SolarSpan creates wide open spaces with a ceiling-like
+              finish due to its long unsupported spans. This allows home owners
+              to further customise their design other lighting solutions. with
+              ceiling accessories such as downlights, fans and SolarSpan truly
+              allows you to create functional and beautiful outdoor living areas
+              that complement your home and improve your outdoor lifestyle.
+            </p>
+            <div className="galpic">
+              <div className="gallery-container">
+                {images.map((image, index) => (
+                  <div
+                    key={index}
+                    className="image-container"
+                    onClick={() => openModal(index)}
+                  >
+                    <img
+                      src={image}
+                      alt={`House ${index + 1}`}
+                      className="gallery-image"
+                    />
+                    <div className="image-overlay" />
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {modalVisible && (
+              <Modal
+                show={modalVisible}
+                onHide={closeModal}
+                dialogClassName="modal-container"
+              >
+                <Modal.Body>
+                  <Image
+                    src={images[selectedImage]}
+                    alt={`House ${selectedImage + 1}`}
+                    className="modal-content"
+                  />
+                  <div className="arrow arrow-left" onClick={prevImage}>
+                    &#8592;
+                  </div>
+                  <div className="arrow arrow-right" onClick={nextImage}>
+                    &#8594;
+                  </div>
+                  <div className="download-button">
+                    <a
+                      href={images[selectedImage]}
+                      download={`House_${selectedImage + 1}.png`}
+                    >
+                      Download
+                    </a>
+                    <div className="close" onClick={closeModal}>
+                      &#10005;
+                    </div>
+                  </div>
+                </Modal.Body>
+              </Modal>
+            )}
+            {/* <div className="pic6-7-in-section5">
+              <img className="servicepic6" src={Services6} alt="Services6" />
+              <div>
+                <img className="servicepic5" src={Services5} alt="Services5" />
+              </div>
+            </div> */}
+
+            {/* <div>
+              <img className="servicepic7" src={Services7} alt="Services7" />
+            </div> */}
           </div>
-          <div className="gridservice1">
-            <p
-              className="pserve"
-              style={{ fontSize: '1.5em', paddingBottom: '2em' }}
-            >
-              We started from 2021 and tried to use the latest technology for
-              building houses.
-            </p>
-            <img
-              className="img-fluid servicepic6"
-              src={Services6}
-              alt="Services6"
-            />
-          </div>
-          <div className="gridservice1">
-            <p
-              className="pserve"
-              style={{ fontSize: '1.5em', paddingBottom: '2em' }}
-            >
-              We started from 2021 and tried to use the latest technology for
-              building houses.
-            </p>
-            <img
-              className="img-fluid servicepic7"
-              src={Services7}
-              alt="Services7"
-            />
-            {/* </div>
-          <div className="gridservice1"> */}
-            <p
-              className="pserve"
-              style={{ fontSize: '1.5em', paddingBottom: '2em' }}
-            >
-              We started from 2021 and tried to use the latest technology for
-              building houses.
-            </p>
-            <img
-              className="img-fluid servicepic8"
-              src={Services8}
-              alt="Services8"
-            />
+        </div>
+        <div className="section8-services">
+          <div>
+            <img className="servicepic8" src={Services8} alt="Services8" />
           </div>
         </div>
       </div>

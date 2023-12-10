@@ -1,5 +1,6 @@
-import React, { useEffect } from 'react'
-import { Element, animateScroll as scroll } from 'react-scroll'
+import React from 'react'
+// import { Element, animateScroll as scroll } from 'react-scroll'
+// import ScrollAnimation from 'react-animate-on-scroll'
 import About1 from '../assets/about/about.jpg'
 import About2 from '../assets/about/about3.jpg'
 import About3 from '../assets/about/15.jpg'
@@ -73,15 +74,17 @@ const AboutUs = () => {
             Your Trust Is Our Responsibility <br />
             <span className="spansection2" style={{ paddingTop: '2.5em' }}>
               Our rich expertise allows us to deliver all the assigned projects
+              placidly
             </span>
-            placidly
           </h2>
         </div>
       </div>
       {/* Section 3 */}
       <div className="section3-about">
         <div className="textabout-section3">
+          {/* <ScrollAnimation animateIn="fadeIn"> */}
           <h2 className="h2about3">We Have Worked With Brands</h2>
+          {/* </ScrollAnimation> */}
           <p className="pabout3">
             We have had the privilege of helping many companies with cold
             storage, freezers...
