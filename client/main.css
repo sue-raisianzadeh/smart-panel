@@ -451,7 +451,7 @@ color:#c9c9c9;
 /*home */
 
 .Bodyhome {
-  background: #504a4a;
+  background: #332f2f;
  /* background:-webkit-linear-gradient(290deg, rgb(17, 23, 25) 0%, rgb(15, 17, 18) 100%); */
 }
  .content-wrapper {
@@ -502,8 +502,8 @@ color:#c9c9c9;
   text-decoration: none;
   position: relative;
   font-size: 1.1em;
-  box-shadow: 2px 4px rgb(251, 103, 103);
-  transition: background-color 0.3s ease;
+  transform-style: preserve-3d;
+
 }
 
 .anav2::before {
@@ -524,17 +524,21 @@ color:#c9c9c9;
   border-radius: 10px;
   color:#f4debc;
   text-decoration: none;
+  box-shadow: 0 7px rgb(192, 191, 191);
+
 }
-anav:active {
+.anav:active {
   transform: translateY(7px);
   transform: scale(2.5);
   color:#ddd4d4;
-  box-shadow: 0 4px rgb(112, 51, 51);
+  transform-style: preserve-3d;
+
 }
 .anav2:hover:before {
   width: 100%;
   color: #e19119;
-  text-decoration: none;
+  text-decoration: none;  box-shadow: 0 4px rgb(141, 141, 141);
+
 }
 
 .section2-home{
@@ -584,7 +588,7 @@ anav:active {
   justify-content: start;
   margin:0em 0em 0em 3em;
   padding: 0em 0em 0.5em 3em;
-  gap:1em;
+  gap:0.5em;
   padding-top: 2em;
   animation: slideIn 2s ease-out; 
 }
@@ -1592,7 +1596,7 @@ padding: 0em;
     justify-content: center;
  
   } 
-  .servicepic7 {
+  .servicepic7, .servicepic8 {
     width: 50em;
     max-height: auto;
     border-radius: 4em;
@@ -1611,7 +1615,7 @@ padding: 0em;
     margin-left: 0px;
     border: 8px solid #e3d8c7 ;
     box-shadow: 2px 2px  #57595a;
-    margin: 1.5em 0em 2.5em 0em ;
+    margin: 1.5em 0em 3em 6em ;
     justify-content: center;
     align-items: center;
  
