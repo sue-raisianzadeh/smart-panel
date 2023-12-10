@@ -92,15 +92,8 @@ const NavBar = () => {
                 Services
               </Link>
             </li>
-            {/* <li className="nav-item">
-              <Link
-                to="/Projects"
-                className={`nav-link ${isActive('/Projects')}`}
-              >
-                <FaBuilding size={20} style={{ marginRight: '5px' }} />
-                Projects
-              </Link>
-            </li> */}
+            {/* bb4955
+             */}
             <li className="nav-item">
               <Link
                 to="/Gallery"

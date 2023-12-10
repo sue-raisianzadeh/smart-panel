@@ -451,7 +451,7 @@ color:#c9c9c9;
 /*home */
 
 .Bodyhome {
-  background: #372020;
+  background: #504a4a;
  /* background:-webkit-linear-gradient(290deg, rgb(17, 23, 25) 0%, rgb(15, 17, 18) 100%); */
 }
  .content-wrapper {
@@ -489,38 +489,51 @@ color:#c9c9c9;
   justify-content: center;
   gap: 2em;
   margin: 2em;
+  color: white;
+  overflow: hidden;
   animation: slideIn 2s ease-in-out forwards;  
 }
 .anav2 {
   padding: 10px 15px;
-  background-color: rgb(154, 14, 14);
   color: white;
+  background-color: rgb(154, 14, 14);
   text-decoration: none;
   border-radius: 10px;
   text-decoration: none;
+  position: relative;
+  font-size: 1.1em;
+  box-shadow: 2px 4px rgb(251, 103, 103);
   transition: background-color 0.3s ease;
 }
 
-.anav2:after {
+.anav2::before {
   content: '';
   position: absolute;
+  bottom: 0;
   left: 0;
-  bottom: -2px;
-  height: 2px;
   width: 0;
-  text-decoration: none;
-  background-color: darkred;
-  transition: width 0.3s ease-in-out; 
+  height: 2px;
+  background-color: #dfcbcb;
+  transition: width 0.3s ease;
+  content: '\260E'; /* Unicode for phone icon */
+  margin-right: 5px;
   
 }
 .anav2:hover{
   background:rgb(125, 13, 13);
   border-radius: 10px;
+  color:#f4debc;
   text-decoration: none;
 }
-.anav2:hover:after {
-  width: 10%;
-  color: #e0c397;
+anav:active {
+  transform: translateY(7px);
+  transform: scale(2.5);
+  color:#ddd4d4;
+  box-shadow: 0 4px rgb(112, 51, 51);
+}
+.anav2:hover:before {
+  width: 100%;
+  color: #e19119;
   text-decoration: none;
 }
 
@@ -545,9 +558,8 @@ color:#c9c9c9;
   width: 70%;
   justify-content: center;
   align-items: center;
-  padding: 8em 0em 0em 3em;
+  padding: 8em 0em 2em 3em;
   margin: 0px 0px 0px 80px;
-  animation: slideout 2s ease-out; 
 }
 
 .homepic {
@@ -556,27 +568,32 @@ color:#c9c9c9;
   justify-content: right;
   justify-content: flex-end;
   width:20em;
-  height: autoem;
+  height: auto;
   border-radius: 30px;
   /* box-shadow: 10px #999; */
   margin-left: 10px;
   box-shadow: 2px 2px  #57595a;
   margin: 8em;
-  animation: fade-in 2s ease-in-out forwards; 
+  animation: slideIn 2s ease-out; 
 
 }
 
-.image-container {
-  display: flex;
-  /* flex-direction: column; */
-  justify-content: start;
+.pics-3-home-section2 {
+  display: grid;
   grid-template-columns: repeat( auto-fit, minmax(250px, 1fr) );
-  margin:0em 0em 2em 3em;
-  padding: 0em 0em 2em 3em;
-  gap:4em;
+  justify-content: start;
+  margin:0em 0em 0em 3em;
+  padding: 0em 0em 0.5em 3em;
+  gap:1em;
+  padding-top: 2em;
   animation: slideIn 2s ease-out; 
 }
-
+.carpark, .toil, .kitchen {
+  display: grid;
+  justify-content: row;
+  border: solid 0.5em rgb(250, 231, 231);
+  border-radius: 55% 40% 50% 12%;
+}
 
    /*AboutUs */
 
@@ -591,7 +608,6 @@ color:#c9c9c9;
  color: rgb(21, 20, 20);
  align-items: center;
  padding-top: 0px;
- text-align: justify;
  line-height: 2em;
  padding: 2em;
  margin: 0px;

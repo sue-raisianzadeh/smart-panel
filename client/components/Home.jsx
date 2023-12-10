@@ -1,6 +1,10 @@
 import React from 'react'
 import House2 from '../assets/house2.jpg'
-import Kitchen from '../assets/houses/house-b.png'
+import House1 from '../assets/houses/house-b.png'
+import Kitchen from '../assets/houses/kitchen-a.png'
+import Carpark from '../assets/houses/carpark.png'
+import Toil from '../assets/houses/toilet.png'
+
 import { FaTools, FaComment } from 'react-icons/fa'
 import Footer from './Footer'
 
@@ -10,7 +14,7 @@ const Home = () => {
       <div
         className="content-wrapper"
         style={{
-          backgroundImage: `url(${Kitchen})`,
+          backgroundImage: `url(${House1})`,
           backgroundSize: 'cover',
           width: '100%',
           height: '85vh',
@@ -41,6 +45,11 @@ const Home = () => {
             {' '}
             We are here to help you build your new dream home or bach
           </h2>
+          <div className="pics-3-home-section2">
+            <img className="carpark" src={Carpark} alt="carpark" />
+            <img className="toil" src={Toil} alt="toil" />
+            <img className="kitchen" src={Kitchen} alt="kitchen" />
+          </div>
         </div>
         <div className="image-container">
           <img className="homepic" src={House2} alt="house2" />

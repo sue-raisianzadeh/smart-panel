@@ -1,11 +1,12 @@
 import React from 'react'
 // import { Element, animateScroll as scroll } from 'react-scroll'
 // import ScrollAnimation from 'react-animate-on-scroll'
-import About1 from '../assets/about/about.jpg'
-import About2 from '../assets/about/about3.jpg'
+import About1 from '../assets/about/about3.jpg'
+import About2 from '../assets/about/l16-scaled.jpg'
 import About3 from '../assets/about/15.jpg'
-import About4 from '../assets/about/I8.jpg'
-import About5 from '../assets/about/16.jpg'
+// import About6 from '../assets/about/l16-scaled.jpg'
+import About4 from '../assets/about/office2.png'
+import About5 from '../assets/about/I8.jpg'
 import LogoMetal from '../assets/icons/metalcraft-logo.jpg'
 import Logobluebird from '../assets/icons/bluebird_logo.png'
 
@@ -61,7 +62,7 @@ const AboutUs = () => {
         className="section2-about"
         style={{
           backgroundImage: `url(${About4})`,
-
+          backgroundSize: 'cover',
           width: '100%',
           height: '65vh',
           margin: 0,
