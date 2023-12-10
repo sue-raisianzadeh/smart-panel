@@ -19,6 +19,7 @@ const Home = () => {
           width: '100%',
           height: '85vh',
           margin: 0,
+          borderBottom: '5px solid darkred',
         }}
       >
         <div className="text-and-buttons">

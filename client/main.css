@@ -147,9 +147,10 @@
       width: 6em;
       margin: 0 7px; /* Add spacing around text in NavBar */
   }
-  phome {
+  .h1home {
   text-align: center;
-  padding: 2.5em 0em 0 0.25em;
+  align-items: center;
+  padding: 2em 0em 0 0.25em;
   }
   .habout {
     position: absolute;
@@ -451,7 +452,7 @@ color:#c9c9c9;
 /*home */
 
 .Bodyhome {
-  background: #332f2f;
+  background: #100e0e;
  /* background:-webkit-linear-gradient(290deg, rgb(17, 23, 25) 0%, rgb(15, 17, 18) 100%); */
 }
  .content-wrapper {
