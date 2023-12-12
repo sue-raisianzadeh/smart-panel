@@ -474,8 +474,8 @@ color:#c9c9c9;
   font-weight: 500;
   justify-content: center;
   align-items: center;
-  padding: 5em 0em 0em 1.5em;
-  margin: 0px 0px 0px 2em;
+  padding: 8.5em 0em 0em 1.5em;
+  margin: 0px 0px 0px 0em;
   font-weight: 400;
   text-shadow: 2px 2px #100f0f;
   animation: slideout 2s ease-out; 
@@ -492,7 +492,7 @@ color:#c9c9c9;
 
 .button-row {
   display: flex;
-  flex-direction: row;
+  /* flex-direction: row; */
   justify-content: center;
   align-items: center;
   gap: 2em;
@@ -504,14 +504,17 @@ color:#c9c9c9;
 .anav2 {
   padding: 10px 15px;
   color: white;
-  background-color: rgb(154, 14, 14);
+  background-color: rgb(116, 12, 12);
   text-decoration: none;
   border-radius: 10px;
   justify-content: center;
   align-items: center;
   text-decoration: none;
   position: relative;
+  text-align: center;
   font-size: 1.1em;
+  width: 10em;
+  height: 3em;
 
 }
 
@@ -529,9 +532,9 @@ color:#c9c9c9;
   
 }
 .anav2:hover{
-  background:rgb(125, 13, 13);
+  background:rgb(115, 34, 34);
   border-radius: 10px;
-  color:#f4debc;
+  color:#fdb455;
   text-decoration: none;
   box-shadow: 0 7px rgb(192, 191, 191);
 
@@ -610,7 +613,7 @@ color:#c9c9c9;
    /*AboutUs */
 
    .about-us-container {
-    background-color: #333;
+    background-color: #1d1c1c;
    }
    
   .section1-about {
@@ -1476,7 +1479,7 @@ height: 2em;
       /* body services   */
       
       .services-body {
-        background-color: #333;
+        background-color: #131212;
         color: white;
         justify-content: center;
         align-items: center;
