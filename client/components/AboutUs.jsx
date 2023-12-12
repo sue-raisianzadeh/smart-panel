@@ -58,6 +58,8 @@ const AboutUs = () => {
           {/* </div> */}
         </div>
       </div>
+      <br />
+      <br />
       <div
         className="section2-about"
         style={{

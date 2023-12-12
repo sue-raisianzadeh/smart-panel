@@ -1,5 +1,6 @@
 import React from 'react'
 import House2 from '../assets/house2.jpg'
+import Bgproject from '../assets/bg/bgproject1.png'
 import House1 from '../assets/houses/house-b.png'
 import Kitchen from '../assets/houses/kitchen-a.png'
 import Carpark from '../assets/houses/carpark.png'
@@ -14,7 +15,7 @@ const Home = () => {
       <div
         className="content-wrapper"
         style={{
-          backgroundImage: `url(${House1})`,
+          backgroundImage: `url(${Bgproject})`,
           backgroundSize: 'cover',
           width: '100%',
           height: '85vh',
