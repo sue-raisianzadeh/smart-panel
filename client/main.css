@@ -465,7 +465,7 @@ color:#c9c9c9;
 }
 
 .phome {
-  font-family: 'Cairo','Montserrat', Arial, Helvetica, sans-serif ;
+  font-family: Arial,'Cairo','Montserrat', Arial, Helvetica, sans-serif ;
   color:rgb(249, 246, 246);
   /* text-shadow: 1px 0px  #f7c4c4; */
   font-size: 3em;
@@ -476,7 +476,7 @@ color:#c9c9c9;
   align-items: center;
   padding: 8.5em 0em 0em 1.5em;
   margin: 0px 0px 0px 0em;
-  font-weight: 400;
+  font-weight: 300;
   text-shadow: 2px 2px #100f0f;
   animation: slideout 2s ease-out; 
 }
@@ -646,6 +646,7 @@ color:#c9c9c9;
   font-size: 1.5em;
   font-family: 'Cairo', 'Arial, Helvetica, sans-serif';
   color: #f8ece7;
+  /* width: 78%; */
   text-align:justify;
   padding:2em;
   text-shadow: #000 2px;
