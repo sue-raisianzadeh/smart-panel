@@ -102,7 +102,7 @@
       margin: 0 7px; /* Add spacing around text in NavBar */
   }
   .phome {
-    text-align: justify;
+    text-align: center;
   padding: 2.5em 0em 0 0.25em;
   }
   .habout {
@@ -148,6 +148,7 @@
       margin: 0 7px; /* Add spacing around text in NavBar */
   }
   .phome {
+    font-size: 2rem;
   text-align: center;
   align-items: center;
   padding: 1em 0em 0 0.25em;
@@ -465,19 +466,19 @@ color:#c9c9c9;
 }
 
 .phome {
-  font-family: Arial,'Cairo','Montserrat', Arial, Helvetica, sans-serif ;
-  color:rgb(249, 246, 246);
+  font-family: 'Cairo','Open Sans',Arial,'Cairo','Montserrat', Arial, Helvetica, sans-serif ;
+  color:rgb(70, 61, 61);
   /* text-shadow: 1px 0px  #f7c4c4; */
-  font-size: 3em;
+  font-size: 3.5rem;
   text-align: center;
   width: 80%;
   font-weight: 500;
   justify-content: center;
   align-items: center;
-  padding: 8.5em 0em 0em 1.5em;
+  padding: 4.5em 0em 0em 1.5em;
   margin: 0px 0px 0px 0em;
-  font-weight: 300;
-  text-shadow: 2px 2px #100f0f;
+  font-weight: 550;
+  text-shadow: 1px 1px #dfa9a9;
   animation: slideout 2s ease-out; 
 }
 
@@ -496,7 +497,7 @@ color:#c9c9c9;
   justify-content: center;
   align-items: center;
   gap: 2em;
-  margin: 2em 0em 0em 0em;
+  margin: em 4em 0em 0em;
   color: white;
   overflow: hidden;
   animation: slideIn 2s ease-in-out forwards;  

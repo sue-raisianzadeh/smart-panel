@@ -1,6 +1,6 @@
 import React from 'react'
 import House2 from '../assets/house2.jpg'
-import Bgproject from '../assets/bg/bgproject1.png'
+import Bgproject from '../assets/bg/1house-h.png'
 import House1 from '../assets/houses/house-b.png'
 import Kitchen from '../assets/houses/kitchen-a.png'
 import Carpark from '../assets/houses/carpark.png'
