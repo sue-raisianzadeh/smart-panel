@@ -86,7 +86,7 @@ const AboutUs = () => {
       <div className="section3-about">
         <div className="textabout-section3">
           {/* <ScrollAnimation animateIn="fadeIn"> */}
-          <h2 className="h2about3">We Have Worked With Brands</h2>
+          <h2 className="h2about3">We Have Worked With Brand</h2>
           {/* </ScrollAnimation> */}
           <p className="pabout3">
             We have had the privilege of helping many companies with cold
@@ -97,7 +97,7 @@ const AboutUs = () => {
       </div>
       <div className="logo-about3">
         <img className="LogoMetal" src={LogoMetal} alt="About5" />
-        <img className="Logobluebird" src={Logobluebird} alt="About5" />
+        {/* <img className="Logobluebird" src={Logobluebird} alt="About5" /> */}
       </div>
       <Footer />
     </div>

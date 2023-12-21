@@ -15,7 +15,7 @@ function Footer() {
 
                 <FaEnvelope className="icon footer-icons" />
                 <p className="company-info text-white">
-                  Email: info@atombuilding.co.nz
+                  Email: info@smartpanelhomes.co.nz
                 </p>
 
                 <FaMapMarkerAlt className="icon footer-icons" />

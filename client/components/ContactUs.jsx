@@ -98,7 +98,7 @@ function ContactUs() {
             <div className="info-box2">
               <FaEnvelope className="icon" />
               <p className="contact-info text-red" style={{ color: 'red' }}>
-                Email: info@atombuilding.co.nz
+                Email: info@smartpanelhomes.co.nz
               </p>
             </div>
             <div className="info-box2">
