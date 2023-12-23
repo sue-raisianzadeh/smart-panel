@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowDown } from '@fortawesome/free-solid-svg-icons'
 import 'aos/dist/aos.css'
 import House2 from '../assets/house2.jpg'
-import Bgproject from '../assets/bg/1house-h.png'
+import Bgproject from '../assets/bg/Treehouse.png'
 import House1 from '../assets/houses/house-b.png'
 import Kitchen from '../assets/houses/kitchen-a.png'
 import Carpark from '../assets/houses/carpark.png'
@@ -20,6 +20,7 @@ const Home = () => {
   return (
     <div className="Bodyhome">
       <div
+        data-aos="fade-down-left"
         className="content-wrapper"
         style={{
           backgroundImage: `url(${Bgproject})`,
@@ -31,12 +32,12 @@ const Home = () => {
         }}
       >
         <div className="text-and-buttons">
-          <h1 className="phome">
+          <h1 data-aos="fade-down-right" className="phome">
             Design & Installation of custom insulated panel solutions is our
             specialty. <br />
           </h1>
           <br />
-          <div className="button-row">
+          {/* <div className="button-row">
             <a className="anav2" href="/Services">
               <FaTools size={27} style={{ marginRight: '5px' }} />
               Services
@@ -45,7 +46,7 @@ const Home = () => {
               <FaComment size={27} style={{ marginRight: '5px' }} />
               Contact Us
             </a>
-          </div>
+          </div> */}
         </div>
         <div className="scroll-down-container">
           <div>
@@ -62,7 +63,7 @@ const Home = () => {
           </h2>
           <div className="pics-3-home-section2">
             <img
-              data-aos="fade-right"
+              data-aos="fade-down-right"
               className="carpark"
               src={Carpark}
               alt="carpark"

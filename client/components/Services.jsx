@@ -73,7 +73,6 @@ const Services = () => {
             Our Products And Services:
           </h2>
           <br />
-
           <h3 className="h3services">
             {/* <FaHardHat size={20} style={{ marginRight: '5px' }} /> */}
             Licensed Practising Builders (LPB), Building company.
@@ -82,47 +81,57 @@ const Services = () => {
             We only use LPB builders on our sites along with experienced Hammer
             hands
           </p>
-
           <h3 className="h3services">
             {/* <FaDraftingCompass size={20} style={{ marginRight: '5px' }} /> */}
             Architectural specialists
           </h3>
-          <p className="pbanner">We make the best you want</p>
-
+          <p className="pbanner">
+            We will work closely with either your preferred architect or we can
+            recommend architects for you to talk directlty with{' '}
+          </p>
           <div className="service-item">
             <h3 className="h3services">
               {/* <FaHammer size={20} style={{ marginRight: '5px' }} /> */}
               Engineering specialists
             </h3>
-            <p className="pbanner">We make the best you want</p>
+            <p className="pbanner">
+              We have specialists engineers however, like the architectural, we
+              can work with outside engineers if you have a preferance
+            </p>
           </div>
-          <div className="service-item">
-            <h3 className="h3services">
-              {/* <FaWrench size={20} style={{ marginRight: '5px' }} /> */}
-              Civil Construction, All Foundation
-            </h3>
-            <p className="pbanner">We make the best you want</p>
-          </div>
+          {/* <div className="service-item"> */}
+          {/* <h3 className="h3services"> */}
+          {/* <FaWrench size={20} style={{ marginRight: '5px' }} /> */}
+          {/* Civil Construction, All Foundation
+            </h3> */}
+          {/* <p className="pbanner">We make the best you want</p> */}
+          {/* </div> */}
           <div className="service-item">
             <h3 className="h3services">
               {/* <FaTasks size={20} style={{ marginRight: '5px' }} /> */}
               Plumbing and Electrical
             </h3>
-            <p className="pbanner">We make the best you want</p>
+            <p className="pbanner">
+              We use Master Electrical and Plumbing companies so all parties are
+              covered with there respective warranties
+            </p>
           </div>
-          <div className="service-item">
-            <h3 className="h3services">
-              {/* <FaHome size={20} style={{ marginRight: '5px' }} /> */}
-              Building Construction
+          {/* <div className="service-item">
+            <h3 className="h3services"> */}
+
+          {/* Building Construction
             </h3>
             <p className="pbanner">We build the best you want</p>
-          </div>
+          </div> */}
           <div className="service-item">
             <h3 className="h3services">
               {/* <FaTasks size={20} style={{ marginRight: '5px' }} /> */}
               Site Management
             </h3>{' '}
-            <p className="pbanner">We make the best you want</p>
+            <p className="pbanner">
+              With these builds I do like the client to be present on a regular
+              basis during the connstruction phase.{' '}
+            </p>
           </div>
         </div>
       </div>

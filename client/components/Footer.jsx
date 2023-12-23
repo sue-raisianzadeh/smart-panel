@@ -31,9 +31,8 @@ function Footer() {
               <h1 className="about text-white">ABOUT</h1>
               <div className="company-info-footer">
                 <p className="company-info text-white">
-                  Atom building and construction ltd are a New Zealand designer,
-                  manufacturer, and installer of complete insulated panel
-                  solutions.
+                  Smart Panel Homes Limited is an installer of insulated panel
+                  (Cool Room Panel), for use in Homes and Bachs{' '}
                 </p>
               </div>
             </div>

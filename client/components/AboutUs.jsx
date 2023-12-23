@@ -1,4 +1,5 @@
 import React from 'react'
+import AOS from 'aos'
 // import { Element, animateScroll as scroll } from 'react-scroll'
 // import ScrollAnimation from 'react-animate-on-scroll'
 import About1 from '../assets/about/about3.jpg'
@@ -19,7 +20,7 @@ const AboutUs = () => {
         <div className="text-animation-container">
           <h2 className="h2about">About Us</h2>
           <p className="pabout">
-            Smart Panel Homes come about after I built a commercial building
+            Smart Panel Homes came about after I built a commercial building
             using insulated panel and was instantly impressed with the ease of
             build, halving the current build times.
             <br /> From there my research took me to Australia to look at the
@@ -60,7 +61,7 @@ const AboutUs = () => {
       </div>
       <br />
       <br />
-      <div
+      {/* <div
         className="section2-about"
         style={{
           backgroundImage: `url(${About4})`,
@@ -68,30 +69,29 @@ const AboutUs = () => {
           width: '100%',
           height: '65vh',
           margin: 0,
-        }}
-      >
-        {/* <img className="picabout2" src={About4} alt="About4" /> */}
-        <div className="text">
-          {/* <h2 className="h2about-section2">Smart Panel Homes Ltd</h2> */}
-          <h2 className="h2about2-section2">
-            Your Trust Is Our Responsibility <br />
-            <span className="spansection2" style={{ paddingTop: '2.5em' }}>
-              Our rich expertise allows us to deliver all the assigned projects
-              placidly
-            </span>
-          </h2>
+        }} */}
+      >{/* <img className="picabout2" src={About4} alt="About4" /> */}
+      {/* <div className="text"> */}
+      {/* <h2 className="h2about-section2">Smart Panel Homes Ltd</h2> */}
+      {/* <h2 className="h2about2-section2"> */}
+      {/* Your Trust Is Our Responsibility <br /> */}
+      {/* <span className="spansection2" style={{ paddingTop: '2.5em' }}> */}
+      {/* Our rich expertise allows us to deliver all the assigned projects */}
+      {/* placidly */}
+      {/* </span> */}
+      {/* </h2>
         </div>
-      </div>
+      </div> */}
       {/* Section 3 */}
       <div className="section3-about">
         <div className="textabout-section3">
           {/* <ScrollAnimation animateIn="fadeIn"> */}
-          <h2 className="h2about3">We Have Worked With Brand</h2>
+          <h2 className="h2about3">
+            We Work closely with local manufacturers such as Metalcraft and
+            Bondor{' '}
+          </h2>{' '}
           {/* </ScrollAnimation> */}
-          <p className="pabout3">
-            We have had the privilege of helping many companies with cold
-            storage, freezers...
-          </p>
+          <p className="pabout3"></p>
         </div>
         <img className="about3" src={About5} alt="About5" />
       </div>
