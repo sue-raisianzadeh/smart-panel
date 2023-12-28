@@ -1,7 +1,8 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import { Modal, Image } from 'react-bootstrap'
-// import ScrollAnimation from 'react-animate-on-scroll'
-import Servisesbg from '../assets/bg/new--.png'
+import AOS from 'aos'
+import 'aos/dist/aos.css'
+// import Servisesbg from '../assets/bg/new--.png'
 import Services1 from '../assets/services/Services1.png'
 import Services2 from '../assets/services/Services2.png'
 import Services3 from '../assets/services/Services3.png'
@@ -11,13 +12,24 @@ import Services6 from '../assets/services/services6.jpg'
 import Services7 from '../assets/services/services7.png'
 import Services8 from '../assets/services/services8.png'
 import Footer from './Footer'
-import { FaTools } from 'react-icons/fa'
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import {
+  FaTools,
+  FaBuilding,
+  FaDraftingCompass,
+  FaHammer,
+  FaTasks,
+} from 'react-icons/fa'
+import { FaWrench, FaAward } from 'react-icons/fa6'
 
 const Services = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 500,
+    })
+  }, [])
   const [modalVisible, setModalVisible] = useState(false)
   const [selectedImage, setSelectedImage] = useState(null)
-  const images = [Services5, Services6, Services7]
+  const images = [Services5, Services6, Services7, Services8]
   const openModal = (index) => {
     setSelectedImage(index)
     setModalVisible(true)
@@ -40,41 +52,32 @@ const Services = () => {
   return (
     <div className="containerservices">
       <div className="bannerservices">
-        <div
-          className="picbanserv"
-          style={{
-            backgroundImage: `url(${Servisesbg})`,
-          }}
-        >
+        <div data-aos="fade-down-right" className="picbanserv">
           <div className="banner-content"></div>
-          <h1 className="h1serv">
-            <FaTools
-              size={58}
-              style={{ color: '#f5ca8b', marginRight: '8px' }}
-            />
+          <h1 data-aos="fade-down-right" className="h1serv">
+            <FaTools size={58} style={{ color: 'white', marginRight: '8px' }} />
             Services
           </h1>
           <div>
             <br />
-            <h3 className="h3serv">Building Construction</h3>
+            <h3 data-aos="fade-up" className="h3serv">
+              Building Construction
+            </h3>
           </div>
         </div>
         {/* Service items */}
         <div
+          data-aos="fade-down-right"
           className="textbanserv"
           style={{ width: '36%', paddingTop: '3em' }}
         >
-          <h2 className="h2services">
-            {/* <FontAwesomeIcon
-              icon={FaBuilding}
-              size={20}
-              style={{ marginRight: '5px' }}
-            /> */}
+          <h2 data-aos="fade-down-right" className="h2services">
+            <FaBuilding size={31} style={{ marginRight: '5px' }} />
             Our Products And Services:
           </h2>
           <br />
           <h3 className="h3services">
-            {/* <FaHardHat size={20} style={{ marginRight: '5px' }} /> */}
+            <FaAward size={31} style={{ marginRight: '5px' }} />
             Licensed Practising Builders (LPB), Building company.
           </h3>
           <p className="pbanner">
@@ -82,7 +85,7 @@ const Services = () => {
             hands
           </p>
           <h3 className="h3services">
-            {/* <FaDraftingCompass size={20} style={{ marginRight: '5px' }} /> */}
+            <FaDraftingCompass size={31} style={{ marginRight: '5px' }} />
             Architectural specialists
           </h3>
           <p className="pbanner">
@@ -91,7 +94,7 @@ const Services = () => {
           </p>
           <div className="service-item">
             <h3 className="h3services">
-              {/* <FaHammer size={20} style={{ marginRight: '5px' }} /> */}
+              <FaHammer size={31} style={{ marginRight: '5px' }} />
               Engineering specialists
             </h3>
             <p className="pbanner">
@@ -99,16 +102,10 @@ const Services = () => {
               can work with outside engineers if you have a preferance
             </p>
           </div>
-          {/* <div className="service-item"> */}
-          {/* <h3 className="h3services"> */}
-          {/* <FaWrench size={20} style={{ marginRight: '5px' }} /> */}
-          {/* Civil Construction, All Foundation
-            </h3> */}
-          {/* <p className="pbanner">We make the best you want</p> */}
-          {/* </div> */}
+
           <div className="service-item">
             <h3 className="h3services">
-              {/* <FaTasks size={20} style={{ marginRight: '5px' }} /> */}
+              <FaWrench size={31} style={{ marginRight: '5px' }} />
               Plumbing and Electrical
             </h3>
             <p className="pbanner">
@@ -116,20 +113,14 @@ const Services = () => {
               covered with there respective warranties
             </p>
           </div>
-          {/* <div className="service-item">
-            <h3 className="h3services"> */}
 
-          {/* Building Construction
-            </h3>
-            <p className="pbanner">We build the best you want</p>
-          </div> */}
           <div className="service-item">
             <h3 className="h3services">
-              {/* <FaTasks size={20} style={{ marginRight: '5px' }} /> */}
+              <FaTasks size={31} style={{ marginRight: '5px' }} />
               Site Management
             </h3>{' '}
             <p className="pbanner">
-              With these builds I do like the client to be present on a regular
+              With these builds we do like the client to be present on a regular
               basis during the connstruction phase.{' '}
             </p>
           </div>
@@ -137,23 +128,23 @@ const Services = () => {
       </div>
       <div className="services-body">
         <div className="text-top-body-service">
-          <h2 className="h2servbody">
+          <h2 data-aos="fade-down-left" className="h2servbody">
             DESIGN & INSTALLATION
             {/* For our clients we provide the following services: */}
           </h2>
           <br />
-          {/* <ScrollAnimation animateIn="fadeIn"> */}
-          <p className="pservebody">
+          <p data-aos="fade-down-right" className="pservebody">
             We pride ourselves on providing an extensive service covering all
             steps in initial consultations to final commissioning.
           </p>
-          {/* </ScrollAnimation> */}
         </div>
         <div className="services-wraper">
           <div className="section1-services">
             <div>
-              <h2 className="h2serveboby">Free Standing</h2>
-              <p className="pserve-section">
+              <h2 data-aos="fade-down-left" className="h2serveboby">
+                Free Standing
+              </h2>
+              <p data-aos="fade-down-left" className="pserve-section">
                 A free-standing patio design offers an oasis away from the home
                 positioned in front of a pool or a cozy spot in the yard perfect
                 for weekend gatherings , family events, or regular outdoor
@@ -164,16 +155,28 @@ const Services = () => {
               </p>{' '}
             </div>
             <div>
-              <img className="servicepic1" src={Services1} alt="Services1" />
+              <img
+                data-aos="fade-down-right"
+                className="servicepic1"
+                src={Services1}
+                alt="Services1"
+              />
             </div>
           </div>
           <br />
           <br />
           <div className="section2-services">
-            <img className="servicepic2" src={Services2} alt="Services2" />
+            <img
+              data-aos="fade-down-left"
+              className="servicepic2"
+              src={Services2}
+              alt="Services2"
+            />
             <div>
-              <h2 className="h2serveboby">Property Extension</h2>
-              <p className="pserve-section">
+              <h2 data-aos="fade-down-left" className="h2serveboby">
+                Property Extension
+              </h2>
+              <p data-aos="fade-down-right" className="pserve-section">
                 A SolarSpan flyover roof creates an impressive open living area
                 with high ceilings for additional headroom, airflow, daylight,
                 and unrestricted views. Create architecturally pleasing roof
@@ -183,11 +186,12 @@ const Services = () => {
               </p>
             </div>
           </div>
-
           <div className="section3-services">
             <div>
-              <p className="pserve-section">
-                <h2 className="h2serveboby">Gable</h2>
+              <p data-aos="fade-down-left" className="pserve-section">
+                <h2 data-aos="fade-down-left" className="h2serveboby">
+                  Gable
+                </h2>
                 Create a grand opening to your outdoor living area with a
                 SolarSpan gable roof while giving your patio additional height
                 and ventilation of hot air. A variety of gable infill and beam
@@ -196,32 +200,48 @@ const Services = () => {
               </p>
             </div>
 
-            <img className="servicepic3" src={Services3} alt="Services3" />
+            <img
+              data-aos="fade-down-right"
+              className="servicepic3"
+              src={Services3}
+              alt="Services3"
+            />
           </div>
-        </div>{' '}
-        <br />
-        <br />
-        <div className="section4-services">
-          <img className="servicepic4" src={Services2} alt="Services4" />
-          <div>
-            <h2 className="h2serveboby">Attached Skillion</h2>
-            <p className="pserve-section">
-              For a quick, simple, and cost-effective addition to any home,
-              SolarSpan's attached skillion roof will extend your living area,
-              provide a multi-use carport, boat port, or general cover area
-              which will protect you and your most valuable possessions from the
-              heat and cold. Your SolarSpan designer and installer will be able
-              to assist you in designing the perfect undercover area, adding
-              value to any outdoor area of your home.
-            </p>
-          </div>
+          <br />
+          <br />
+          <div className="section4-services">
+            <img
+              data-aos="fade-down-left"
+              className="servicepic4"
+              src={Services2}
+              alt="Services4"
+            />
+            <div>
+              <p data-aos="fade-down-right" className="pserve-section">
+                <h2 data-aos="fade-down-right" className="h2serveboby">
+                  Attached Skillion
+                </h2>
+                For a quick, simple, and cost-effective addition to any home,
+                SolarSpan's attached skillion roof will extend your living area,
+                provide a multi-use carport, boat port, or general cover area
+                which will protect you and your most valuable possessions from
+                the heat and cold. Your SolarSpan designer and installer will be
+                able to assist you in designing the perfect undercover area,
+                adding value to any outdoor area of your home.
+              </p>
+            </div>
+          </div>{' '}
         </div>
         <div className="section5-services">
           <div className="section-pic5and6">
-            <h2 className="h2serveboby" style={{ paddingTop: '2em' }}>
+            <h2
+              data-aos="fade-down-right"
+              className="h2serveboby"
+              style={{ paddingTop: '2rem' }}
+            >
               The ultimate in Patio & Pergola design options
             </h2>
-            <p className="pserve-section5-6">
+            <p data-aos="fade-up-left" className="pserve-section5-6">
               A SolarSpan outdoor shaded living area offers the ultimate freedom
               in design. Select from a wide choice of modern COLORBOND steel
               colours for your SolarSpan roof, unique ceiling profiles, designer
@@ -241,8 +261,12 @@ const Services = () => {
                     key={index}
                     className="image-container"
                     onClick={() => openModal(index)}
+                    onKeyDown={() => openModal(index)} // for accessibility
+                    role="button" // indicates the div is a button
+                    tabIndex="0" // allows keyboard navigation
                   >
                     <img
+                      data-aos="fade-down-left"
                       src={image}
                       alt={`House ${index + 1}`}
                       className="gallery-image"
@@ -257,13 +281,13 @@ const Services = () => {
               <Modal
                 show={modalVisible}
                 onHide={closeModal}
-                dialogClassName="modal-container"
+                dialogClassName="modal-container modal-xl"
               >
                 <Modal.Body>
                   <Image
                     src={images[selectedImage]}
                     alt={`House ${selectedImage + 1}`}
-                    className="modal-content"
+                    className="modal-content "
                   />
                   <div className="arrow arrow-left" onClick={prevImage}>
                     &#8592;
@@ -297,11 +321,16 @@ const Services = () => {
             </div> */}
           </div>
         </div>
-        <div className="section8-services">
+        {/* <div className="section8-services">
           <div>
-            <img className="servicepic8" src={Services8} alt="Services8" />
+            <img
+              data-aos="fade-down-right"
+              className="servicepic8"
+              src={Services8}
+              alt="Services8"
+            />
           </div>
-        </div>
+        </div> */}
       </div>
       <Footer />
     </div>

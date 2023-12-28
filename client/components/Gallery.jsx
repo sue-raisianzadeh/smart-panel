@@ -59,6 +59,9 @@ const Gallery = () => {
               key={index}
               className="image-container"
               onClick={() => openModal(index)}
+              onKeyDown={() => openModal(index)} // for accessibility
+              role="button" // indicates the div is a button
+              tabIndex="0" // allows keyboard navigation
             >
               <img
                 src={image}
@@ -75,13 +78,13 @@ const Gallery = () => {
         <Modal
           show={modalVisible}
           onHide={closeModal}
-          dialogClassName="modal-container"
+          dialogClassName="modal-container modal-lg"
         >
           <Modal.Body>
             <Image
               src={images[selectedImage]}
               alt={`House ${selectedImage + 1}`}
-              className="modal-content"
+              className="modal-content "
             />
             <div className="arrow arrow-left" onClick={prevImage}>
               &#8592;
@@ -97,7 +100,7 @@ const Gallery = () => {
                 Download
               </a>
               <div className="close" onClick={closeModal}>
-                &#10005;
+                &#10006;
               </div>
             </div>
           </Modal.Body>
