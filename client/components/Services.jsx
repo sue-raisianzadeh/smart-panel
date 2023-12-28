@@ -24,7 +24,7 @@ import { FaWrench, FaAward } from 'react-icons/fa6'
 const Services = () => {
   useEffect(() => {
     AOS.init({
-      duration: 500,
+      duration: 550,
     })
   }, [])
   const [modalVisible, setModalVisible] = useState(false)
@@ -55,7 +55,10 @@ const Services = () => {
         <div data-aos="fade-down-right" className="picbanserv">
           <div className="banner-content"></div>
           <h1 data-aos="fade-down-right" className="h1serv">
-            <FaTools size={58} style={{ color: 'white', marginRight: '8px' }} />
+            <FaTools
+              size={58}
+              style={{ color: 'rgb(132, 11, 11)', marginRight: '8px' }}
+            />
             Services
           </h1>
           <div>
@@ -67,11 +70,10 @@ const Services = () => {
         </div>
         {/* Service items */}
         <div
-          data-aos="fade-down-right"
           className="textbanserv"
           style={{ width: '36%', paddingTop: '3em' }}
         >
-          <h2 data-aos="fade-down-right" className="h2services">
+          <h2 className="h2services">
             <FaBuilding size={31} style={{ marginRight: '5px' }} />
             Our Products And Services:
           </h2>
@@ -152,7 +154,7 @@ const Services = () => {
                 gable or skillion roof design for a free-standing patio with a
                 variety of exciting beam and post options to complement your
                 home.
-              </p>{' '}
+              </p>
             </div>
             <div>
               <img
