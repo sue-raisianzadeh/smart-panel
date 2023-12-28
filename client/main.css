@@ -1577,7 +1577,21 @@ height: 2rem;
 }
     
   /* Services */
-
+  @media screen and (max-width: 900px) {
+    .h1serv {
+      padding-top: 14rem !important;
+      font-size: 3rem !important;
+      padding-left: 3,5rem !important; 
+ 
+    }
+  
+    .h3serv {
+      font-size: 1.3rem; 
+      padding-left: 3.5rem !important; 
+      padding-bottom: 2rem;
+    }
+  
+  }
 /* Styles for tablets and smaller devices */
  @media screen and (max-width: 768px) {
   
@@ -1587,13 +1601,15 @@ height: 2rem;
   }
 
   .h1serv {
-    padding-top: 5rem;
+    padding-top: 18rem !important;
     font-size: 2.2rem; 
+    padding-left: 1rem !important; 
+
   }
 
   .h3serv {
     font-size: 1.3rem; 
-    padding-left: 2rem; 
+    padding-left: 1rem; 
     padding-bottom: 2rem;
   }
 
@@ -1613,8 +1629,6 @@ height: 2rem;
    {
     width: 100%;
     margin: 0.5rem 0; 
-    border-radius: 1rem; 
-    box-shadow: none; 
   }
 
   .pserve-section, .pserve-section2, .pserve-section5-6 {
@@ -1622,38 +1636,49 @@ height: 2rem;
     padding-left: 1rem; 
     padding-right: 1rem; 
   }
+  .pserve-section5-6 {
+    padding: 2rem !important;
+   }
 } 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 508px) {
   .h1serv {
-    padding-top: 4.2rem;
+    padding-top: 5.5rem !important;
     font-size: 1.75rem; 
+    padding-left: 3rem; 
+
   }
 
   .h3serv {
     font-size: 1.2rem; 
-    padding-left: 2rem; 
+    padding-left: 3rem; 
     padding-bottom: 2rem;
   }
+  .pserve-section5-6 {
+    padding: 2rem !important;
+   }
 
 }
 /* Styles for mobile phones */
  @media screen and (max-width: 480px) {
   .h1serv {
-    font-size: 1.5rem;
-    padding-top: 3.75rem;
-    padding-left: 2rem;
+    font-size: 1.55rem;
+    padding-top: 4.75rem;
+    padding-left: 2.2rem;
   }
 
   .h3serv {
-    font-size: 1rem;
+    font-size: 1.1rem;
     padding-bottom: 1.75rem;
-    padding-left: 2rem;
+    padding-left: 2.2rem;
  
   }
 
   .h2services, .h3services, .pbanner,
   .pserve-section, .pserve-section2, .pserve-section5-6 {
     font-size: 0.9rem;
+  }
+  .pserve-section5-6 {
+   padding: 2rem !important;
   }
 } 
 /* servicepage style */
@@ -1665,7 +1690,7 @@ height: 2rem;
   }
 .bannerservices {
     display: grid;
-    grid-template-columns: repeat( auto-fit, minmax(350px, 1fr) );
+    grid-template-columns: repeat( auto-fit, minmax(250px, 1fr) );
     font-family: 'Cairo', 'Montserrat', 'Arial, Helvetica, sans-serif';
     color: rgb(21, 20, 20);
     padding-top: 0px;
