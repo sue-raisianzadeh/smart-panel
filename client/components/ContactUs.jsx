@@ -103,7 +103,10 @@ function ContactUs() {
             </div>
             <div className="info-box2">
               <FaMapMarkerAlt className="icon" />
-              <p className="contact-info text-white">
+              <p
+                className="contact-info text-white"
+                style={{ paddindLeft: '1.75rem', paddindRight: '1.75rem' }}
+              >
                 Address: 23a Hereford Street, Te Atatu Peninsula, Auckland, 0610
                 , New Zealand
               </p>

@@ -87,10 +87,10 @@ const Gallery = () => {
               className="modal-content "
             />
             <div className="arrow arrow-left" onClick={prevImage}>
-              &#10139;
+              &#11164;
             </div>
             <div className="arrow arrow-right" onClick={nextImage}>
-              &#10139;
+              &#11166;
             </div>
             <div className="download-button">
               <a

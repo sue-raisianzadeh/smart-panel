@@ -2243,8 +2243,8 @@ height: 2rem;
 
 
 .arrow {
-  font-size: 4rem !important;
-  color: #5a0d0d;
+  font-size: 3rem !important;
+  color: rgb(190, 31, 31);
   font-weight: 700;
   position: absolute;
   top: 50%;
@@ -2365,9 +2365,11 @@ height: 2rem;
   align-items: center;
   color: #141313;
   font-size: 1.2em;
-  padding: 0rem 1.75rem 1rem 1.75rem !important;
 }
+.contact-info{
+  /* padding: 0rem 1.75rem 1rem 1.75rem !important; */
 
+}
 .icon {
   font-size: 1.5em;
   /* margin-right: 10px; */
