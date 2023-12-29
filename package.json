@@ -8,6 +8,7 @@
     "dev:client": "vite",
     "dev:server": "nodemon server/server.js",
     "build": "vite build",
+    "knex": "knex --knexfile ./server/database/knexfile.js",
     "lint": "eslint src --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
   },
