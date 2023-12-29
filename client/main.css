@@ -4,7 +4,7 @@
   margin:0px !important;
   overflow-x: hidden;
  } 
- @media (max-width: 1075px) {
+ @media (max-width: 1078px) {
   .nav-link {
     letter-spacing: 1px !important;
     width: 8em !important;
@@ -16,6 +16,7 @@
  @media screen and (max-width: 999px) {
   
   .nav-link {
+    font-size:1em !important;
     letter-spacing: 1px !important;
     width: 7.5em !important;
 
@@ -107,7 +108,7 @@
   .habout {
     color: #fff;
     font-family: 'Cairo', 'Arial, Helvetica, sans-serif';
-    text-shadow: 3px 2px 5px #f2a8a8;
+    text-shadow: 3px 2px 2px #f2a8a8;
     font-size: 2em;
     font-weight:bolder;
     text-align: center;
@@ -163,7 +164,7 @@
   text-align: center;
   font-size: 1em;
   font-weight: bold;
-  color: #f0e5e5;
+  color: #f6f0f0;
   width: 100%;
   padding-right: 3em;
   padding-top: 0rem;
@@ -225,7 +226,7 @@ color:#c9c9c9;
 
 .contact-link:hover {
   text-decoration: none; 
-  color:#240b0b;
+  color:#fcf19e;
 }
 
 .contact-link:hover::before {
@@ -272,11 +273,11 @@ color:#c9c9c9;
   justify-content: center;
   align-items: center;
   font-family: 'Cairo', 'Montserrat', 'Merriweather', 'Open Sans', 'Lato', Helvetica;
-  font-size: 1.1em;
+  font-size: 1.15em;
   font-weight: bold;
   text-align: center;
   letter-spacing: 4px;
-  width: 9.25em;
+  width: 9.18em;
   height: 2.5em;
   border: none;
   /* color: #fcfcfc; */
@@ -294,19 +295,20 @@ color:#c9c9c9;
   bottom: 0;
   left: 0;
   width: 0;
-  height: 2px;
-  background-color: #e88c8c;
+  height: 2.5px;
+  background-color: #9c2222;
   transition: width 0.3s ease;
-  content: '\260E'; /* Unicode for phone icon */
+  /* content: '\260E';  */
   margin-right: 5px;
 }
 
 .nav-link:hover {
-  color: #cee3ca;
+  color: #fbfcb4;
 }
 
 .nav-link:hover::before {
   width: 100%;
+  color: #fbfcb4;
 }
 
 .nav-link span {
@@ -833,14 +835,14 @@ color:#c9c9c9;
 
 .h2about {
   font-size: 3em;
-  letter-spacing: 0.2em;
+  letter-spacing: 0.3em;
   font-family: 'Cairo', 'Arial, Helvetica, sans-serif';
   color: #f8e6ca;
-  font-weight: bold;
-  text-shadow: 1px 1px 5px #f2a8a8;
+  font-weight: 550;
+  text-shadow: 1px 1px 2px #f2a8a8;
   border-bottom: 1px solid #dbc7c7;
   text-align: left;
-  padding: 1.05em 0em 1em 2.5em;
+  padding: 1.05em 0em 1em 1.80em;
   animation: slideout 2s ease-out; 
  }
 
@@ -2058,7 +2060,7 @@ height: 2rem;
   color: white;
   font-size: 2.7em ;
   font-weight: 450;
-  letter-spacing: 9px;
+  letter-spacing: 10px;
   justify-content: start;
 }
 
