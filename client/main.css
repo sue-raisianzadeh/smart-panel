@@ -226,7 +226,7 @@ color:#c9c9c9;
 
 .contact-link:hover {
   text-decoration: none; 
-  color:#fcf19e;
+  color:#faf1b2;
 }
 
 .contact-link:hover::before {
@@ -281,7 +281,7 @@ color:#c9c9c9;
   height: 2.5em;
   border: none;
   /* color: #fcfcfc; */
-  padding: 60px; 
+  padding: 58px; 
   color:#d8dddd!important;
   border-radius: 15px;
   text-decoration: none;
@@ -303,12 +303,11 @@ color:#c9c9c9;
 }
 
 .nav-link:hover {
-  color: #fbfcb4;
+  color: #fefed6 !important;
 }
 
 .nav-link:hover::before {
   width: 100%;
-  color: #fbfcb4;
 }
 
 .nav-link span {
@@ -1678,7 +1677,7 @@ height: 2rem;
 
   .h3serv {
     font-size: 1.2rem; 
-    padding-left: 3rem; 
+    padding-left: 2.5rem; 
     padding-bottom: 2rem;
     letter-spacing: 2px; 
 
@@ -1751,7 +1750,7 @@ height: 2rem;
     padding-right:2rem;
   }
   .picbanserv {
-    background-image: url('./assets/bg/new--.png');
+    background-image: url('./assets/new--.png');
     background-size: cover;
     width: 100%;
     height: auto;
@@ -1771,7 +1770,7 @@ height: 2rem;
     color: rgb(246, 230, 230);
     /* color: rgb(94, 32, 32);  */
      text-shadow: 2px 2px 2px #f2a8a8;
-     padding-left: 8rem;
+     padding-left: 5.5rem;
      justify-content: center; 
      align-items: center;
      font-weight: 550;
@@ -2245,7 +2244,7 @@ height: 2rem;
 
 .arrow {
   font-size: 4rem !important;
-  color: #141111;
+  color: #5a0d0d;
   font-weight: 700;
   position: absolute;
   top: 50%;
@@ -2366,6 +2365,7 @@ height: 2rem;
   align-items: center;
   color: #141313;
   font-size: 1.2em;
+  padding: 0rem 1.75rem 1rem 1.75rem !important;
 }
 
 .icon {

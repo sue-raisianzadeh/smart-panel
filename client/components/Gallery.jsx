@@ -1,13 +1,13 @@
 import React, { useState } from 'react'
 import { Modal, Image } from 'react-bootstrap'
-import House1 from '../assets/1house.png'
-import House2 from '../assets/house1.png'
-import House11 from '../assets/3house.png'
-import House16 from '../assets/1house6.png'
-import House14 from '../assets/4house.png'
-import House13 from '../assets/1housesp.png'
-import House15 from '../assets/1house8.png'
-import House17 from '../assets/1house7.png'
+import House1 from '../assets/houses/1house.png'
+import House2 from '../assets/houses/house1.png'
+import House11 from '../assets/houses/3house.png'
+import House16 from '../assets/houses/1house6.png'
+import House14 from '../assets/houses/4house.png'
+import House13 from '../assets/houses/1housesp.png'
+import House15 from '../assets/houses/1house8.png'
+import House17 from '../assets/houses/1house7.png'
 import Footer from './Footer'
 
 const Gallery = () => {
@@ -87,10 +87,10 @@ const Gallery = () => {
               className="modal-content "
             />
             <div className="arrow arrow-left" onClick={prevImage}>
-              &#8592;
+              &#10139;
             </div>
             <div className="arrow arrow-right" onClick={nextImage}>
-              &#8594;
+              &#10139;
             </div>
             <div className="download-button">
               <a

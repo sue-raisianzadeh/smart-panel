@@ -1,6 +1,6 @@
 import React from 'react'
-import Bgproject from '../assets/bg/bgproject1.png'
-import Logo1 from '../assets/Logo1.png'
+import Bgproject from '../assets/houses/1housesp.png'
+// import Logo1 from '../assets/Logo1.png'
 
 const Projects = () => {
   return (
@@ -22,13 +22,13 @@ const Projects = () => {
       <div className="grid-wrapper">
         <div className="grid1">
           <div className="projectl">
-            <img className="logopic" src={Logo1} alt="Logo1" />
+            {/* <img className="logopic" src={Logo1} alt="Logo1" /> */}
             <h2 className="h2pro1">peoject1</h2>
             <p className="p4">this is project 1</p>
           </div>
         </div>
         <div className="grid2">
-          <img className="logopic" src={Logo1} alt="Logo1" />
+          {/* <img className="logopic" src={Logo1} alt="Logo1" /> */}
           <h2 className="h2pro2">project2</h2>
 
           <p className="pp4">
@@ -52,7 +52,7 @@ const Projects = () => {
         </div>
 
         <div className="grid3">
-          <img className="logopic" src={Logo1} alt="Logo1" />
+          {/* <img className="logopic" src={Logo1} alt="Logo1" /> */}
           <h2 className="h2pro2">
             {/* <RiFlashlightLine size={45} /> */}
             Project3
