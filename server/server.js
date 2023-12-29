@@ -1,4 +1,5 @@
 const express = require('express')
+const path = require('path')
 const knex = require('knex')(require('./database/knexfile').development)
 const nodemailer = require('nodemailer')
 require('dotenv').config()
@@ -16,7 +17,7 @@ const transporter = nodemailer.createTransport({
 })
 
 server.use(express.json())
-server.use(express.static('dist'))
+server.use(express.static(path.join(__dirname, '../public')))
 
 server.post('/api/add-user', async (req, res) => {
   const { name, email, phone, message } = req.body
