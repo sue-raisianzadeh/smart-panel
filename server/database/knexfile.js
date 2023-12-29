@@ -3,12 +3,15 @@
 /**
  * @type { Object.<string, import("knex").Knex.Config> }
  */
+const path = require('path')
+
 module.exports = {
   development: {
     client: 'sqlite3',
     connection: {
-      filename: './database/dev.sqlite3',
+      filename: path.join(__dirname, 'dev.sqlite3'), // Use an absolute path
     },
+    useNullAsDefault: true,
   },
 
   staging: {

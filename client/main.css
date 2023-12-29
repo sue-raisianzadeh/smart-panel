@@ -4,9 +4,25 @@
   margin:0px !important;
   overflow-x: hidden;
  } 
+ @media (max-width: 1075px) {
+  .nav-link {
+    letter-spacing: 1px !important;
+    width: 8em !important;
 
+  }
+ 
+}
+
+ @media screen and (max-width: 999px) {
+  
+  .nav-link {
+    letter-spacing: 1px !important;
+    width: 7.5em !important;
+
+  }
+} 
 /* Responsive styles */
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1005px) {
   
   .top-line {
     flex-direction: column;
@@ -49,8 +65,8 @@
   }
 
   .nav-link {
-    width: 7em;
-    margin: 0 7px; /* Add spacing around text in NavBar */
+    width: 6em;
+    margin: 0 7px; 
   }
   
 }
@@ -260,7 +276,7 @@ color:#c9c9c9;
   font-weight: bold;
   text-align: center;
   letter-spacing: 4px;
-  width: 10em;
+  width: 9.25em;
   height: 2.5em;
   border: none;
   /* color: #fcfcfc; */
@@ -952,6 +968,7 @@ padding: 0px;
   font-size: 3em;
   font-family: 'Cairo', 'Arial, Helvetica, sans-serif';
   color: #f7e9d3;
+  letter-spacing: 2px;
   font-weight: bold;
   text-shadow: 2px 1px 5px #f2a8a8;
   text-align: left;
@@ -1217,7 +1234,7 @@ height: 4.75rem;
 .pabout{
   font-size: 1.35em;
   color: #f4e7e0;
-  text-align:justify;
+  /* text-align:justify; */
   padding:1.75em 0.5em 1.75em 1.5em;
   /* text-shadow: #000 2px; */
   word-spacing:-5px;
@@ -1517,7 +1534,7 @@ height: 2.5em;
   font-size: 1.25em;
   font-family: 'Cairo', 'Arial, Helvetica, sans-serif';
   color: #faf2ed;
-  text-align:justify;
+  /* text-align:justify; */
   padding:1.5em;
   /* text-shadow: #000 2px; */
   word-spacing:-5.2px;
@@ -1577,11 +1594,13 @@ height: 2rem;
 }
     
   /* Services */
-  @media screen and (max-width: 900px) {
+  @media screen and (max-width: 100px) {
     .h1serv {
       padding-top: 14rem !important;
       font-size: 3rem !important;
-      padding-left: 3,5rem !important; 
+      padding-left: 3.5rem !important; 
+      letter-spacing: 6px; 
+
  
     }
   
@@ -1589,6 +1608,8 @@ height: 2rem;
       font-size: 1.3rem; 
       padding-left: 3.5rem !important; 
       padding-bottom: 2rem;
+      letter-spacing: 2px; 
+
     }
   
   }
@@ -1604,6 +1625,8 @@ height: 2rem;
     padding-top: 18rem !important;
     font-size: 2.2rem; 
     padding-left: 1rem !important; 
+    letter-spacing: 5px; 
+
 
   }
 
@@ -1611,6 +1634,8 @@ height: 2rem;
     font-size: 1.3rem; 
     padding-left: 1rem; 
     padding-bottom: 2rem;
+    letter-spacing: px; 
+
   }
 
   .h2services, .h3services, .pbanner {
@@ -1618,12 +1643,12 @@ height: 2rem;
   }
 
   /* Adjust the service images and container styles */
-   .services-wraper,
+   /* .services-wraper,
   .section1-services, .section2-services, 
   .section3-services, .section4-services,
   .section5-services {
     grid-template-columns: 1fr; 
-  }
+  } */
 
   .servicepic1, .servicepic2, .servicepic3, .servicepic4
    {
@@ -1644,7 +1669,8 @@ height: 2rem;
   .h1serv {
     padding-top: 5.5rem !important;
     font-size: 1.75rem; 
-    padding-left: 3rem; 
+    padding-left: 3rem;
+    letter-spacing: 4px; 
 
   }
 
@@ -1652,6 +1678,8 @@ height: 2rem;
     font-size: 1.2rem; 
     padding-left: 3rem; 
     padding-bottom: 2rem;
+    letter-spacing: 2px; 
+
   }
   .pserve-section5-6 {
     padding: 2rem !important;
@@ -1659,17 +1687,21 @@ height: 2rem;
 
 }
 /* Styles for mobile phones */
- @media screen and (max-width: 480px) {
+ @media screen and (max-width: 400px) {
   .h1serv {
     font-size: 1.55rem;
     padding-top: 4.75rem;
     padding-left: 2.2rem;
+    letter-spacing: 4px; 
+
   }
 
   .h3serv {
     font-size: 1.1rem;
     padding-bottom: 1.75rem;
     padding-left: 2.2rem;
+    letter-spacing: 2px; 
+
  
   }
 
@@ -1816,15 +1848,14 @@ height: 2rem;
       } 
       
       
-      .section1-services, .section2-services, 
-      .section3-services, .section4-services, 
-      .section8-services {
-        display: grid;
-        /* grid-template-columns: repeat(3, auto); */
-       
-        grid-template-columns: repeat( auto-fit, minmax(250px, 1fr) );
+ .section1-services, .section2-services, 
+ .section3-services, .section4-services, 
+ .section5-services {
+  display: grid;
+  /* grid-template-columns: repeat(3, auto); */  
+  grid-template-columns: repeat( auto-fit, minmax(250px, 1fr) );
   height: auto;
-  width: 80%;
+  width: 95%;
   margin: 0;
   font-family: 'Cairo', 'Montserrat', 'Arial, Helvetica, sans-serif';
   color: white;
@@ -1841,7 +1872,7 @@ height: 2rem;
   display: grid;
   grid-template-rows: repeat(auto-fit, minmax(250px, 1fr));
   height: auto;
-  width: 80%;
+  width: 100%;
   margin: 0;
   font-family: 'Cairo', 'Montserrat', 'Arial, Helvetica, sans-serif';
   color: white;
@@ -1851,7 +1882,7 @@ height: 2rem;
   opacity: 0;
   margin: 0px;
   animation: fade-in 2s ease-in-out forwards;
-  padding-left: 10em;
+  padding: 3em;
 }
 .pic6-7-in-section5 {
   display: grid;
@@ -1859,13 +1890,14 @@ height: 2rem;
 }
 .h2serveboby {
   letter-spacing: 4px;
-  padding: 2rem 2rem 0.5rem 2rem;
+  padding: 6rem 3rem 0.5rem 3rem !important;
+  width: 100%;
 }
 .pserve-section {
   font-size: 1.5rem;
   padding: 1rem ;
   justify-content: end;
-  width: 95%;
+  width: 100%;
  }
   .servicepic1, .servicepic2, 
   .servicepic3, .servicepic4 {
@@ -1886,14 +1918,14 @@ height: 2rem;
     border-radius: 14rem 15rem 13rem 13rem;
   }
   .servicepic3 {
-   border-radius: 0rem 12rem 12rem 8rem;
+   border-radius: 1rem 12rem 12rem 8rem;
    }
   .servicepic4 {
     border-radius: 8rem 6rem 13rem 11rem;
    }
 
   .servicepic5, .servicepic6  {
-    width: 50rem;
+    width: 100%;
     max-height: auto;
     border-radius: 4rem;
     margin-left: 0px;
@@ -1921,14 +1953,10 @@ height: 2rem;
     align-items: center;
  
   } 
-  
-  .servicepic8 {
-    width: 50%;
-    }  
-    .pserve-section5-6 {
-      width: 95%;
-      font-size: 1.5rem;
-  padding: 2rem;
+  .pserve-section5-6 {
+  width: 100%;
+  font-size: 1.5rem;
+  padding: 1rem 3rem 3rem 3rem;
   justify-content: center;
   text-align: left;
     }

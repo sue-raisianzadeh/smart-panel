@@ -17,7 +17,7 @@ import Footer from './Footer'
 const AboutUs = () => {
   useEffect(() => {
     AOS.init({
-      duration: 500, // You can also fine-tune other options
+      duration: 700,
     })
   }, [])
   return (
