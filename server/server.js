@@ -24,6 +24,8 @@ const transporter = nodemailer.createTransport({
 server.use(express.json())
 server.use(express.static(path.join(__dirname, '../public')))
 
+server.use(express.static(path.join(__dirname, '../public')))
+
 server.post('/api/add-user', async (req, res) => {
   const { name, email, phone, message } = req.body
 
@@ -65,6 +67,13 @@ server.post('/api/add-user', async (req, res) => {
     res.status(500).json({ error: error.message })
   }
 })
+
+if (process.env.NODE_ENV === 'production') {
+  server.use(express.static(path.join(__dirname, '../dist')))
+  server.get('*', (_, res) => {
+    res.sendFile(path.join(__dirname, '../dist/index.html'))
+  })
+}
 
 server.listen(port, () => {
   console.log(`Server is running on port ${port}`)
