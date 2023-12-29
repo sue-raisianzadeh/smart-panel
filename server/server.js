@@ -1,6 +1,11 @@
 const express = require('express')
 const path = require('path')
-const knex = require('knex')(require('./database/knexfile').development)
+
+const env = process.env.NODE_ENV || 'development'
+const knexfile = require('./database/knexfile')
+
+const knex = require('knex')
+const db = knex(knexfile[env])
 const nodemailer = require('nodemailer')
 require('dotenv').config()
 
@@ -24,7 +29,7 @@ server.post('/api/add-user', async (req, res) => {
 
   try {
     // Insert user data into 'smartpanel' table
-    await knex('smartpanel').insert({ name, email, phone, message })
+    await db('smartpanel').insert({ name, email, phone, message })
 
     // Send confirmation email to the user
     const userMailOptions = {
