@@ -1,5 +1,5 @@
 import React from 'react'
-import Bgproject from '/assets/houses/1housesp.png'
+import Bgproject from '/assets/1housesp.png'
 // import Logo1 from '/assets/Logo1.png'
 
 const Projects = () => {
