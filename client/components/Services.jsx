@@ -64,7 +64,7 @@ const Services = () => {
           <div>
             <br />
             <h3 data-aos="fade-up" className="h3serv">
-              Building Construction
+              Smart Panel Homes Ltd
             </h3>
           </div>
         </div>
