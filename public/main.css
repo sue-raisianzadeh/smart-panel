@@ -1851,8 +1851,8 @@ height: 2rem;
       
       
  .section1-services, .section2-services, 
- .section3-services, .section4-services, 
- .section5-services {
+ .section3-services, .section4-services
+  {
   display: grid;
   /* grid-template-columns: repeat(3, auto); */  
   grid-template-columns: repeat( auto-fit, minmax(250px, 1fr) );
@@ -1870,7 +1870,7 @@ height: 2rem;
   /* padding-left: 1em; */
 }
 
-.section5-services {
+/* .section5-services {
   display: grid;
   grid-template-rows: repeat(auto-fit, minmax(250px, 1fr));
   height: auto;
@@ -1885,11 +1885,11 @@ height: 2rem;
   margin: 0px;
   animation: fade-in 2s ease-in-out forwards;
   padding: 3em;
-}
-.pic6-7-in-section5 {
+} */
+/* .pic6-7-in-section5 {
   display: grid;
   grid-template-columns: repeat(2, auto);
-}
+} */
 .h2serveboby {
   letter-spacing: 4px;
   padding: 6rem 3rem 0.5rem 3rem !important;
@@ -1926,7 +1926,7 @@ height: 2rem;
     border-radius: 8rem 6rem 13rem 11rem;
    }
 
-  .servicepic5, .servicepic6  {
+  /* .servicepic5, .servicepic6  {
     width: 100%;
     max-height: auto;
     border-radius: 4rem;
@@ -1937,13 +1937,13 @@ height: 2rem;
     justify-content: center;
     transition: opacity 0.3s ease;
  
-  } 
- .servicepic5:hover, .servicepic6:hover, .servicepic7:hover{
+  }  */
+ /* .servicepic5:hover, .servicepic6:hover, .servicepic7:hover{
     transform: scale(1.05); /* Scale the image by 1.1 on hover */
-    opacity: 0.1;
-  }
+    /* opacity: 0.1;
+  } */
 
-  .servicepic7, .servicepic8 {
+  /* .servicepic7, .servicepic8 {
     width: 100%;
     height: auto;
     border-radius: 4rem;
@@ -1954,14 +1954,14 @@ height: 2rem;
     justify-content: center;
     align-items: center;
  
-  } 
-  .pserve-section5-6 {
+  }  */ 
+   .pserve-section5-6 {
   width: 100%;
   font-size: 1.5rem;
   padding: 1rem 3rem 3rem 3rem;
   justify-content: center;
   text-align: left;
-    }
+    } 
 
 
 
@@ -2068,7 +2068,7 @@ height: 2rem;
   padding-bottom: 1em;
   font-family: 'Cairo', 'Montserrat', 'Arial, Helvetica, sans-serif';
   font-size: 1.5em ;
-  text-align: justify;
+  text-align: left;
   color: white;
   line-height: 2em;
   font-weight: normal;
@@ -2161,7 +2161,7 @@ height: 2rem;
   }
   
   .modal-image-container:hover .modal-image-overlay {
-  opacity: 1;
+  opacity: 0;
 }
 .modal-container {
   background-color: transparent !important;

@@ -234,105 +234,83 @@ const Services = () => {
             </div>
           </div>{' '}
         </div>
-        <div className="section5-services">
-          <div className="section-pic5and6">
-            <h2
-              data-aos="fade-down-right"
-              className="h2serveboby"
-              style={{ paddingTop: '2rem' }}
-            >
-              The ultimate in Patio & Pergola design options
-            </h2>
-            <p data-aos="fade-up-left" className="pserve-section5-6">
-              A SolarSpan outdoor shaded living area offers the ultimate freedom
-              in design. Select from a wide choice of modern COLORBOND steel
-              colours for your SolarSpan roof, unique ceiling profiles, designer
-              roofing accessories in COLORBOND and a selection of stylish posts
-              and beams available in prepainted steel, aluminium or stained
-              timber. SolarSpan creates wide open spaces with a ceiling-like
-              finish due to its long unsupported spans. This allows home owners
-              to further customise their design other lighting solutions. with
-              ceiling accessories such as downlights, fans and SolarSpan truly
-              allows you to create functional and beautiful outdoor living areas
-              that complement your home and improve your outdoor lifestyle.
-            </p>
-            <div className="galpic">
-              <div className="gallery-container">
-                {images.map((image, index) => (
-                  <div
-                    key={index}
-                    className="image-container"
-                    onClick={() => openModal(index)}
-                    onKeyDown={() => openModal(index)} // for accessibility
-                    role="button" // indicates the div is a button
-                    tabIndex="0" // allows keyboard navigation
-                  >
-                    <img
-                      data-aos="fade-down-left"
-                      src={image}
-                      alt={`House ${index + 1}`}
-                      className="gallery-image"
-                    />
-                    <div className="image-overlay" />
-                  </div>
-                ))}
-              </div>
-            </div>
-
-            {modalVisible && (
-              <Modal
-                show={modalVisible}
-                onHide={closeModal}
-                dialogClassName="modal-container modal-xl"
+        {/* <div className="section5-services"> */}
+        {/* <div className="section-pic5and6"> */}
+        <h2
+          data-aos="fade-down-right"
+          className="h2serveboby"
+          style={{ paddingTop: '2rem' }}
+        >
+          The ultimate in Patio & Pergola design options
+        </h2>
+        <p data-aos="fade-up-left" className="pserve-section5-6">
+          A SolarSpan outdoor shaded living area offers the ultimate freedom in
+          design. Select from a wide choice of modern COLORBOND steel colours
+          for your SolarSpan roof, unique ceiling profiles, designer roofing
+          accessories in COLORBOND and a selection of stylish posts and beams
+          available in prepainted steel, aluminium or stained timber. SolarSpan
+          creates wide open spaces with a ceiling-like finish due to its long
+          unsupported spans. This allows home owners to further customise their
+          design other lighting solutions. with ceiling accessories such as
+          downlights, fans and SolarSpan truly allows you to create functional
+          and beautiful outdoor living areas that complement your home and
+          improve your outdoor lifestyle.
+        </p>
+        <div className="galpic">
+          <div className="gallery-container">
+            {images.map((image, index) => (
+              <div
+                key={index}
+                className="image-container modal-lg"
+                onClick={() => openModal(index)}
+                onKeyDown={() => openModal(index)} // for accessibility
+                role="button" // indicates the div is a button
+                tabIndex="0" // for keyboard navigation
               >
-                <Modal.Body>
-                  <Image
-                    src={images[selectedImage]}
-                    alt={`House ${selectedImage + 1}`}
-                    className="modal-content "
-                  />
-                  <div className="arrow arrow-left" onClick={prevImage}>
-                    &#11164;
-                  </div>
-                  <div className="arrow arrow-right" onClick={nextImage}>
-                    &#11166;
-                  </div>
-                  <div className="download-button">
-                    <a
-                      href={images[selectedImage]}
-                      download={`House_${selectedImage + 1}.png`}
-                    >
-                      Download
-                    </a>
-                    <div className="close" onClick={closeModal}>
-                      &#10005;
-                    </div>
-                  </div>
-                </Modal.Body>
-              </Modal>
-            )}
-            {/* <div className="pic6-7-in-section5">
-              <img className="servicepic6" src={Services6} alt="Services6" />
-              <div>
-                <img className="servicepic5" src={Services5} alt="Services5" />
+                <img
+                  src={image}
+                  alt={`House ${index + 1}`}
+                  className="gallery-image"
+                />
+                <div className="image-overlay" />
               </div>
-            </div> */}
-
-            {/* <div>
-              <img className="servicepic7" src={Services7} alt="Services7" />
-            </div> */}
+            ))}
           </div>
         </div>
-        {/* <div className="section8-services">
-          <div>
-            <img
-              data-aos="fade-down-right"
-              className="servicepic8"
-              src={Services8}
-              alt="Services8"
-            />
-          </div>
-        </div> */}
+
+        {modalVisible && (
+          <Modal
+            show={modalVisible}
+            onHide={closeModal}
+            dialogClassName="modal-container modal-xl"
+          >
+            <Modal.Body>
+              <Image
+                src={images[selectedImage]}
+                alt={`House ${selectedImage + 1}`}
+                className="modal-content "
+              />
+              <div className="arrow arrow-left" onClick={prevImage}>
+                &#11164;
+              </div>
+              <div className="arrow arrow-right" onClick={nextImage}>
+                &#11166;
+              </div>
+              <div className="download-button">
+                <a
+                  href={images[selectedImage]}
+                  download={`House_${selectedImage + 1}.png`}
+                >
+                  Download
+                </a>
+                <div className="close" onClick={closeModal}>
+                  &#10006;
+                </div>
+              </div>
+            </Modal.Body>
+          </Modal>
+        )}
+        {/* </div> */}
       </div>
       <Footer />
     </div>

@@ -63,11 +63,11 @@ const Gallery = () => {
           {images.map((image, index) => (
             <div
               key={index}
-              className="image-container"
+              className="image-container modal-lg"
               onClick={() => openModal(index)}
               onKeyDown={() => openModal(index)} // for accessibility
               role="button" // indicates the div is a button
-              tabIndex="0" // allows keyboard navigation
+              tabIndex="0" // for keyboard navigation
             >
               <img
                 src={image}
