@@ -1751,7 +1751,7 @@ height: 2rem;
     padding-right:2rem;
   }
   .picbanserv {
-    background-image: url('./assets/new--.png');
+    background-image: url('/assets/new--.png');
     background-size: cover;
     width: 100%;
     height: auto;

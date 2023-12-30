@@ -3,14 +3,14 @@ import { Modal, Image } from 'react-bootstrap'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
 // import Servisesbg from '../assets/bg/new--.png'
-import Services1 from '../assets/services/Services1.png'
-import Services2 from '../assets/services/Services2.png'
-import Services3 from '../assets/services/Services3.png'
-import Services4 from '../assets/services/Services4.png'
-import Services5 from '../assets/services/services5.png'
-import Services6 from '../assets/services/services6.jpg'
-import Services7 from '../assets/services/services7.png'
-import Services8 from '../assets/services/services8.png'
+import Services1 from '/assets/services/Services1.png'
+import Services2 from '/assets/services/Services2.png'
+import Services3 from '/assets/services/Services3.png'
+import Services4 from '/assets/services/Services4.png'
+import Services5 from '/assets/services/services5.png'
+import Services6 from '/assets/services/services6.jpg'
+import Services7 from '/assets/services/services7.png'
+import Services8 from '/assets/services/services8.png'
 import Footer from './Footer'
 import {
   FaTools,
@@ -292,10 +292,10 @@ const Services = () => {
                     className="modal-content "
                   />
                   <div className="arrow arrow-left" onClick={prevImage}>
-                    &#8592;
+                    &#11164;
                   </div>
                   <div className="arrow arrow-right" onClick={nextImage}>
-                    &#8594;
+                    &#11166;
                   </div>
                   <div className="download-button">
                     <a

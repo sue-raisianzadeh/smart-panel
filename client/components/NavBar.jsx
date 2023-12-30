@@ -1,7 +1,7 @@
 // NavBar.jsx
 import React from 'react'
 import { Link, useLocation } from 'react-router-dom'
-import Logo1 from '../assets/icons/logo-smart1.png'
+import Logo1 from '/assets/icons/logo-smart1.png'
 import {
   FaEnvelope,
   FaPhoneAlt,
