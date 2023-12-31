@@ -86,7 +86,12 @@ function ContactUs() {
       <div className="contact-container">
         <div className="row justify-content-center align-items-center">
           <div className="col-md-6 text-center">
-            <h1 className="get-in-touch text-white">GET IN TOUCH</h1>
+            <h1
+              className="get-in-touch text-white"
+              style={{ paddingTop: '2em' }}
+            >
+              GET IN TOUCH
+            </h1>
           </div>
         </div>
         <div className="row justify-content-center align-items-center">

@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react'
 import { Modal, Image } from 'react-bootstrap'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
-// import Servisesbg from '../assets/bg/new--.png'
+// import Servisesbg from '/assets/new--.png'
 import Services1 from '/assets/services/Services1.png'
 import Services2 from '/assets/services/Services2.png'
 import Services3 from '/assets/services/Services3.png'
@@ -51,7 +51,17 @@ const Services = () => {
 
   return (
     <div className="containerservices">
-      <div className="bannerservices">
+      <div
+        className="bannerservices"
+        // style={{
+        //   backgroundImage: `url(${Servisesbg})`,
+        //   backgroundSize: 'cover',
+        //   backgroundPosition: 'center',
+        //   backgroundRepeat: 'no-repeat',
+        //   height: '100vh',
+        //   width: '100%',
+        // }}
+      >
         <div data-aos="fade-down-right" className="picbanserv">
           <div className="banner-content"></div>
           <h1 data-aos="fade-down-right" className="h1serv">
@@ -74,12 +84,12 @@ const Services = () => {
           style={{ width: '36%', paddingTop: '3em' }}
         >
           <h2 className="h2services">
-            <FaBuilding size={31} style={{ marginRight: '5px' }} />
+            <FaBuilding size={38} style={{ marginRight: '5px' }} />
             Our Products And Services:
           </h2>
           <br />
           <h3 className="h3services">
-            <FaAward size={31} style={{ marginRight: '5px' }} />
+            <FaAward size={38} style={{ marginRight: '5px' }} />
             Licensed Practising Builders (LPB), Building company.
           </h3>
           <p className="pbanner">
@@ -87,7 +97,7 @@ const Services = () => {
             hands
           </p>
           <h3 className="h3services">
-            <FaDraftingCompass size={31} style={{ marginRight: '5px' }} />
+            <FaDraftingCompass size={38} style={{ marginRight: '5px' }} />
             Architectural specialists
           </h3>
           <p className="pbanner">
@@ -96,7 +106,7 @@ const Services = () => {
           </p>
           <div className="service-item">
             <h3 className="h3services">
-              <FaHammer size={31} style={{ marginRight: '5px' }} />
+              <FaHammer size={38} style={{ marginRight: '5px' }} />
               Engineering specialists
             </h3>
             <p className="pbanner">
@@ -107,7 +117,7 @@ const Services = () => {
 
           <div className="service-item">
             <h3 className="h3services">
-              <FaWrench size={31} style={{ marginRight: '5px' }} />
+              <FaWrench size={38} style={{ marginRight: '5px' }} />
               Plumbing and Electrical
             </h3>
             <p className="pbanner">
@@ -118,7 +128,7 @@ const Services = () => {
 
           <div className="service-item">
             <h3 className="h3services">
-              <FaTasks size={31} style={{ marginRight: '5px' }} />
+              <FaTasks size={38} style={{ marginRight: '5px' }} />
               Site Management
             </h3>{' '}
             <p className="pbanner">
