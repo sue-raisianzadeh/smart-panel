@@ -59,7 +59,7 @@ const Gallery = () => {
         for advertising, marketing, or to imply endorsement.
       </p>
       <div className="galpic">
-        <div className="gallery-container">
+        <div className="gallery-container blur-load">
           {images.map((image, index) => (
             <div
               key={index}
