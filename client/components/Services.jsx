@@ -24,7 +24,7 @@ import { FaWrench, FaAward } from 'react-icons/fa6'
 const Services = () => {
   useEffect(() => {
     AOS.init({
-      duration: 550,
+      duration: 650,
     })
   }, [])
   const [modalVisible, setModalVisible] = useState(false)
@@ -51,33 +51,7 @@ const Services = () => {
 
   return (
     <div className="containerservices">
-      <div
-        className="bannerservices"
-        // style={{
-        //   backgroundImage: `url(${Servisesbg})`,
-        //   backgroundSize: 'cover',
-        //   backgroundPosition: 'center',
-        //   backgroundRepeat: 'no-repeat',
-        //   height: '100vh',
-        //   width: '100%',
-        // }}
-      >
-        <div data-aos="fade-down-right" className="picbanserv">
-          <div className="banner-content"></div>
-          <h1 data-aos="fade-down-right" className="h1serv">
-            <FaTools
-              size={58}
-              style={{ color: 'rgb(132, 11, 11)', marginRight: '8px' }}
-            />
-            Services
-          </h1>
-          <div>
-            <br />
-            <h3 data-aos="fade-up" className="h3serv">
-              Smart Panel Homes Ltd
-            </h3>
-          </div>
-        </div>
+      <div className="bannerservices">
         {/* Service items */}
         <div
           className="textbanserv"
@@ -89,7 +63,7 @@ const Services = () => {
           </h2>
           <br />
           <h3 className="h3services">
-            <FaAward size={38} style={{ marginRight: '5px' }} />
+            <FaAward size={35} style={{ marginRight: '5px' }} />
             Licensed Practising Builders (LPB), Building company.
           </h3>
           <p className="pbanner">
@@ -97,7 +71,7 @@ const Services = () => {
             hands
           </p>
           <h3 className="h3services">
-            <FaDraftingCompass size={38} style={{ marginRight: '5px' }} />
+            <FaDraftingCompass size={35} style={{ marginRight: '5px' }} />
             Architectural specialists
           </h3>
           <p className="pbanner">
@@ -106,7 +80,7 @@ const Services = () => {
           </p>
           <div className="service-item">
             <h3 className="h3services">
-              <FaHammer size={38} style={{ marginRight: '5px' }} />
+              <FaHammer size={35} style={{ marginRight: '5px' }} />
               Engineering specialists
             </h3>
             <p className="pbanner">
@@ -117,7 +91,7 @@ const Services = () => {
 
           <div className="service-item">
             <h3 className="h3services">
-              <FaWrench size={38} style={{ marginRight: '5px' }} />
+              <FaWrench size={35} style={{ marginRight: '5px' }} />
               Plumbing and Electrical
             </h3>
             <p className="pbanner">
@@ -128,13 +102,29 @@ const Services = () => {
 
           <div className="service-item">
             <h3 className="h3services">
-              <FaTasks size={38} style={{ marginRight: '5px' }} />
+              <FaTasks size={35} style={{ marginRight: '5px' }} />
               Site Management
             </h3>{' '}
             <p className="pbanner">
               With these builds we do like the client to be present on a regular
               basis during the connstruction phase.{' '}
             </p>
+          </div>
+        </div>
+        <div data-aos="fade-down-right" className="picbanserv">
+          <div className="banner-content"></div>
+          <h1 data-aos="fade-down-right" className="service-title h1serv ">
+            <FaTools
+              size={58}
+              style={{ color: 'rgb(132, 11, 11)', marginRight: '8px' }}
+            />
+            Services
+          </h1>
+          <div>
+            <br />
+            <h3 data-aos="fade-up" className="service-subtitle h3serv ">
+              Smart Panel Homes Ltd
+            </h3>
           </div>
         </div>
       </div>
