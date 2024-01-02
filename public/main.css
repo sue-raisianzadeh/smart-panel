@@ -2022,6 +2022,7 @@ height: 2rem;
   justify-content: center;
   grid-gap: 1.2em;
   padding: 20px;
+  opacity: 1;
   margin: 20px;
   animation: fade-in 2s ease-in forwards;
 }
@@ -2116,7 +2117,6 @@ height: 2rem;
   width: auto;
   max-width: 100%;
 }
-
 
 .modal-content {
   background-color: rgba(23, 20, 20, 0.95); /* Increase the alpha for a darker background */
