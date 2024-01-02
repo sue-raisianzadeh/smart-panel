@@ -325,7 +325,7 @@ color:#c9c9c9;
   background-color: rgb(94, 32, 32);
   color: white;
   text-align: center;
-  padding: 2em;
+  padding: 1.75em;
   gap:2em;
 }
 
@@ -335,7 +335,7 @@ color:#c9c9c9;
 
 /* Contact Us section */
 .contact-footer-colum {
-  padding: 2em;
+  padding: 1.75em;
   text-align: center; 
 }
 
@@ -350,7 +350,7 @@ color:#c9c9c9;
 
 .company-info-footer {
   text-align: left;
-  padding-bottom: 1em; 
+  padding-bottom: 0.5em; 
 }
 
 .contact-information,
@@ -1737,14 +1737,14 @@ height: 2rem;
     width: auto!important;
     padding: 2rem 2rem 2rem 6rem;
     line-height: 2.70rem;
-    animation: slideIn 2s ease-in-out forwards; 
+    /* animation: fade-in 2s ease-in-out forwards;  */
   }
   /* bannerside */
   .h3services, .h2services, .pbanner{
     padding: 0rem 0rem 0rem 1rem;
     color:#efebeb;
     font-weight: 400;
-    animation: slideIn 2s ease-in-out forwards; 
+    /* animation: slideIn 2s ease-in-out forwards;  */
   }
   .pbanner {
     font-size: 1rem;
@@ -1755,7 +1755,7 @@ height: 2rem;
     background-size: cover;
     width: 100%;
     height: auto;
-    animation: slideout 2s ease-in-out forwards; 
+    /* animation: slideout 2s ease-in-out forwards;  */
 
 }
    
@@ -1776,7 +1776,6 @@ height: 2rem;
      align-items: center;
      font-weight: 550;
      margin: 0;
-     animation: slidein 2s ease-in-out forwards; 
 
         /* background-color: transparent; */
         /* display: inline-block; */
@@ -1789,14 +1788,12 @@ height: 2rem;
         padding-top: 10rem;
         justify-content: center;
         align-items: center;
-        animation: slidein 2s ease-in-out forwards; 
       }
       .h3serv {
         font-size: 2rem;
         font-weight: bold;
         padding-bottom: 3rem;
         letter-spacing: 3px;
-        animation: slidein 3s ease-in-out forwards; 
       }
       .h2services {
         font-size: 2rem;
@@ -1864,7 +1861,6 @@ height: 2rem;
   justify-content: center; 
   align-items: center;
   gap: 1.2em;
-  opacity: 0;
   margin: 0px;
   animation: fade-in 2s ease-in-out forwards;
   /* padding-left: 1em; */
@@ -2011,16 +2007,7 @@ height: 2rem;
   animation: fade-in 2s ease-in-out forwards;
   margin: 0px;
 }
-@keyframes fade-in {
-  0% {
-    opacity: 1;
-    transform: translateY(-90px); 
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
+
 
 .grid1,
 .grid2,
@@ -2087,7 +2074,6 @@ height: 2rem;
   color: white;
   justify-content: center;
   grid-gap: 1.2em;
-  opacity: 0;
   padding: 20px;
   margin: 20px;
   animation: fade-in 2s ease-in forwards;

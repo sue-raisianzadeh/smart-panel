@@ -1,5 +1,7 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import { Modal, Image } from 'react-bootstrap'
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 import House1 from '/assets/1house.png'
 import House2 from '/assets/house1.png'
 import House11 from '/assets/3house.png'
@@ -14,6 +16,11 @@ import House20 from '/assets/house11.jpg'
 import Footer from './Footer'
 
 const Gallery = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 700,
+    })
+  }, [])
   const [modalVisible, setModalVisible] = useState(false)
   const [selectedImage, setSelectedImage] = useState(null)
   const images = [
@@ -58,7 +65,7 @@ const Gallery = () => {
         or the photographer specified in the image caption. They cannot be used
         for advertising, marketing, or to imply endorsement.
       </p>
-      <div className="galpic">
+      <div data-aos="fade-dawn" className="galpic">
         <div className="gallery-container blur-load">
           {images.map((image, index) => (
             <div

@@ -54,10 +54,16 @@ const Services = () => {
       <div className="bannerservices">
         {/* Service items */}
         <div
+          data-aos="fade-down-right"
           className="textbanserv"
-          style={{ width: '36%', paddingTop: '3em' }}
+          style={{
+            width: '36%',
+            paddingTop: '3em',
+            // backgroundColor: 'transparent',
+            // animation: 'slideFromright 2s ease-in-out forwards',
+          }}
         >
-          <h2 className="h2services">
+          <h2 data-aos="fade-in" className="h2services">
             <FaBuilding size={38} style={{ marginRight: '5px' }} />
             Our Products And Services:
           </h2>
@@ -111,9 +117,8 @@ const Services = () => {
             </p>
           </div>
         </div>
-        <div data-aos="fade-down-right" className="picbanserv">
-          <div className="banner-content"></div>
-          <h1 data-aos="fade-down-right" className="service-title h1serv ">
+        <div data-aos="fade-down-left" className="picbanserv">
+          <h1 data-aos="fade-down-left" className="service-title h1serv ">
             <FaTools
               size={58}
               style={{ color: 'rgb(132, 11, 11)', marginRight: '8px' }}
@@ -122,7 +127,7 @@ const Services = () => {
           </h1>
           <div>
             <br />
-            <h3 data-aos="fade-up" className="service-subtitle h3serv ">
+            <h3 data-aos="fade-down-left" className="service-subtitle h3serv ">
               Smart Panel Homes Ltd
             </h3>
           </div>
@@ -256,7 +261,7 @@ const Services = () => {
           and beautiful outdoor living areas that complement your home and
           improve your outdoor lifestyle.
         </p>
-        <div className="galpic">
+        <div data-aos="fade-down-right" className="galpic">
           <div className="gallery-container">
             {images.map((image, index) => (
               <div
