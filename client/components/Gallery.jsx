@@ -24,17 +24,17 @@ const Gallery = () => {
   const [modalVisible, setModalVisible] = useState(false)
   const [selectedImage, setSelectedImage] = useState(null)
   const images = [
+    House19,
+    House20,
+    House14,
     House1,
     House2,
     House11,
     House13,
-    House14,
     House15,
     House16,
     House17,
     House18,
-    House19,
-    House20,
   ]
 
   const openModal = (index) => {
