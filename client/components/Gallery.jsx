@@ -25,10 +25,10 @@ const Gallery = () => {
   const [selectedImage, setSelectedImage] = useState(null)
   const images = [
     House19,
-    House20,
     House14,
-    House1,
+    House20,
     House2,
+    House1,
     House11,
     House13,
     House15,
