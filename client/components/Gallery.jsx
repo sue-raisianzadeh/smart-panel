@@ -75,7 +75,7 @@ const Gallery = () => {
         for advertising, marketing, or to imply endorsement.
       </p>
       <div className="galpic">
-        <div className="gallery-container blur-load">
+        <div className="gallery-container">
           {images.map((image, index) => (
             <div
               key={index}
@@ -92,8 +92,9 @@ const Gallery = () => {
               <LazyLoadImage
                 src={image}
                 alt={`House ${index + 1}`}
-                className="gallery-image"
                 effect="blur"
+                className="gallery-image"
+                placeholder={<div className="image-placeholder" />}
               />
               <div className="image-overlay"></div>
             </div>
