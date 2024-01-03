@@ -1991,6 +1991,13 @@ height: 2rem;
   margin: 0px;
 }
 
+.image-placeholder {
+  background-color: #ccc; /* Placeholder color */
+  height: 100%;
+  width: 100%;
+}
+
+
 /* overlay */
 .image-container {
   position: relative;
