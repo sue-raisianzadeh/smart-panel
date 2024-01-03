@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react'
 import { Modal, Image } from 'react-bootstrap'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
+import { LazyLoadImage } from 'react-lazy-load-image-component'
+import 'react-lazy-load-image-component/src/effects/blur.css'
 import House1 from '/assets/1house.png'
 import House2 from '/assets/house1.png'
 import House11 from '/assets/3house.png'
@@ -18,9 +20,10 @@ import Footer from './Footer'
 const Gallery = () => {
   useEffect(() => {
     AOS.init({
-      duration: 700,
+      duration: 680,
     })
   }, [])
+
   const [modalVisible, setModalVisible] = useState(false)
   const [selectedImage, setSelectedImage] = useState(null)
   const images = [
@@ -56,6 +59,12 @@ const Gallery = () => {
     )
   }
 
+  const handleKeyDown = (index, event) => {
+    if (event.key === 'Enter') {
+      openModal(index)
+    }
+  }
+
   return (
     <div className="gallerybody">
       <h1 className="hgallery">GALLERY</h1>
@@ -65,28 +74,32 @@ const Gallery = () => {
         or the photographer specified in the image caption. They cannot be used
         for advertising, marketing, or to imply endorsement.
       </p>
-      <div data-aos="fade-dawn" className="galpic">
+      <div className="galpic">
         <div className="gallery-container blur-load">
           {images.map((image, index) => (
             <div
               key={index}
               className="image-container modal-lg"
               onClick={() => openModal(index)}
-              onKeyDown={() => openModal(index)} // for accessibility
-              role="button" // indicates the div is a button
-              tabIndex="0" // for keyboard navigation
+              onKeyDown={(event) => {
+                if (event.key === 'Enter' || event.key === 'Space') {
+                  openModal(index)
+                }
+              }}
+              role="button"
+              tabIndex="0"
             >
-              <img
+              <LazyLoadImage
                 src={image}
                 alt={`House ${index + 1}`}
                 className="gallery-image"
+                effect="blur"
               />
-              <div className="image-overlay" />
+              <div className="image-overlay"></div>
             </div>
           ))}
         </div>
       </div>
-
       {modalVisible && (
         <Modal
           show={modalVisible}
@@ -97,7 +110,7 @@ const Gallery = () => {
             <Image
               src={images[selectedImage]}
               alt={`House ${selectedImage + 1}`}
-              className="modal-content "
+              className="modal-content"
             />
             <div className="arrow arrow-left" onClick={prevImage}>
               &#11164;
@@ -119,6 +132,7 @@ const Gallery = () => {
           </Modal.Body>
         </Modal>
       )}
+
       <Footer />
     </div>
   )

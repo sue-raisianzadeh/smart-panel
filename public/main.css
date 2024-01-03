@@ -631,84 +631,6 @@ color:#c9c9c9;
   animation: slideFromRight 3s ease-out;
 }
 
-
-/* @keyframes slideout {
-  0% {
-    transform: translateX(-50%); /* Start off the screen to the left */
-  /* }
-  100% {
-    transform: translateX(0); /* End at the original position */
-  /* }
-}  */
-/* .text-and-buttons {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
-} */
-
-/* .button-row {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  gap: 2em;
-  margin: 2rem ;
-  color: white;
-  /* overflow: hidden; */
-  /* animation: slideIn 2s ease-in-out forwards;   */
-/* }  */
-/* .anav2 {
-  padding: 1.5rem ;
-  color: white;
-  background-color: rgb(116, 12, 12);
-  text-decoration: none;
-  border-radius: 10px;
-  justify-content: center;
-  align-items: center;
-  text-decoration: none;
-  position: relative;
-  text-align: center;
-  font-size: 1.1em;
-  width: 10em;
-  height: 2em;
-
-}
-
-.anav2::before {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 0;
-  height: 2px;
-  background-color: #dfcbcb;
-  transition: width 0.3s ease;
-  margin-right: 5px;
-  
-}
-.anav2:hover{
-  background:rgb(115, 34, 34);
-  border-radius: 10px;
-  color:#fdb455;
-  text-decoration: none;
-  box-shadow: 0 7px rgb(192, 191, 191);
-
-}
-.anav:active {
-  transform: translateY(7px);
-  transform: scale(2.5);
-  color:#ddd4d4;
-  transform-style: preserve-3d;
-
-}
-.anav2:hover:before {
-  width: 100%;
-  color: #e19119;
-  text-decoration: none;  box-shadow: 0 4px rgb(141, 141, 141);
-
-} */
 .scroll-down-container {
   display: flex;
   flex-direction: column;
@@ -1865,7 +1787,6 @@ height: 2rem;
   /* padding-left: 1em; */
 }
 
-
 .h2serveboby {
   letter-spacing: 4px;
   padding: 6rem 3rem 0.5rem 3rem !important;
@@ -1912,7 +1833,6 @@ height: 2rem;
 
   
 /*Projects */
-
 
 .projectheader{
   display: flex;
@@ -2072,12 +1992,12 @@ height: 2rem;
 }
 
 /* overlay */
-.modal-image-container {
+.image-container {
   position: relative;
   overflow: hidden;
 }
 
-.modal-image-overlay {
+.image-overlay {
   display: block;
   position: absolute;
   top: 0;
@@ -2094,7 +2014,7 @@ height: 2rem;
    pointer-events: none; /* Ensure clicks pass through the overlay to the image below */
   }
   
-  .modal-image-container:hover .modal-image-overlay {
+  .image-container:hover .image-overlay {
   opacity: 0;
 }
 .modal-container {
@@ -2133,6 +2053,49 @@ height: 2rem;
   padding: 0rem;
   overflow-y: auto; /* Allows scrolling within the modal if content overflows */
 }
+
+
+
+.image-container:hover .image-overlay {
+  opacity: 1; /* Show overlay on hover */
+}
+.modal-container {
+  background-color: transparent ;
+  width: auto;
+  height: auto; 
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* z-index: 1050; High z-index to ensure it's on top of other elements */
+
+}
+.custom-modal-dialog .modal-dialog {
+  margin: auto;
+  width: auto;
+  max-width: 100%;
+}
+
+.modal-content {
+  background-color: rgba(23, 20, 20, 0.95); /* Increase the alpha for a darker background */
+  border-radius: 10px;
+  position: relative;
+  border: none;
+  width: auto;
+  height: auto;
+  /* max-width: 100%;  */
+  /* max-height: auto;  */
+  object-fit: contain;
+  overflow: auto;
+  margin: 0px;
+  padding: 0rem;
+  overflow-y: auto; /* Allows scrolling within the modal if content overflows */
+}
+
 
 
 .download-button {

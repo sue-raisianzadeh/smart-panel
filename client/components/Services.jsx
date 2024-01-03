@@ -2,6 +2,9 @@ import React, { useState, useEffect } from 'react'
 import { Modal, Image } from 'react-bootstrap'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
+import { LazyLoadImage } from 'react-lazy-load-image-component'
+import 'react-lazy-load-image-component/src/effects/blur.css'
+
 // import Servisesbg from '/assets/new--.png'
 import Services1 from '/assets/services/Services1.png'
 import Services2 from '/assets/services/Services2.png'
@@ -262,27 +265,31 @@ const Services = () => {
           improve your outdoor lifestyle.
         </p>
         <div data-aos="fade-down-right" className="galpic">
-          <div className="gallery-container">
+          <div className="gallery-container blur-load">
             {images.map((image, index) => (
               <div
                 key={index}
-                className="image-container modal-lg"
+                className="image-container"
                 onClick={() => openModal(index)}
-                onKeyDown={() => openModal(index)} // for accessibility
-                role="button" // indicates the div is a button
-                tabIndex="0" // for keyboard navigation
+                onKeyDown={(event) => {
+                  if (event.key === 'Enter' || event.key === 'Space') {
+                    openModal(index)
+                  }
+                }}
+                role="button"
+                tabIndex="0"
               >
-                <img
+                <LazyLoadImage
                   src={image}
                   alt={`House ${index + 1}`}
                   className="gallery-image"
+                  effect="blur"
                 />
-                <div className="image-overlay" />
+                <div className="image-overlay"></div>
               </div>
             ))}
           </div>
         </div>
-
         {modalVisible && (
           <Modal
             show={modalVisible}
@@ -293,7 +300,7 @@ const Services = () => {
               <Image
                 src={images[selectedImage]}
                 alt={`House ${selectedImage + 1}`}
-                className="modal-content "
+                className="modal-content"
               />
               <div className="arrow arrow-left" onClick={prevImage}>
                 &#11164;

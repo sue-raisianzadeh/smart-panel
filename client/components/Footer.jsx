@@ -10,16 +10,16 @@ function Footer() {
             <div className="info-box-footer">
               <h1 className="contact-us2 text-white">CONTACT US</h1>
               <div className="company-info-footer">
-                <FaPhoneAlt className="icon footer-icons" />
                 <p className="company-info text-white">Phone: 027 478 1672</p>
+                <FaPhoneAlt className="icon footer-icons" />
 
-                <FaEnvelope className="icon footer-icons" />
                 <p className="company-info text-white">
+                  <FaEnvelope className="icon footer-icons" />
                   Email: info@smartpanelhomes.co.nz
                 </p>
 
-                <FaMapMarkerAlt className="icon footer-icons" />
                 <p className="company-info address text-white">
+                  <FaMapMarkerAlt className="icon footer-icons" />
                   Address: 23a Hereford Street, Te Atatu Peninsula, Auckland,
                   0610, New Zealand
                 </p>
