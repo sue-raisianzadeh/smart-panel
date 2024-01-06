@@ -10,19 +10,36 @@ function Footer() {
             <div className="info-box-footer">
               <h1 className="contact-us2 text-white">CONTACT US</h1>
               <div className="company-info-footer">
-                <p className="company-info text-white">Phone: 027 478 1672</p>
-                <FaPhoneAlt className="icon footer-icons" />
+                <div
+                  style={{
+                    display: 'flex',
+                    flexDirection: 'row',
+                    padding: '1rem',
+                  }}
+                >
+                  <FaPhoneAlt className="icon footer-icons" />
+                  <p className="company-info text-white">Phone: 027 478 1672</p>
+                </div>
 
-                <p className="company-info text-white">
+                <div
+                  style={{
+                    display: 'flex',
+                    flexDirection: 'row',
+                    paddingBottom: '1rem',
+                  }}
+                >
                   <FaEnvelope className="icon footer-icons" />
-                  Email: info@smartpanelhomes.co.nz
-                </p>
-
-                <p className="company-info address text-white">
+                  <p className="company-info text-white">
+                    Email: info@smartpanelhomes.co.nz
+                  </p>
+                </div>
+                <div style={{ display: 'flex', flexDirection: 'row' }}>
                   <FaMapMarkerAlt className="icon footer-icons" />
-                  Address: 23a Hereford Street, Te Atatu Peninsula, Auckland,
-                  0610, New Zealand
-                </p>
+                  <p className="company-info address text-white">
+                    Address: 23a Hereford Street, Te Atatu Peninsula, Auckland,
+                    0610, New Zealand
+                  </p>
+                </div>
               </div>
             </div>
           </div>

@@ -341,6 +341,7 @@ color:#c9c9c9;
 
 .contact-us2{
   font-size: 2em;
+  letter-spacing: 3px;
 }
 .info-box-footer {
   display: flex;
@@ -383,12 +384,14 @@ color:#c9c9c9;
   letter-spacing: 5px;
   text-align: left;
   font-size: 2em;
+  letter-spacing: 3px;
 }
 
 .company-info-footer {
   text-align: center;
   padding-bottom: 1em;
   font-size: 1em;
+  line-height: 1rem;
 }
 
 /* Media query for responsiveness */
