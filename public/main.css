@@ -10,7 +10,7 @@
     width: 8em !important;
 
   }
- 
+
 }
 
  @media screen and (max-width: 999px) {
@@ -839,36 +839,6 @@ color:#c9c9c9;
 }
 
 
-/* section2 */
-
-/* .section2-about {
-padding: 0px; 
-  margin: 0px;
-}
-
-.picabout2 {
- cursor: pointer;
- animation: slideout 2s ease-out; 
-}
-.h2about-section2, .h2about2-section2{
-  font-family: 'Cairo','Montserrat', Arial, Helvetica, sans-serif ;
-  color:rgb(84, 11, 11);
-  text-shadow: 1px 1px 3px #f0cece;
-  font-size: 2.5em;
-  font-weight: bold;
-  width: 50%;
-  line-height: 2em;
-  padding: 1.5em 0em 0em 2em;
-  margin: 0px 0px 0px 80px;
-  animation: slideout 2s ease-out; 
-}
-
-
-
-  .spansection2{
-    padding-top: 2.5em;
-  } */
-
 /* section3-aboutus */
 
 .section3-about{
@@ -947,71 +917,7 @@ height: 4.5rem;
   height: auto;
   padding-right: 1rem;
 }
-     /* Add these animations for scroll effects */
-     /* .fade-right {
-       opacity: 0;
-       transform: translateX(-20px);
-       transition: opacity 0.5s ease, transform 0.5s ease;
-     }
-     
-     .fade-right.active {
-       opacity: 1;
-       transform: translateX(0);
-     } */
-    
-   /* @keyframes slideIn {
-     0% {
-       transform: translateX(-50%); */
-       /* Start off the screen to the left */
-       /* }
-       100% {
-         transform: translateX(0); */
-         /* End at the original position */
-         /* } 
-       }
-       */    
-
-
-/* responsive aboutus */
-
-  /* @media screen and (max-width: 1800px) {
-
-    .section1-about {
-    padding: 1em;
-    margin: 0px;
-    width: 100%;
-   }
-    
-   .h2about {
-      font-size: 2.75em;
-      letter-spacing: 0.1em;
-      font-family: 'Cairo','Montserrat', Arial, Helvetica, sans-serif ;
-      color: #f9dcaf;
-      font-weight: bold;
-      text-shadow: 1px 1px 5px #f2a8a8;
-      padding: 1.75em 0em 0.25em 1.2em;
-  }
-  .pabout{
-    font-size: 1.25em;
-    font-family: 'Cairo', 'Arial, Helvetica, sans-serif';
-    color: #f4e7e0;
-    text-align:justify;
-    padding:2em;
-    text-shadow: #000 2px;
-    /* word-spacing:-4px; */
-   /* }
-   .picabout1-animation-container {
-   display: flex;
-   justify-content: row;
-     } 
-     .about1-1{
-      width: 30em;
-      height: 28em;
-     margin: 10px 3px 10px 10px;
-     padding: 2px;
-     cursor: pointer;
-    }
-    
+       
   .h2about2-section2{
     width: 90%;
     padding: 0.25em;
@@ -1907,7 +1813,7 @@ height: 2rem;
 }
 
 .hgallery {
-  padding: 2em;
+  padding: 2em 0em 0.25em 1.15em;
   padding-bottom: 0.25em;
   border-bottom: 1px solid #888;
   font-family:  'Montserrat', 'Arial', 'Cairo','Helvetica, sans-serif';
@@ -2183,21 +2089,23 @@ height: 2rem;
   form {
     display: flex;
     flex-direction: column;
-    /* justify-self: center;
-    align-content: center;
-    align-items: center; */
-    margin: auto important;
+    margin: 2rem important;
   }
   .get-in-touch {
-    padding-top: 1em;
+    padding-top: 2.5em;
   }
- }
+  
+}
 
  @media (max-width: 768px) {
    .form-container {
      flex-direction: column;
    }
+   .get-in-touch {
+    padding-top: 3em;
   }
+ }
+  
 
   .container-zone{
     display: flex; 
@@ -2233,14 +2141,6 @@ height: 2rem;
     animation: slideIn 2s ease-out; /* Define animation */
   }
   
-  @keyframes slideIn {
-    0% {
-      transform: translateX(50%); /* Start off the screen to the left */
-    }
-    100% {
-      transform: translateX(0); /* End at the original position */
-  }
-}
 .allform {
   /* background-color: #e3d2d2; */
   font-family: 'Cairo',Arial, Helvetica, sans-serif;
@@ -2280,18 +2180,13 @@ height: 2rem;
   color: #141313;
   font-size: 1.2em;
 }
-.contact-info{
-  /* padding: 0rem 1.75rem 1rem 1.75rem !important; */
-
-}
 .icon {
   font-size: 1.5em;
-  /* margin-right: 10px; */
   color: white;
   padding-right: 0.25em;
 }
 .get-in-touch {
-  /* padding-top: 1em; */
+  padding-top: 1em;
   font-family: 'Montserrat', Arial, Helvetica, sans-serif;
   font-weight: bold;
   
@@ -2299,19 +2194,23 @@ height: 2rem;
 
 .form-part {
   flex: 1;
-  margin-right: 15px; /* Adjust the spacing between the two form parts */
+  margin-right: 15px; 
 }
 .form-group {
-  margin-bottom: 10px; /* Adjust the spacing between form elements */
+  margin-bottom: 10px; 
 }
 .message{
   height: 5em;
 }
-
-/* Add or update the styles for the submit button */
+.submit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .custom-btn {
   display: flex;
   flex-direction: row;
+  padding-bottom: 10px 0px;
   /* background-color: red; 
   font-family: 'Cairo', Arial, Helvetica, sans-serif;
   letter-spacing: 2px;
@@ -2324,7 +2223,6 @@ height: 2rem;
   font-size: 1.4em;
   font-weight: bold;
   color: #ffffff;
-  padding: 10px 0px;
   border: none;
   border-radius: 10px;
   cursor: pointer;

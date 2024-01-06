@@ -4,17 +4,17 @@ import AOS from 'aos'
 import 'aos/dist/aos.css'
 import { LazyLoadImage } from 'react-lazy-load-image-component'
 import 'react-lazy-load-image-component/src/effects/blur.css'
-import House1 from '/assets/1house.png'
+import House1 from '/assets/house2.png'
 import House2 from '/assets/house1.png'
-import House11 from '/assets/3house.png'
-import House16 from '/assets/1house6.png'
-import House14 from '/assets/4house.png'
-import House13 from '/assets/1housesp.png'
-import House15 from '/assets/1house8.png'
-import House17 from '/assets/1house7.png'
-import House18 from '/assets/1housess3.png'
-import House19 from '/assets/roof.jpg'
-import House20 from '/assets/house11.jpg'
+import House3 from '/assets/house3.png'
+import House4 from '/assets/modern-roof.jpg'
+import House5 from '/assets/1house8.png'
+import House6 from '/assets/1house6.png'
+import House7 from '/assets/1house7.png'
+import House8 from '/assets/1housess3.png'
+import House9 from '/assets/roof.jpg'
+import House10 from '/assets/house11.jpg'
+import House11 from '/assets/1housesp.png'
 import Footer from './Footer'
 
 const Gallery = () => {
@@ -27,17 +27,17 @@ const Gallery = () => {
   const [modalVisible, setModalVisible] = useState(false)
   const [selectedImage, setSelectedImage] = useState(null)
   const images = [
-    House19,
-    House14,
-    House20,
+    House9,
+    House4,
+    House10,
     House2,
     House1,
+    House3,
     House11,
-    House13,
-    House15,
-    House16,
-    House17,
-    House18,
+    House5,
+    House6,
+    House7,
+    House8,
   ]
 
   const openModal = (index) => {
@@ -75,7 +75,7 @@ const Gallery = () => {
         for advertising, marketing, or to imply endorsement.
       </p>
       <div className="galpic">
-        <div className="gallery-container">
+        <div className="gallery-container blur">
           {images.map((image, index) => (
             <div
               key={index}
