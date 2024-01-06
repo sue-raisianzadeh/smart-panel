@@ -363,7 +363,6 @@ color:#c9c9c9;
   margin-bottom: 0.25em;
   text-align: left;
   font-size: 1.1em;
-  
 }
 
 .footer-icons {
@@ -391,7 +390,6 @@ color:#c9c9c9;
   text-align: center;
   padding-bottom: 1em;
   font-size: 1em;
-  line-height: 1rem;
 }
 
 /* Media query for responsiveness */
@@ -2209,6 +2207,7 @@ height: 2rem;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 2rem;
 }
 .custom-btn {
   display: flex;
