@@ -7,7 +7,7 @@ import About1 from '/assets/aboutus.jpg'
 import About2 from '/assets/panel.jpg'
 import About3 from '/assets/panel2.jpg'
 // import About4 from '/assets/about/office2.png'
-import About5 from '/assets/I8.jpg'
+import About5 from '/assets/panel3.jpg'
 import LogoMetal from '/assets/icons/metalcraft-logo.jpg'
 import Logobluebird from '/assets/icons/Bondor-Logo2.jpg'
 

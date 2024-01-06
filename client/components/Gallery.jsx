@@ -8,13 +8,14 @@ import House1 from '/assets/renovate.jpg'
 import House2 from '/assets/interior-design.jpg'
 import House3 from '/assets/building.jpg'
 import House4 from '/assets/modern-roof.jpg'
-import House5 from '/assets/1house8.png'
+import House5 from '/assets/house5.jpg'
 import House6 from '/assets/house.jpg'
-import House7 from '/assets/1house7.png'
+import House7 from '/assets/house4.jpg'
 import House8 from '/assets/house3.jpg'
 import House9 from '/assets/roof.jpg'
 import House10 from '/assets/house11.jpg'
-import House11 from '/assets/1housesp.png'
+import House11 from '/assets/building2.jpg'
+import House12 from '/assets/solarspan.jpg'
 import Footer from './Footer'
 
 const Gallery = () => {
@@ -27,13 +28,14 @@ const Gallery = () => {
   const [modalVisible, setModalVisible] = useState(false)
   const [selectedImage, setSelectedImage] = useState(null)
   const images = [
+    House3,
     House9,
     House4,
-    House10,
     House2,
     House1,
-    House3,
     House11,
+    House12,
+    House10,
     House5,
     House6,
     House7,

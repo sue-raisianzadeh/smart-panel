@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import axios from 'axios'
 import { FaEnvelope, FaPhoneAlt, FaMapMarkerAlt } from 'react-icons/fa'
-import NZ1 from '/assets/nz1.png'
+import NZ1 from '/assets/nz1.jpg'
 // import Footer from './Footer'
 
 function ContactUs() {
@@ -133,7 +133,7 @@ function ContactUs() {
                       className={`form-control ${
                         errors.name ? 'is-invalid' : ''
                       }`}
-                      style={{ width: '22em', height: '3em' }} // Set a wider width for the input
+                      style={{ width: '22em', height: '3em' }}
                       required
                     />
                     {errors.name && (
@@ -149,7 +149,7 @@ function ContactUs() {
                       className={`form-control ${
                         errors.email ? 'is-invalid' : ''
                       }`}
-                      style={{ width: '22em', height: '3em' }} // Set a wider width for the input
+                      style={{ width: '22em', height: '3em' }}
                       required
                     />
                     {errors.email && (
@@ -163,7 +163,7 @@ function ContactUs() {
                       value={phone}
                       onChange={handlePhoneChange}
                       className="form-control"
-                      style={{ width: '22em', height: '3em' }} // Set a wider width for the input
+                      style={{ width: '22em', height: '3em' }}
                     />
                   </div>
                 </div>
@@ -177,7 +177,7 @@ function ContactUs() {
                         errors.message ? 'is-invalid' : ''
                       }`}
                       required
-                      style={{ height: '11em', width: '22em' }} // Set a wider width and the same height for the textarea
+                      style={{ height: '11em', width: '22em' }}
                     />
                     {errors.message && (
                       <div className="invalid-feedback">{errors.message}</div>

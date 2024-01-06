@@ -6,14 +6,16 @@ import { LazyLoadImage } from 'react-lazy-load-image-component'
 import 'react-lazy-load-image-component/src/effects/blur.css'
 
 // import Servisesbg from '/assets/new--.png'
-import Services1 from '/assets/services/Services1.png'
-import Services2 from '/assets/services/Services2.png'
-import Services3 from '/assets/services/Services3.png'
-import Services4 from '/assets/services/Services4.png'
-import Services5 from '/assets/services/services5.png'
+import Services1 from '/assets/services/free-standing.jpg'
+import Services2 from '/assets/services/property-extention.jpg'
+import Services3 from '/assets/services/gable.jpg'
+import Services4 from '/assets/services/attached-skilion.jpg'
 import Services6 from '/assets/services/services6.jpg'
-import Services7 from '/assets/services/services7.png'
-import Services8 from '/assets/services/services8.png'
+import Services7 from '/assets/services/colors.png'
+import Services8 from '/assets/services/solarspan2.jpg'
+import Services9 from '/assets/services/solarspan5.jpg'
+import Services5 from '/assets/services/solarspan1.jpg'
+
 import Footer from './Footer'
 import {
   FaTools,
@@ -32,7 +34,7 @@ const Services = () => {
   }, [])
   const [modalVisible, setModalVisible] = useState(false)
   const [selectedImage, setSelectedImage] = useState(null)
-  const images = [Services5, Services6, Services7, Services8]
+  const images = [Services5, Services6, Services7, Services8, Services9]
   const openModal = (index) => {
     setSelectedImage(index)
     setModalVisible(true)
@@ -223,7 +225,7 @@ const Services = () => {
             <img
               data-aos="fade-down-left"
               className="servicepic4"
-              src={Services2}
+              src={Services4}
               alt="Services4"
             />
             <div>
