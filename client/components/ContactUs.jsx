@@ -1,10 +1,16 @@
-import React, { useState } from 'react'
-import axios from 'axios'
+import React, { useState, useEffect } from 'react'
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 import { FaEnvelope, FaPhoneAlt, FaMapMarkerAlt } from 'react-icons/fa'
 import NZ1 from '/assets/nz1.jpg'
 // import Footer from './Footer'
 
 function ContactUs() {
+  useEffect(() => {
+    AOS.init({
+      duration: 850,
+    })
+  }, [])
   const [name, setName] = useState('')
   const [email, setEmail] = useState('')
   const [phone, setPhone] = useState('')
@@ -85,7 +91,7 @@ function ContactUs() {
     >
       <div className="contact-container">
         <div className="row justify-content-center align-items-center">
-          <div className="col-md-6 text-center">
+          <div data-aos="fade-down-right" className="col-md-6 text-center">
             <h1
               className="get-in-touch text-white"
               style={{ paddingTop: '2em' }}
@@ -96,17 +102,17 @@ function ContactUs() {
         </div>
         <div className="row justify-content-center align-items-center">
           <div className="col-md-6 text-center">
-            <div className="info-box">
+            <div data-aos="fade-down-right" className="info-box">
               <FaPhoneAlt className="icon" />
               <p className="contact-info text-white">Phone: 027 478 1672</p>
             </div>
-            <div className="info-box2">
+            <div data-aos="fade-down-right" className="info-box2">
               <FaEnvelope className="icon" />
               <p className="contact-info text-red" style={{ color: 'red' }}>
                 Email: info@smartpanelhomes.co.nz
               </p>
             </div>
-            <div className="info-box2">
+            <div data-aos="fade-down-left" className="info-box2">
               <FaMapMarkerAlt className="icon" />
               <p
                 className="contact-info text-white"

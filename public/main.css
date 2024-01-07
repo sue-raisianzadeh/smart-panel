@@ -371,7 +371,7 @@ color:#c9c9c9;
   margin-right: 0.5em; 
 }
 
-/* About section */
+/* footer-About section- */
 .about-box-footer {
   display: flex;
   flex-direction: column;
@@ -1793,6 +1793,8 @@ height: 2rem;
   font-weight: 450;
   letter-spacing: 10px;
   justify-content: start;
+  animation: scroll-In 2s ease-in forwards;
+
 }
 
 .pgallery{
@@ -1996,6 +1998,7 @@ height: 2rem;
   margin-top: 0.25rem; 
   cursor: pointer;
   text-decoration: none; 
+  
 }
 
 .download-button a {
@@ -2003,7 +2006,7 @@ height: 2rem;
   text-decoration: none;
   transition: color 0.3s ease;
   text-decoration: none !important; 
-
+  
 }
 
 .download-button a:hover {
@@ -2054,7 +2057,7 @@ height: 2rem;
 
 
 
-     /* ContactUs */
+  /* ContactUs */
 
 @media screen and (max-width: 600px) {
   form {
@@ -2111,6 +2114,15 @@ height: 2rem;
   .form-animation-container {
     animation: slideIn 2s ease-out; /* Define animation */
   }
+  @keyframes slideIn {
+    from { transform: translateX(100%); }
+    to { transform: translateX(0); }
+  }
+  
+  .form-animation-container {
+    animation: slideIn 2s ease-out; /* Define animation */
+  }
+  
   
 .allform {
   /* background-color: #e3d2d2; */

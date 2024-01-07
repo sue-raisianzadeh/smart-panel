@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
-import { Modal, Image } from 'react-bootstrap'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
+import { Modal, Image } from 'react-bootstrap'
 import { LazyLoadImage } from 'react-lazy-load-image-component'
 import 'react-lazy-load-image-component/src/effects/blur.css'
 import House1 from '/assets/renovate.jpg'
@@ -69,8 +69,10 @@ const Gallery = () => {
 
   return (
     <div className="gallerybody">
-      <h1 className="hgallery">GALLERY</h1>
-      <p className="pgallery">
+      <h1 data-aos="fade-down-right" className="hgallery">
+        GALLERY
+      </h1>
+      <p data-aos="fade-down-right" className="pgallery">
         Disclaimer: The imagery and video footage provided in this gallery are
         available for media download and use, and must be credited to Metalcraft
         or the photographer specified in the image caption. They cannot be used

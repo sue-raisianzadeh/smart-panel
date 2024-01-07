@@ -1,15 +1,13 @@
 import React, { useEffect } from 'react'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
-// import { Element, animateScroll as scroll } from 'react-scroll'
-// import ScrollAnimation from 'react-animate-on-scroll'
 import About1 from '/assets/aboutus.jpg'
 import About2 from '/assets/panel.jpg'
 import About3 from '/assets/panel2.jpg'
-// import About4 from '/assets/about/office2.png'
 import About5 from '/assets/panel3.jpg'
 import LogoMetal from '/assets/icons/metalcraft-logo.jpg'
 import Logobluebird from '/assets/icons/Bondor-Logo2.jpg'
+// import About4 from '/assets/about/office2.png'
 
 import Footer from './Footer'
 
@@ -74,14 +72,12 @@ const AboutUs = () => {
               alt="About2"
             />
           </div>
-          {/* <div className="divabout1-1"> */}
           <img
             data-aos="fade-down-left"
             className="about1-1"
             src={About3}
             alt="About3"
           />
-          {/* </div> */}
         </div>
       </div>
       <br />
@@ -90,12 +86,10 @@ const AboutUs = () => {
       {/* Section 3 */}
       <div className="section3-about">
         <div data-aos="fade-down-right" className="textabout-section3">
-          {/* <ScrollAnimation animateIn="fadeIn"> */}
           <h2 data-aos="fade-down-right" className="h2about3">
             We Work closely with local manufacturers such as Metalcraft and
             Bondor{' '}
           </h2>{' '}
-          {/* </ScrollAnimation> */}
         </div>
         <img
           data-aos="fade-down-left"
