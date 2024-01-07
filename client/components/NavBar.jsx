@@ -1,5 +1,7 @@
 // NavBar.jsx
-import React from 'react'
+import React, { useEffect } from 'react'
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 import { Link, useLocation } from 'react-router-dom'
 import Logo1 from '/assets/icons/logo-smart1.png'
 import {
@@ -14,6 +16,11 @@ import {
 } from 'react-icons/fa'
 
 const NavBar = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 900,
+    })
+  }, [])
   const location = useLocation()
 
   const isDarkRedBackground = location.pathname === '/SpecificPage'
@@ -24,7 +31,7 @@ const NavBar = () => {
   return (
     <div className={`navbar-container ${isDarkRedBackground ? 'red' : ''}`}>
       {/* The top part with contact information */}
-      <div className="top-line">
+      <div data-aos="fade-down" className="top-line">
         <div className="logo-container">
           <img className="logopic" src={Logo1} alt="Logo1" />
         </div>

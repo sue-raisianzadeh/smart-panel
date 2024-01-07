@@ -29,7 +29,7 @@ import { FaWrench, FaAward } from 'react-icons/fa6'
 const Services = () => {
   useEffect(() => {
     AOS.init({
-      duration: 800,
+      duration: 850,
     })
   }, [])
   const [modalVisible, setModalVisible] = useState(false)

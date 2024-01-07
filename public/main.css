@@ -169,7 +169,7 @@
   padding-right: 3em;
   padding-top: 0rem;
   margin: 0px !important;
-  animation: fade-in 2s ease-in-out forwards; 
+  animation: fade-in 2s ease-in forwards; 
 }
 
 .logo-container {
@@ -1800,18 +1800,20 @@ height: 2rem;
 
 /* Gallery */
 /* Styles for mobile phones */
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 480px) {
   .hgallery {
+    font-size: 1.95em;
     justify-content: start;
     align-items: center;
-    padding-left: 1.1em ; 
+    padding-left: 0.75rem !important ; 
   }
 }
-@media screen and (max-width: 300px) {
+@media screen and (max-width: 280px) {
   .hgallery {
+    font-size: 1.5em;
     justify-content: start;
     align-items: center;
-    padding-left: 0.75em ; 
+    padding-left: 0.5em !important; 
   }
 }
 .gallerybody {
@@ -1820,7 +1822,7 @@ height: 2rem;
 }
 
 .hgallery {
-  padding: 2em 0em 0.25em 2.5em;
+  padding: 2em 0em 0.25em 1.75em;
   padding-bottom: 0.25em;
   border-bottom: 1px solid #888;
   font-family:  'Montserrat', 'Arial', 'Cairo','Helvetica, sans-serif';
