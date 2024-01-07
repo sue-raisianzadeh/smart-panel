@@ -26,7 +26,7 @@ const AboutUs = () => {
           <h2 data-aos="fade-down-right" className="h2about">
             About Us
           </h2>
-          <p data-aos="fade-down-left" className="pabout">
+          <p data-aos="fade-down-right" className="pabout">
             Smart Panel Homes came about after I built a commercial building
             using insulated panel and was instantly impressed with the ease of
             build, halving the current build times.
@@ -86,27 +86,7 @@ const AboutUs = () => {
       </div>
       <br />
       <br />
-      {/* <div
-        className="section2-about"
-        style={{
-          backgroundImage: `url(${About4})`,
-          backgroundSize: 'cover',
-          width: '100%',
-          height: '65vh',
-          margin: 0,
-        }}> */}
-      {/* <img className="picabout2" src={About4} alt="About4" /> */}
-      {/* <div className="text"> */}
-      {/* <h2 className="h2about-section2">Smart Panel Homes Ltd</h2> */}
-      {/* <h2 className="h2about2-section2"> */}
-      {/* Your Trust Is Our Responsibility <br /> */}
-      {/* <span className="spansection2" style={{ paddingTop: '2.5em' }}> */}
-      {/* Our rich expertise allows us to deliver all the assigned projects */}
-      {/* placidly */}
-      {/* </span> */}
-      {/* </h2>
-        </div>
-      </div> */}
+
       {/* Section 3 */}
       <div className="section3-about">
         <div data-aos="fade-down-right" className="textabout-section3">

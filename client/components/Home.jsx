@@ -39,16 +39,6 @@ const Home = () => {
             specialty. <br />
           </h1>
           <br />
-          {/* <div className="button-row">
-            <a className="anav2" href="/Services">
-              <FaTools size={27} style={{ marginRight: '5px' }} />
-              Services
-            </a>
-            <a className="anav2" href="/ContactUs">
-              <FaComment size={27} style={{ marginRight: '5px' }} />
-              Contact Us
-            </a>
-          </div> */}
         </div>
         <div className="scroll-down-container">
           <div>
@@ -88,7 +78,7 @@ const Home = () => {
           />
         </div>
       </div>
-      {/* </div> */}
+
       <Footer />
     </div>
   )
