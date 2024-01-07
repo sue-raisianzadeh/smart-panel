@@ -21,7 +21,7 @@ import Footer from './Footer'
 const Gallery = () => {
   useEffect(() => {
     AOS.init({
-      duration: 680,
+      duration: 780,
     })
   }, [])
 

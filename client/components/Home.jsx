@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowDown } from '@fortawesome/free-solid-svg-icons'
 import 'aos/dist/aos.css'
 import House2 from '/assets/house2.jpg'
-import Bgproject from '/assets/homepage.jpg'
+import Homepage from '/assets/homepage.jpg'
 // import House1 from '/assets/houses/house-b.png'
 import Kitchen from '/assets/kitchen-a.png'
 import Carpark from '/assets/carpark.png'
@@ -16,16 +16,16 @@ import Footer from './Footer'
 const Home = () => {
   useEffect(() => {
     AOS.init({
-      duration: 500,
+      duration: 1000,
     })
   }, [])
   return (
     <div className="Bodyhome">
       <div
-        data-aos="fade-down-left"
+        data-aos="fade-down"
         className="content-wrapper"
         style={{
-          backgroundImage: `url(${Bgproject})`,
+          backgroundImage: `url(${Homepage})`,
           backgroundSize: 'cover',
           width: '100%',
           height: '85vh',
