@@ -14,8 +14,7 @@ import Services5 from '/assets/services/solarspan1.jpg'
 import Services6 from '/assets/services/services6.jpg'
 import Services7 from '/assets/services/colors.png'
 import Services8 from '/assets/services/solarspan2.jpg'
-import Services9 from '/assets/services/solarspan5.jpg'
-import Services10 from '/assets/services/service-solar.jpg'
+import Services9 from '/assets/services/solarspan3.jpg'
 
 import Footer from './Footer'
 import {
@@ -35,14 +34,7 @@ const Services = () => {
   }, [])
   const [modalVisible, setModalVisible] = useState(false)
   const [selectedImage, setSelectedImage] = useState(null)
-  const images = [
-    Services5,
-    Services6,
-    Services7,
-    Services8,
-    Services9,
-    Services10,
-  ]
+  const images = [Services5, Services6, Services7, Services8, Services9]
   const openModal = (index) => {
     setSelectedImage(index)
     setModalVisible(true)
