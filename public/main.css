@@ -852,7 +852,7 @@ color:#c9c9c9;
     align-items: center;
     margin: 4rem 0rem 2rem 3rem;
     cursor: pointer;
-    border-radius: 100% 82% 35% 76%;
+    border-radius: 100% 100% 75% 46%;
     animation: slideout 2s ease-out; 
     border: solid 0.75em rgb(250, 231, 231);
   }
