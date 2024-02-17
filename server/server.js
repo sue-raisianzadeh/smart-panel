@@ -1,16 +1,18 @@
 const express = require('express')
-const path = require('path')
-
-const env = process.env.NODE_ENV || 'development'
-const knexfile = require('./database/knexfile')
-
-const knex = require('knex')
-const db = knex(knexfile[env])
+const { join } = require('path')
+const server = express()
+const port = process.env.PORT || 3000
 const nodemailer = require('nodemailer')
 require('dotenv').config()
 
-const server = express()
-const port = process.env.PORT || 3000
+// Correctly require the knex configuration
+const knexConfig = require('./database/knexfile')
+
+const environment = process.env.NODE_ENV || 'development'
+const config = knexConfig[environment]
+const knex = require('knex')(config)
+
+module.exports = knex
 
 // Nodemailer configuration
 const transporter = nodemailer.createTransport({
@@ -22,59 +24,41 @@ const transporter = nodemailer.createTransport({
 })
 
 server.use(express.json())
-server.use(express.static(path.join(__dirname, '../public')))
+server.use(express.static(join(__dirname, '..', 'dist')))
 
-server.use(express.static(path.join(__dirname, '../public')))
+if (process.env.NODE_ENV === 'production') {
+  server.get('*', (req, res) => {
+    res.sendFile(join(__dirname, '..', 'dist', 'index.html'))
+  })
+}
 
+// Make sure this route is async because we are using await inside
 server.post('/api/add-user', async (req, res) => {
   const { name, email, phone, message } = req.body
 
   try {
-    // Insert user data into 'smartpanel' table
-    await db('smartpanel').insert({ name, email, phone, message })
-
-    // Send confirmation email to the user
-    const userMailOptions = {
-      from: process.env.EMAIL_USER,
-      to: email,
-      subject: 'Thank you for your message',
-      text: `Dear ${name},\n\nThank you for contacting us. We will get back to you as soon as possible.\n\nBest regards,\nYour Team`,
-    }
-
-    transporter.sendMail(userMailOptions, (error) => {
-      if (error) {
-        return console.error('Error sending email to user:', error)
-      }
+    // Insert form data into the contactForm table
+    await knex('smartpanel').insert({
+      name,
+      email,
+      phone,
+      message,
     })
 
-    // Send notification email to the site owner
-    const ownerMailOptions = {
-      from: process.env.EMAIL_USER,
-      to: 'site-owner-email@example.com', // Replace with the site owner's email address
-      subject: 'New Contact Form Submission',
-      text: `Name: ${name}\nEmail: ${email}\nPhone: ${phone}\nMessage: ${message}`,
-    }
+    // Log the successful insertion
+    console.log('Form submission saved:', { name, email, phone, message })
 
-    transporter.sendMail(ownerMailOptions, (error) => {
-      if (error) {
-        return console.error('Error sending email to owner:', error)
-      }
-    })
-
-    res.status(201).json({ message: 'Contact added successfully' })
+    // Send a success response back to the client
+    res.status(200).json({ message: 'Form submission saved.' })
   } catch (error) {
-    console.error(error)
-    res.status(500).json({ error: error.message })
+    // Log the error
+    console.error('Error inserting data into database:', error)
+
+    // Send an error response back to the client
+    res.status(500).json({ error: 'Error saving form submission.' })
   }
 })
 
-if (process.env.NODE_ENV === 'production') {
-  server.use(express.static(path.join(__dirname, '../dist')))
-  server.get('*', (_, res) => {
-    res.sendFile(path.join(__dirname, '../dist/index.html'))
-  })
-}
-
 server.listen(port, () => {
-  console.log(`Server is running on port ${port}`)
+  console.log(`Listening on port ${port}`)
 })

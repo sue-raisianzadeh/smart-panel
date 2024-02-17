@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react'
+import axios from 'axios'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
 import { FaEnvelope, FaPhoneAlt, FaMapMarkerAlt } from 'react-icons/fa'
@@ -66,10 +67,10 @@ function ContactUs() {
       setPhone('')
       setMessage('')
       setShowPopup(true)
-
       try {
         const newUser = { name, email, phone, message }
         await axios.post('/api/add-user', newUser)
+
         // await axios.post('https://emailsender.com/', newUser)
       } catch (error) {
         console.error(error)
