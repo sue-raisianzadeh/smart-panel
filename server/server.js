@@ -34,19 +34,18 @@ if (process.env.NODE_ENV === 'production') {
 
 // Make sure this route is async because we are using await inside
 server.post('/api/add-user', async (req, res) => {
-  const { name, email, phone, message } = req.body
+  const { name, email, message } = req.body
 
   try {
     // Insert form data into the contactForm table
     await knex('smartpanel').insert({
       name,
       email,
-      phone,
       message,
     })
 
     // Log the successful insertion
-    console.log('Form submission saved:', { name, email, phone, message })
+    console.log('Form submission saved:', { name, email, message })
 
     // Send a success response back to the client
     res.status(200).json({ message: 'Form submission saved.' })
