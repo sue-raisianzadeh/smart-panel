@@ -1,6 +1,6 @@
 {
   "name": "atom-building",
-  "homepage": "https://smartpanelhomes.co.nz/react",
+  // "homepage": "https://smartpanelhomes.co.nz/react",
   "private": true,
   "version": "0.1.0",
   "scripts": {
