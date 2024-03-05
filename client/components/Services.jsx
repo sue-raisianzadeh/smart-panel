@@ -123,7 +123,7 @@ const Services = () => {
           </div>
         </div>
         <div data-aos="fade-down-left" className="picbanserv">
-          <h1 data-aos="fade-down-left" className="service-title h1serv ">
+          <h1 data-aos="fade-down-left" className="service-title h1serv">
             <FaTools
               size={58}
               style={{ color: 'rgb(132, 11, 11)', marginRight: '8px' }}

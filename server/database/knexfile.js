@@ -1,8 +1,3 @@
-// Update with your config settings.
-
-/**
- * @type { Object.<string, import("knex").Knex.Config> }
- */
 const path = require('path')
 
 require('dotenv').config({ path: path.join(__dirname, '../../.env') })
@@ -11,17 +6,17 @@ module.exports = {
   development: {
     client: 'sqlite3',
     connection: {
-      filename: path.join(__dirname, 'dev.sqlite3'), // Use an absolute path
+      filename: path.join(__dirname, '../../database/dev.sqlite3'),
     },
     useNullAsDefault: true,
   },
 
   production: {
-    client: 'pg',
+    client: 'sqlite3',
     connection: {
-      connectionString: process.env.DATABASE_URL,
-      ssl: { rejectUnauthorized: false },
+      filename: path.join(__dirname, '../../database/dev.sqlite3'),
     },
+    useNullAsDefault: true,
     pool: {
       min: 2,
       max: 10,

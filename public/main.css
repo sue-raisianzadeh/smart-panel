@@ -618,13 +618,13 @@ color:#c9c9c9;
 .phome {
   font-family: 'Cairo','Open Sans',Arial,'Cairo','Montserrat', Arial, Helvetica, sans-serif;
   color: white;
-  font-size: 3rem;
+  font-size: 3.1rem;
   justify-content: center;
   align-items: center;
   text-align: center;
   letter-spacing: 4px;
-  font-weight: 500;
-  text-shadow: 2px 1px #dfa9a9;
+  font-weight: 600;
+  /* text-shadow: 0px 0px #e9c1c1; */
   margin: auto;
   padding: 15rem 2rem 1rem 2rem;
 }
@@ -644,7 +644,7 @@ color:#c9c9c9;
   text-align: center;
   font-size: 1.5rem;
   margin-bottom: 10px;
-  text-shadow: 1px 1px #dfa9a9;
+  /* text-shadow: 1px 1px #dfa9a9; */
  letter-spacing: 3px;
 }
 
@@ -1552,7 +1552,7 @@ height: 2rem;
   .h1serv, .h3serv {
     color: rgb(246, 230, 230);
     /* color: rgb(94, 32, 32);  */
-     text-shadow: 2px 2px 2px #f2a8a8;
+     text-shadow: 1px 1px 1px #fccaca;
      padding-left: 5.5rem;
      justify-content: center; 
      align-items: center;
