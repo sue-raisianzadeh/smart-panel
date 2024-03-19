@@ -1,17 +1,20 @@
-const express = require('express')
-const { addNewUser } = require('./database/db')
+// const express = require('express')
+// const { addNewUser } = require('./database/db')
 
-const router = express.Router()
+// const router = express.Router()
 
-router.post('/add-user', async (req, res) => {
-  try {
-    const newUser = req.body
-    await addNewUser(newUser)
-    res.status(201).json({ message: 'Contact added successfully' })
-  } catch (error) {
-    console.error(error)
-    res.status(500).json({ error: error.message })
-  }
-})
+// router.post('/add-user', async (req, res) => {
+//   try {
+//     const newUser = req.body
+//     await addNewUser(newUser)
+//     res.status(201).json({ message: 'Contact added successfully' })
+//   } catch (error) {
+//     console.error(error)
+//     res.status(500).json({ error: error.message })
+//   }
+// })
 
-module.exports = router
+// module.exports = router
+// server.post('/api/add-user', async (req, res) => {
+//   const { name, email, message } = req.body
+// //

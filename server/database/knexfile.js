@@ -11,7 +11,7 @@ module.exports = {
   development: {
     client: 'sqlite3',
     connection: {
-      filename: path.join(__dirname, 'dev.sqlite3'), // Use an absolute path
+      filename: path.resolve(__dirname, process.env.DATABASE_FILENAME),
     },
     useNullAsDefault: true,
   },
